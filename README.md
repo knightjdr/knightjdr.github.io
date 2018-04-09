@@ -1,3 +1,3 @@
 ## My personal page (jamesknight.ca)
 
-A page to show off some projects, where I learn new stuff and for doing random things.
+A page for my personal projects and where I test new things.

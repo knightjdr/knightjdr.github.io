@@ -1,0 +1,60 @@
+$accent: #f1f10e;
+$primary: #337bae;
+$darkPrimary: #1a405f;
+$lightPrimary: #4d97cb;
+$navbar: #2f2e33;
+$light: #f8f1e5;
+$lighter: #faf4eb;
+$text-light: #f8f1e5;
+$text-dark: #2f2e33;
+$text-very-dark: #0c0c0d;
+
+.Landing {
+  align-items: center;
+  background-color: $primary;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.text-light {
+  color: $text-light;
+  font-size: 2em;
+  font-weight: bold;
+}
+.text-dark {
+  color: $text-very-dark;
+  font-size: 2em;
+  font-weight: bold;
+}
+.accent {
+  background-color: $accent;
+  color: $accent;
+  font-size: 2em;
+  font-weight: bold;
+}
+.navbar {
+  background-color: $navbar;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  height: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.section-1 {
+  background-color: $lighter;
+  height: 100vh;
+}
+.section-2 {
+  background-color: $darkPrimary;
+  height: 100vh;
+}
+.section-3 {
+  background-color: $light;
+  height: 100vh;
+}
+.section-4 {
+  background-color: $lightPrimary;
+  height: 100vh;
+}
