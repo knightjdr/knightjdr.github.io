@@ -22,3 +22,6 @@ yarn-error.log*
 
 # using SCSS, so ignore css
 src/**/*.css
+
+#assets
+src/assets/images/svg-originals/*
