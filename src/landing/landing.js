@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ComputerBack from '../assets/images/computer-back-min.svg';
+import ComputerBack from './images/computer-back';
 import Description from '../assets/images/description-min.svg';
 import Name from '../assets/images/name-min.svg';
 
@@ -15,10 +15,7 @@ const Landing = () => (
       />
     </div>
     <div className="Landing-image">
-      <img
-        alt="James at computer"
-        src={ComputerBack}
-      />
+      <ComputerBack />
     </div>
     <div className="Landing-description">
       <img
