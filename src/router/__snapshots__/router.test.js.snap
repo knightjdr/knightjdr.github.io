@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Router Renders 1`] = `
+<BrowserRouter>
+  <withRouter()>
+    <RouteWrapper
+      atActive={
+        Object {
+          "opacity": 1,
+        }
+      }
+      atEnter={
+        Object {
+          "opacity": 0,
+        }
+      }
+      atLeave={
+        Object {
+          "opacity": 0,
+        }
+      }
+      className="switch-wrapper"
+    >
+      <Route
+        component={[Function]}
+        exact={true}
+        path="/"
+      />
+      <Route
+        component={[Function]}
+        path="/analysis"
+      />
+      <Route
+        component={[Function]}
+        path="/help"
+      />
+      <Route
+        component={[Function]}
+        path="/news"
+      />
+      <Route
+        component={[Function]}
+        path="/visualization"
+      />
+      <Route
+        component={[Function]}
+        path="*"
+      />
+    </RouteWrapper>
+  </withRouter()>
+</BrowserRouter>
+`;

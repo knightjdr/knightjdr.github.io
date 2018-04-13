@@ -1,64 +1,97 @@
-@import 'style/_fonts.scss';
 @import 'style/_theme.scss';
 
 .Landing {
   align-items: center;
-  background: linear-gradient(135deg, rgba(51, 123, 174, 1) 0%, rgba(77, 151, 203, 0) 130%);
+  background: $primary;
   display: flex;
   flex-direction: column;
   height: 100vh;
+  min-height: calc(38.05vw + 120px); // 20px for desc. margin, 100px for padding
   justify-content: center;
 }
 .Landing-description {
+  height: 2.6vw;
+  left: 6%;
+  margin-top: 25px;
   position: relative;
-  margin-top: 20px;
+  width: 30vw;
 }
 .Landing-image {
-  width: 40%;
+  height: 27.2vw;
+  width: 45vw;
 }
 .Landing-name {
-  margin-bottom: 5px;
+  height: 6vw;
   position: relative;
-  width: 350px;
+  right: 3%;
+  width: 40vw;
+}
+.beaker-fluid {
+  animation: bubble-color 30s linear infinite;
 }
 .beaker-bubble1 {
-  animation: bubble1 10s linear infinite;
+  animation: bubble1 10s linear infinite, bubble-color 30s linear infinite;
   opacity: 0;
   transform: translate(0, 0);
 }
 .beaker-bubble2 {
-  animation: bubble2 10s linear 2.9s infinite;
+  animation: bubble2 10s linear 2.9s infinite, bubble-color 30s linear infinite;
   opacity: 0;
   transform: translate(0, 0);
 }
 .beaker-bubble3 {
-  animation: bubble3 10s linear 3.2s infinite;
+  animation: bubble3 10s linear 3.2s infinite, bubble-color 30s linear infinite;
   opacity: 0;
-  transform: translate(0, 25px);
+  transform: translate(0, 30px);
 }
 .beaker-bubble4 {
-  animation: bubble4 10s linear 4.2s infinite;
+  animation: bubble4 10s linear 4.2s infinite, bubble-color 30s linear infinite;
   opacity: 0;
   transform: translate(10px, 50px);
 }
 .beaker-bubble5 {
-  animation: bubble5 10s linear 5.6s infinite;
+  animation: bubble5 10s linear 5.6s infinite, bubble-color 30s linear infinite;
   opacity: 0;
   transform: translate(0px, 65px);
 }
 .beaker-bubble6 {
-  animation: bubble6 10s linear 7s infinite;
+  animation: bubble6 10s linear 7s infinite, bubble-color 30s linear infinite;
   opacity: 0;
   transform: translate(-10px, 75px);
 }
 .beaker-bubble7 {
-  animation: bubble7 10s linear 8.4s infinite;
+  animation: bubble7 10s linear 8.4s infinite, bubble-color 30s linear infinite;
   opacity: 0;
   transform: translate(0, 0);
 }
 .james-head {
-  animation: head 5s ease-in-out 0s infinite;
+  animation: head 4s ease-in-out 0s infinite;
   transform-origin: 310.5px 100px;
+}
+@keyframes bubble-color {
+  0% {
+    fill: $accent;
+  }
+  30% {
+    fill: $accent-2;
+  }
+  60% {
+    fill: $primary-dark;
+  }
+  100% {
+    fill: $accent;
+  }
+}
+@keyframes name-fade-out {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 @keyframes bubble1 {
   0% {
@@ -101,7 +134,7 @@
 @keyframes bubble3 {
   0% {
     opacity: 0;
-    transform: translate(0, 25px);
+    transform: translate(0, 30px);
   }
   30% {
     opacity: 1;
@@ -129,7 +162,7 @@
   }
   100% {
     opacity: 1;
-    transform: translate(10px, -25px);
+    transform: translate(10px, -30px);
   }
 }
 @keyframes bubble5 {
@@ -180,7 +213,7 @@
   }
   100% {
     opacity: 1;
-    transform: translate(-25px, -75px);
+    transform: translate(-30px, -75px);
   }
 }
 @keyframes head {
@@ -198,35 +231,21 @@
   }
 }
 @media (max-width: 700px) {
+  .Landing {
+    min-height: calc(49.7vw + 120px); // 20px for desc. margin, 100px for padding
+  }
   .Landing-description {
-    left: 0;
+    height: 3.5vw;
+    left: 1%;
+    width: 40vw;
   }
   .Landing-image {
-    width: 60%;
+    height: 36.3vw;
+    width: 60vw;
   }
   .Landing-name {
-    right: 0;
-  }
-}
-@media (min-width: 701px) {
-  .Landing-description {
-    left: 6%;
-  }
-  .Landing-image {
-    width: 40%;
-  }
-  .Landing-name {
-    right: 4%;
-  }
-}
-@media (min-width: 701px) {
-  .Landing-description {
-    left: 6%;
-  }
-  .Landing-image {
-    width: 40%;
-  }
-  .Landing-name {
-    right: 4%;
+    height: 9.9vw;
+    right: 0%;
+    width: 60vw;
   }
 }
