@@ -1,9 +1,12 @@
 import React from 'react';
 
 import About from './about/about';
+import Footer from './footer/footer';
 import Landing from './landing/landing';
 import Navbar from './navbar/navbar-container';
 import Projects from './projects/projects';
+import Publications from './publications/publications';
+import Skills from './skills/skills';
 
 import './App.css';
 
@@ -20,13 +23,13 @@ const links = [
 
 const App = () => (
   <div className="App">
-    <Navbar
-      background={false}
-      links={links}
-    />
+    <Navbar links={links} />
     <Landing />
     <About />
     <Projects />
+    <Skills />
+    <Publications />
+    <Footer />
   </div>
 );
 export default App;

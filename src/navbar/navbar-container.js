@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 import Navbar from './navbar';
 
-const smallScreenSize = 680;
+const smallScreenSize = 700;
 
 class NavbarContainer extends Component {
   constructor(props) {
@@ -39,7 +39,7 @@ class NavbarContainer extends Component {
 }
 
 NavbarContainer.defaultProps = {
-  background: true,
+  background: false,
   links: [],
 };
 

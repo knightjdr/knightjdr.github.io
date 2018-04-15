@@ -24,4 +24,4 @@ yarn-error.log*
 src/**/*.css
 
 #assets
-src/assets/images/svg-originals/*
+src/assets/svg/originals/*

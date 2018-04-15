@@ -14,7 +14,7 @@ const ComputerBack = () => (
         .computer-back13{fill:#f5f556}
         .computer-back14{fill:#c1c10b; opacity:0.8}
         .computer-back16{fill:#2f2e33}
-        .computer-back17{opacity:.2}
+        .computer-back17{opacity:.4}
         .computer-back18{opacity:.4}
         .computer-back19{fill:#fff8ef}
         .computer-back20{fill:#fff}

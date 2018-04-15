@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 // import Logo from '../assets/logos/logo_nobg.svg';
 // import LogoAccent from '../assets/logos/logo_accent_nobg.svg';
+import SmallScreenMenu from './small-screen-menu-container';
 
 import './navbar.css';
 
@@ -13,23 +14,18 @@ const Navbar = ({
   smallScreen,
 }) => {
   const className = background ? 'Navbar-default' : 'Navbar-transparent';
-  const linksElements = links.map(link => (
-    <NavLink
-      className="Navbar-link"
-      key={link.text}
-      to={link.route}
-    >
-      { link.text }
-    </NavLink>
-  ));
-  if (smallScreen) {
-    /* const menu = (
-      <div className="Navbar-menu-items">
-        { linksElements }
-      </div>
-    );
-    linksElements = null; */
-  }
+  const linksElement = smallScreen ?
+    <SmallScreenMenu links={links} />
+    :
+    links.map(link => (
+      <NavLink
+        className="Navbar-link"
+        key={link.text}
+        to={link.route}
+      >
+        { link.text }
+      </NavLink>
+    ));
   const logo = null; // background ? LogoAccent : Logo;
   return (
     <div className={`Navbar ${className}`}>
@@ -44,7 +40,7 @@ const Navbar = ({
         />
       </NavLink>
       <div className="Navbar-link-container">
-        { linksElements }
+        { linksElement }
       </div>
     </div>
   );

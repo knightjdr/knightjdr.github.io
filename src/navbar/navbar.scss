@@ -3,7 +3,6 @@
 
 .Navbar {
   height: 40px;
-  font-family: $default-font;
   left: 0;
   line-height: 40px;
   padding: 0px 10px;
@@ -17,18 +16,21 @@
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .Navbar-link {
+  font-family: $default-font;
+  font-size: 1.1em;
   font-weight: bold;
   margin: 0px 5px;
   text-decoration: none;
+  transition: color 0.3s linear;
 }
 .Navbar-default a.Navbar-link:link {
-  color: $accent;
+  color: $primary-light;
 }
 .Navbar-default a.Navbar-link:visited {
-  color: $accent;
+  color: $primary-light;
 }
 .Navbar-default a.Navbar-link:hover {
-  color: $primary-light;
+  color: $accent;
 }
 .Navbar-link-container {
   position: absolute;
@@ -41,18 +43,6 @@
 .Navbar-logo-link {
   float: left;
 }
-.Navbar-menu {
-  cursor: pointer;
-  font-size: 1.8em;
-  margin-top: 8px;
-}
-.Navbar-default .Navbar-menu {
-  color: $accent;
-}
-.Navbar-menu-items {
-  display: flex;
-  flex-direction: column;
-}
 .Navbar-transparent {
   background-color: transparent;
 }
@@ -63,18 +53,5 @@
   color: $primary-dark;
 }
 .Navbar-transparent a.Navbar-link:hover {
-  color: $accent;
-}
-.Navbar-transparent .Navbar-menu {
-  color: $primary-dark;
-}
-// menu links
-.Navbar-link:link {
-  color: $primary-dark;
-}
-.Navbar-link:visited {
-  color: $primary-dark;
-}
-.Navbar-link:hover {
   color: $accent;
 }
