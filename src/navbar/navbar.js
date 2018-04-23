@@ -10,6 +10,7 @@ import './navbar.css';
 
 const Navbar = ({
   background,
+  fixed,
   links,
   smallScreen,
 }) => {
@@ -28,7 +29,12 @@ const Navbar = ({
     ));
   const logo = null; // background ? LogoAccent : Logo;
   return (
-    <div className={`Navbar ${className}`}>
+    <div
+      className={`Navbar ${className}`}
+      style={{
+        position: fixed ? 'fixed' : 'absolute',
+      }}
+    >
       <NavLink
         className="Navbar-logo-link"
         to="/"
@@ -48,6 +54,7 @@ const Navbar = ({
 
 Navbar.propTypes = {
   background: PropTypes.bool.isRequired,
+  fixed: PropTypes.bool.isRequired,
   links: PropTypes.arrayOf(
     PropTypes.shape({
       route: PropTypes.string,

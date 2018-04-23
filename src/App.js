@@ -23,7 +23,10 @@ const links = [
 
 const App = () => (
   <div className="App">
-    <Navbar links={links} />
+    <Navbar
+      fixed={false}
+      links={links}
+    />
     <Landing />
     <About />
     <Projects />
