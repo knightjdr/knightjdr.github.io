@@ -12,7 +12,8 @@
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-router-transition": "^1.2.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "react-tos": "^0.1.0"
   },
   "scripts": {
     "build": "npm-run-all build-css build-js",

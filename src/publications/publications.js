@@ -1,12 +1,14 @@
 import React from 'react';
-
-import FadeInSroll from '../fade-in-scroll/fade-in-scroll';
+import ReactTos from 'react-tos';
 
 import './publications.css';
 
 const Publications = () => (
   <div className="Publications-container">
-    <FadeInSroll className="Publications-flex-container">
+    <ReactTos
+      className="Publications-flex-container"
+      config={{ startingScale: 0.95 }}
+    >
       <div className="Publications-title">
         Publications
       </div>
@@ -17,7 +19,7 @@ const Publications = () => (
         creating web apps that help biologists to analyze, manage and visualize their
         data.
       </div>
-    </FadeInSroll>
+    </ReactTos>
   </div>
 );
 export default Publications;

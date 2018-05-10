@@ -1,12 +1,14 @@
 import React from 'react';
-
-import FadeInSroll from '../fade-in-scroll/fade-in-scroll';
+import ReactTos from 'react-tos';
 
 import './skills.css';
 
 const Skills = () => (
   <div className="Skills-container">
-    <FadeInSroll className="Skills-flex-container">
+    <ReactTos
+      className="Skills-flex-container"
+      config={{ startingScale: 0.95 }}
+    >
       <div className="Skills-title">
         Skills
       </div>
@@ -17,7 +19,7 @@ const Skills = () => (
         creating web apps that help biologists to analyze, manage and visualize their
         data.
       </div>
-    </FadeInSroll>
+    </ReactTos>
   </div>
 );
 export default Skills;

@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-// import Logo from '../assets/logos/logo_nobg.svg';
-// import LogoAccent from '../assets/logos/logo_accent_nobg.svg';
+import Logo from './logo';
+import LogoAccent from './logo-accent';
 import SmallScreenMenu from './small-screen-menu-container';
 
 import './navbar.css';
@@ -27,7 +27,7 @@ const Navbar = ({
         { link.text }
       </NavLink>
     ));
-  const logo = null; // background ? LogoAccent : Logo;
+  const logo = background ? LogoAccent() : Logo();
   return (
     <div
       className={`Navbar ${className}`}
@@ -39,11 +39,7 @@ const Navbar = ({
         className="Navbar-logo-link"
         to="/"
       >
-        <img
-          alt="Logo"
-          className="Navbar-logo"
-          src={logo}
-        />
+        {logo}
       </NavLink>
       <div className="Navbar-link-container">
         { linksElement }

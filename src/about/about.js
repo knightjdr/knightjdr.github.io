@@ -1,12 +1,14 @@
 import React from 'react';
-
-import FadeInSroll from '../fade-in-scroll/fade-in-scroll';
+import ReactTos from 'react-tos';
 
 import './about.css';
 
 const About = () => (
   <div className="About-container">
-    <FadeInSroll className="About-flex-container">
+    <ReactTos
+      className="About-flex-container"
+      config={{ startingScale: 0.95 }}
+    >
       <div className="About-title">
         A brief history
       </div>
@@ -17,7 +19,7 @@ const About = () => (
         creating web apps that help biologists to analyze, manage and visualize their
         data.
       </div>
-    </FadeInSroll>
+    </ReactTos>
   </div>
 );
 export default About;

@@ -36,12 +36,23 @@
   position: absolute;
   right: 10px;
 }
-.Navbar-logo {
-  height: 30px;
-  margin-top: -5px;
+.Navbar-logo:hover .Navbar-logo-path {
+  fill: $accent;
+}
+.Navbar-logo-path {
+  fill: $primary-dark;
+  transition: fill 0.3s linear;
+}
+.Navbar-logo-accent:hover .Navbar-logo-accent-path {
+  fill: $accent;
+}
+.Navbar-logo-accent-path {
+  fill: $primary-medium;
+  transition: fill 0.3s linear;
 }
 .Navbar-logo-link {
   float: left;
+  margin-top: 5px;
 }
 .Navbar-transparent {
   background-color: transparent;

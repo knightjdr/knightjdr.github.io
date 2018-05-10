@@ -1,12 +1,14 @@
 import React from 'react';
-
-import FadeInSroll from '../fade-in-scroll/fade-in-scroll';
+import ReactTos from 'react-tos';
 
 import './footer.css';
 
 const Footer = () => (
   <div className="Footer-container">
-    <FadeInSroll className="Footer-flex-container">
+    <ReactTos
+      className="About-flex-container"
+      config={{ startingScale: 0.95 }}
+    >
       <div className="Footer-title">
         Footer
       </div>
@@ -17,7 +19,7 @@ const Footer = () => (
         creating web apps that help biologists to analyze, manage and visualize their
         data.
       </div>
-    </FadeInSroll>
+    </ReactTos>
   </div>
 );
 export default Footer;
