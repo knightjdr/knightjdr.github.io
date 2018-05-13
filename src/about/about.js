@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactTos from 'react-tos';
 
+import Timeline from './timeline-container';
+
 import './about.css';
 
 const About = () => (
@@ -19,6 +21,7 @@ const About = () => (
         creating web apps that help biologists to analyze, manage and visualize their
         data.
       </div>
+      <Timeline />
     </ReactTos>
   </div>
 );

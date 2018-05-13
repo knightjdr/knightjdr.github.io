@@ -1,0 +1,152 @@
+@import 'style/_fonts.scss';
+@import 'style/_theme.scss';
+
+$cw: calc(50% - 90px);
+$cwp1: calc(50% - 89px);
+$cw2: calc(2*(50% - 90px));
+$cw2p1: calc(2*(50% - 89px));
+$cw3: calc(3*(50% - 90px));
+$cw3p1: calc(3*(50% - 89px));
+$cwleft: calc(50% - 110px);
+$cwright: calc(3*(50% - 110px));
+
+.Timeline {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+.Timeline-buttons {
+  height: 60px;
+  position: relative;
+  min-width: calc((3 * 60px) + (100vw / 3));
+}
+.Timeline-button {
+  background-color: $light-2;
+  background-position: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 50px;
+  position: absolute;
+  top: 5px;
+  transition: background 0.3s;
+  width: 50px;
+}
+.Timeline-button::after {
+  background-repeat: no-repeat;
+  content: " ";
+  display: inline-block;
+  height: 30px;
+  position: relative;
+  top: 2px;
+  width: 30px;
+}
+.Timeline-button:focus {
+  outline: 0;
+}
+.Timeline-connector {
+  background: linear-gradient(to right, $light-2 0px, $light-2 $cwp1, $primary-light $cwp1, $primary-light $cw2p1, $light-2 $cw2p1, $light-2 $cw3p1);
+  background-size: 300% 100%;
+  height: 6px;
+  position: absolute;
+  top: 25px;
+  transition-duration: 0.6s;
+  transition-property: background;
+  transition-timing-function: linear;
+  width: $cw;
+}
+.Timeline-connector-left {
+  left: 60px;
+}
+.Timeline-connector-right {
+  left: calc(50% + 30px);
+}
+.Timeline-content {
+  font-family: $default-font;
+  font-size: 1.2em;
+  margin-top: 30px;
+}
+.Timeline-outer-button {
+  background: linear-gradient(to right, $light-2 0, $light-2 61px, $primary-light 61px, $primary-light 122px, $light-2 122px, $light-2 183px);
+  background-size: 183px 100%;
+  border-radius: 50%;
+  display: inline;
+  height: 60px;
+  position: absolute;
+  transition-duration: 0.3s;
+  transition-property: background;
+  transition-timing-function: linear;
+  width: 60px;
+}
+.Timeline-career-outer,
+.Timeline-career-button {
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+}
+.Timeline-career-button::after {
+  background-image: url("./assets/briefcase.svg");
+  top: -1px;
+}
+.Timeline-education-outer {
+  left: 0;
+}
+.Timeline-education-button {
+  left: 5px;
+}
+.Timeline-education-button::after {
+  background-image: url("./assets/school.svg");
+  height: 35px;
+  width: 35px;
+}
+.Timeline-publication-outer {
+  right: 0;
+}
+.Timeline-publication-button {
+  right: 5px;
+}
+.Timeline-publication-button::after {
+  background-image: url("./assets/book.svg");
+  left: 2px;
+  top: 0px;
+}
+@media (max-width: 679px) {
+  .Timeline-button {
+    cursor: default;
+  }
+}
+@media (min-width: 680px) {
+  .Timeline-button {
+    cursor: pointer;
+  }
+  .Timeline-button:hover {
+    background: $primary-light radial-gradient(circle, transparent 1%, $primary-light 1%) center/15000%;
+  }
+}
+// Animate button background.
+.Timeline-button-left-transition {
+  background-position: 61px bottom;
+}
+.Timeline-button-center-transition {
+  background-position: 122px bottom;
+}
+.Timeline-button-right-transition {
+  background-position: 183px bottom;
+}
+.Timeline-connector-left-transition {
+  background-position: $cwleft bottom;
+}
+.Timeline-connector-right-transition {
+  background-position: $cwright bottom;
+}
+.Timeline-button-end-transition {
+  transition-delay: 0.45s;
+}
+.Timeline-button-inter-transition {
+  transition-delay: 0.225s;
+}
+.Timeline-button-start-transition {
+  transition-delay: 0s;
+}
