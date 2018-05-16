@@ -24,6 +24,24 @@ const connectorClass = (selection, last, index) => {
     className = 'Timeline-connector-left-transition';
   }
 
+  // Add delay
+  if (
+    Math.abs(selection - last) === 2 &&
+    (
+      (
+        selection === 0 &&
+        index === 0
+      ) ||
+      (
+        selection === 2 &&
+        index === 1
+      )
+    )
+  ) {
+    className += ' Timeline-connector-end-transition';
+  } else {
+    className += ' Timeline-connector-start-transition';
+  }
   return className;
 };
 

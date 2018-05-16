@@ -150,3 +150,9 @@ $cwright: calc(3*(50% - 110px));
 .Timeline-button-start-transition {
   transition-delay: 0s;
 }
+.Timeline-connector-end-transition {
+  transition-delay: 0.3s;
+}
+.Timeline-connector-start-transition {
+  transition-delay: 0s;
+}
