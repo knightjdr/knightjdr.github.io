@@ -1,0 +1,104 @@
+@import 'style/_fonts.scss';
+@import 'style/_theme.scss';
+
+.CV-associations-date {
+  width: 200px;
+}
+.CV-associations-item {
+  display: flex;
+  padding-left: 0 5px;
+}
+.CV-associations > div:not(:last-child) {
+  margin-bottom: 10px;
+}
+.CV-awards > div:not(:last-child) {
+  margin-bottom: 10px;
+}
+.CV-awards-award {
+  display: flex;
+  padding-left: 0 5px;
+}
+.CV-awards-date {
+  width: 150px;
+}
+.CV-container {
+  align-items: center;
+  background-color: $light-2;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 30px);
+  padding: 10px 20px 20px 20px;
+}
+.CV-content {
+  font-family: $default-font;
+  margin-top: 50px;
+  max-width: 1000px;
+  width: 100%;
+}
+.CV-content > div:not(:last-child) {
+  margin-bottom: 20px;
+}
+.CV-degrees {
+  display: grid;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-columns: 50px 50px auto;
+  grid-template-rows: auto;
+  padding: 0 5px;
+}
+.CV-degrees-details {
+  text-align: right;
+}
+.CV-experience > .CV-experience-content:not(:last-child) {
+  border-bottom: 1px solid $primary-medium;
+  margin-bottom: 15px;
+}
+.CV-experience-content {
+  padding: 0 5px;
+}
+.CV-experience-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.CV-experience-flex-left {
+  margin-right: 10px;
+}
+.CV-experience-title {
+  font-weight: 800;
+}
+.CV-publications-content {
+  padding: 0 5px;
+}
+.CV-publications-heading {
+  border-bottom: 1px solid $primary-medium;
+  font-style: italic;
+}
+.CV-publications-journal {
+  font-style: italic;
+  margin: 0 3px;
+}
+.CV-publications-list > div {
+  margin-top: 10px;
+}
+.CV-publications-second {
+  margin-top: 20px;
+}
+.CV-talks-content {
+  padding: 0 5px;
+}
+.CV-talks-conference {
+  font-style: italic;
+  margin: 0 3px;
+}
+.CV-talks-list > div {
+  margin-top: 10px;
+}
+.CV-section-heading {
+  border-bottom: 2px solid $primary-dark;
+  font-family: $title-font;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  padding-left: 2px;
+  text-transform: uppercase;
+}

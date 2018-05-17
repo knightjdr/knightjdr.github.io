@@ -12,12 +12,8 @@ import './App.css';
 
 const links = [
   {
-    route: '/education',
-    text: 'EDUCATION',
-  },
-  {
-    route: '/publications',
-    text: 'PUBLICATIONS',
+    route: '/cv',
+    text: 'Curriculum Vitae',
   },
 ];
 
