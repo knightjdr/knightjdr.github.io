@@ -1,74 +1,11 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import ConnectorClass from './connector-class';
+import Details from './timeline-details';
+import OuterButtonClass from './outerbutton-class';
+
 import './timeline.css';
-
-const titles = [
-  'Education',
-  'Career',
-  'Publications',
-];
-
-const connectorClass = (selection, last, index) => {
-  let className = '';
-  // Add transition.
-  if (
-    selection === 0 ||
-    (
-      selection === 1 &&
-      index === 1
-    )
-  ) {
-    className = 'Timeline-connector-right-transition';
-  } else {
-    className = 'Timeline-connector-left-transition';
-  }
-
-  // Add delay
-  if (
-    Math.abs(selection - last) === 2 &&
-    (
-      (
-        selection === 0 &&
-        index === 0
-      ) ||
-      (
-        selection === 2 &&
-        index === 1
-      )
-    )
-  ) {
-    className += ' Timeline-connector-end-transition';
-  } else {
-    className += ' Timeline-connector-start-transition';
-  }
-  return className;
-};
-
-const outerButtonClass = (selection, last, index) => {
-  let className = '';
-  // Add transition.
-  if (selection === index) {
-    className = 'Timeline-button-center-transition';
-  } else if (selection > index) {
-    className = 'Timeline-button-right-transition';
-  } else {
-    className = 'Timeline-button-left-transition';
-  }
-
-  // Add delay.
-  if (selection === index) {
-    className += ' Timeline-button-end-transition';
-  } else if (last === index) {
-    className += ' Timeline-button-start-transition';
-  } else if (index === 1) {
-    className += ' Timeline-button-inter-transition';
-  } else {
-    className += ' Timeline-button-start-transition';
-  }
-
-  return className;
-};
 
 const Timeline = ({
   activeSection,
@@ -77,11 +14,11 @@ const Timeline = ({
 }) => (
   <div className="Timeline">
     <div className="Timeline-buttons">
-      <div className={`Timeline-outer-button Timeline-education-outer ${outerButtonClass(activeSection, lastSection, 0)}`} />
-      <div className={`Timeline-outer-button Timeline-career-outer ${outerButtonClass(activeSection, lastSection, 1)}`} />
-      <div className={`Timeline-outer-button Timeline-publication-outer ${outerButtonClass(activeSection, lastSection, 2)}`} />
-      <div className={`Timeline-connector Timeline-connector-left ${connectorClass(activeSection, lastSection, 0)}`} />
-      <div className={`Timeline-connector Timeline-connector-right ${connectorClass(activeSection, lastSection, 1)}`} />
+      <div className={`Timeline-outer-button Timeline-education-outer ${OuterButtonClass(activeSection, lastSection, 0)}`} />
+      <div className={`Timeline-outer-button Timeline-career-outer ${OuterButtonClass(activeSection, lastSection, 1)}`} />
+      <div className={`Timeline-outer-button Timeline-publication-outer ${OuterButtonClass(activeSection, lastSection, 2)}`} />
+      <div className={`Timeline-connector Timeline-connector-left ${ConnectorClass(activeSection, lastSection, 0)}`} />
+      <div className={`Timeline-connector Timeline-connector-right ${ConnectorClass(activeSection, lastSection, 1)}`} />
       <button
         className="Timeline-button Timeline-education-button"
         onClick={() => { handleClick(0); }}
@@ -96,7 +33,36 @@ const Timeline = ({
       />
     </div>
     <div className="Timeline-content">
-      { titles[activeSection] }
+      <div className="Timeline-section-title">
+        { Details[activeSection].title }
+      </div>
+      <div className="Timeline-item-container">
+        <div className="Timeline-item-year">
+          { Details[activeSection].items[0].year }
+        </div>
+        <div className="Timeline-item-content">
+          <div className="Timeline-item-details-container">
+            <div className="Timeline-item-title">
+              { Details[activeSection].items[0].title }
+            </div>
+            { Details[activeSection].items[0].details }
+          </div>
+          <div>
+            <a
+              href={Details[activeSection].items[0].link}
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              <img
+                alt={Details[activeSection].items[0].imgAlt}
+                className="Timeline-item-img"
+                src={Details[activeSection].items[0].img}
+              />
+            </a>
+          </div>
+        </div>
+        <div className="Timeline-item-end" />
+      </div>
     </div>
   </div>
 );

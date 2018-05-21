@@ -1,15 +1,6 @@
 @import 'style/_fonts.scss';
 @import 'style/_theme.scss';
 
-$cw: calc(50% - 90px);
-$cwp1: calc(50% - 89px);
-$cw2: calc(2*(50% - 90px));
-$cw2p1: calc(2*(50% - 89px));
-$cw3: calc(3*(50% - 90px));
-$cw3p1: calc(3*(50% - 89px));
-$cwleft: calc(50% - 110px);
-$cwright: calc(3*(50% - 110px));
-
 .Timeline {
   align-items: center;
   display: flex;
@@ -19,7 +10,6 @@ $cwright: calc(3*(50% - 110px));
 .Timeline-buttons {
   height: 60px;
   position: relative;
-  min-width: calc((3 * 60px) + (100vw / 3));
 }
 .Timeline-button {
   background-color: $light-2;
@@ -46,26 +36,80 @@ $cwright: calc(3*(50% - 110px));
   outline: 0;
 }
 .Timeline-connector {
-  background: linear-gradient(to right, $light-2 0px, $light-2 $cwp1, $primary-light $cwp1, $primary-light $cw2p1, $light-2 $cw2p1, $light-2 $cw3p1);
-  background-size: 300% 100%;
   height: 6px;
   position: absolute;
   top: 25px;
   transition-duration: 0.6s;
   transition-property: background;
   transition-timing-function: linear;
-  width: $cw;
 }
 .Timeline-connector-left {
   left: 60px;
 }
-.Timeline-connector-right {
-  left: calc(50% + 30px);
-}
 .Timeline-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   font-family: $default-font;
-  font-size: 1.2em;
   margin-top: 30px;
+}
+.Timeline-item-container {
+  position: relative;
+}
+.Timeline-item-container::before {
+  border-left: 5px solid $primary-medium;
+  content: '';
+  display: block;
+  left: 7.5px;
+  position: absolute;
+  top: 5px;
+  height: calc(100% - 20px);
+}
+.Timeline-item-content {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 28px;
+}
+.Timeline-item-details-container {
+  font-size: 0.9em;
+  margin-right: 40px;
+  max-width: 600px;
+  min-width: 250px;
+  text-align: justify;
+}
+.Timeline-item-end::before {
+  background-color: $primary-medium;
+  border-radius: 50%;
+  content: '';
+  display: inline-block;
+  height: 15px;
+  margin-left: 3px;
+  margin-right: 8px;
+  vertical-align: -3px;
+  width: 15px;
+}
+.Timeline-item-img {
+  width: 200px;
+}
+.Timeline-item-title {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.Timeline-item-year {
+  color: $primary-medium;
+  margin-bottom: 5px;
+  margin-right: auto;
+}
+.Timeline-item-year::before {
+  background-color: $primary-medium;
+  border-radius: 50%;
+  content: '';
+  display: inline-block;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: -3px;
+  width: 20px;
 }
 .Timeline-outer-button {
   background: linear-gradient(to right, $light-2 0, $light-2 61px, $primary-light 61px, $primary-light 122px, $light-2 122px, $light-2 183px);
@@ -112,18 +156,13 @@ $cwright: calc(3*(50% - 110px));
   left: 2px;
   top: 0px;
 }
-@media (max-width: 679px) {
-  .Timeline-button {
-    cursor: default;
-  }
-}
-@media (min-width: 680px) {
-  .Timeline-button {
-    cursor: pointer;
-  }
-  .Timeline-button:hover {
-    background: $primary-light radial-gradient(circle, transparent 1%, $primary-light 1%) center/15000%;
-  }
+.Timeline-section-title {
+  border-bottom: 1px solid #E0E0E0;
+  font-size: 1.1em;
+  margin: 0px 30px 30px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
 }
 // Animate button background.
 .Timeline-button-left-transition {
@@ -134,12 +173,6 @@ $cwright: calc(3*(50% - 110px));
 }
 .Timeline-button-right-transition {
   background-position: 183px bottom;
-}
-.Timeline-connector-left-transition {
-  background-position: $cwleft bottom;
-}
-.Timeline-connector-right-transition {
-  background-position: $cwright bottom;
 }
 .Timeline-button-end-transition {
   transition-delay: 0.45s;
@@ -155,4 +188,78 @@ $cwright: calc(3*(50% - 110px));
 }
 .Timeline-connector-start-transition {
   transition-delay: 0s;
+}
+// button color.
+@media (max-width: 679px) {
+  .Timeline-button {
+    cursor: default;
+  }
+}
+@media (min-width: 680px) {
+  .Timeline-button {
+    cursor: pointer;
+  }
+  .Timeline-button:hover {
+    background: $primary-light radial-gradient(circle, transparent 1%, $primary-light 1%) center/15000%;
+  }
+}
+// Connector size.
+@media (min-width: 800px) {
+  .Timeline-buttons {
+    min-width: 600px;
+  }
+  .Timeline-connector {
+    background: linear-gradient(to right, $light-2 0px, $light-2 212px, $primary-light 212px, $primary-light 424px, $light-2 424px, $light-2 636px);
+    background-size: 636px 100%;
+    width: 210px;
+  }
+  .Timeline-connector-left-transition {
+    background-position: 636px bottom;
+  }
+  .Timeline-connector-right {
+    left: 330px;
+  }
+  .Timeline-connector-right-transition {
+    background-position: 212px bottom;
+  }
+}
+// Connector size.
+@media (min-width: 500px) and (max-width: 799px) {
+  .Timeline-buttons {
+    min-width: 400px;
+  }
+  .Timeline-connector {
+    background: linear-gradient(to right, $light-2 0px, $light-2 112px, $primary-light 112px, $primary-light 224px, $light-2 224px, $light-2 336px);
+    background-size: 336px 100%;
+    width: 110px;
+  }
+  .Timeline-connector-left-transition {
+    background-position: 336px bottom;
+  }
+  .Timeline-connector-right {
+    left: 230px;
+  }
+  .Timeline-connector-right-transition {
+    background-position: 112px bottom;
+  }
+}
+// Connector size.
+@media (max-width: 499px) {
+  .Timeline-buttons {
+    min-width: 280px;
+  }
+  .Timeline-connector {
+    background: linear-gradient(to right, $light-2 0px, $light-2 52px, $primary-light 52px, $primary-light 104px, $light-2 104px, $light-2 156px);
+    background-size: 156px 100%;
+    width: 50px;
+  }
+  .Timeline-connector-left-transition {
+    background-position: 156px bottom;
+  }
+  .Timeline-connector-right {
+    left: 170px;
+  }
+  .Timeline-connector-right-transition {
+    background-position: 52px bottom;
+  }
 }
