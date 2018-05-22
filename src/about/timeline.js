@@ -4,13 +4,16 @@ import React from 'react';
 import ConnectorClass from './connector-class';
 import Details from './timeline-details';
 import OuterButtonClass from './outerbutton-class';
+import TimelineItems from './timeline-items';
 
 import './timeline.css';
 
 const Timeline = ({
   activeSection,
-  lastSection,
   handleClick,
+  handleItem,
+  itemSelection,
+  lastSection,
 }) => (
   <div className="Timeline">
     <div className="Timeline-buttons">
@@ -20,15 +23,15 @@ const Timeline = ({
       <div className={`Timeline-connector Timeline-connector-left ${ConnectorClass(activeSection, lastSection, 0)}`} />
       <div className={`Timeline-connector Timeline-connector-right ${ConnectorClass(activeSection, lastSection, 1)}`} />
       <button
-        className="Timeline-button Timeline-education-button"
+        className="Timeline-button Timeline-education-button button-pointer"
         onClick={() => { handleClick(0); }}
       />
       <button
-        className="Timeline-button Timeline-career-button"
+        className="Timeline-button Timeline-career-button button-pointer"
         onClick={() => { handleClick(1); }}
       />
       <button
-        className="Timeline-button Timeline-publication-button"
+        className="Timeline-button Timeline-publication-button button-pointer"
         onClick={() => { handleClick(2); }}
       />
     </div>
@@ -36,41 +39,17 @@ const Timeline = ({
       <div className="Timeline-section-title">
         { Details[activeSection].title }
       </div>
-      <div className="Timeline-item-container">
-        <div className="Timeline-item-year">
-          { Details[activeSection].items[0].year }
-        </div>
-        <div className="Timeline-item-content">
-          <div className="Timeline-item-details-container">
-            <div className="Timeline-item-title">
-              { Details[activeSection].items[0].title }
-            </div>
-            { Details[activeSection].items[0].details }
-          </div>
-          <div>
-            <a
-              href={Details[activeSection].items[0].link}
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              <img
-                alt={Details[activeSection].items[0].imgAlt}
-                className="Timeline-item-img"
-                src={Details[activeSection].items[0].img}
-              />
-            </a>
-          </div>
-        </div>
-        <div className="Timeline-item-end" />
-      </div>
+      { TimelineItems(Details[activeSection].items, itemSelection, handleItem) }
     </div>
   </div>
 );
 
 Timeline.propTypes = {
   activeSection: PropTypes.number.isRequired,
-  lastSection: PropTypes.number.isRequired,
   handleClick: PropTypes.func.isRequired,
+  handleItem: PropTypes.func.isRequired,
+  itemSelection: PropTypes.number.isRequired,
+  lastSection: PropTypes.number.isRequired,
 };
 
 export default Timeline;

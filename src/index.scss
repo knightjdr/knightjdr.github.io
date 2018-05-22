@@ -5,3 +5,23 @@ body {
   margin: 0;
   padding: 0;
 }
+.nobutton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.nobutton:focus {
+  outline: 0;
+}
+// Button cursor
+@media (min-width: 700px) {
+  .button-pointer {
+    cursor: pointer;
+  }
+}
+@media (max-width: 699px) {
+  .button-pointer {
+    cursor: default;
+  }
+}

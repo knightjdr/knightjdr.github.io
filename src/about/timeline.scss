@@ -16,7 +16,6 @@
   background-position: center;
   border: none;
   border-radius: 50%;
-  cursor: pointer;
   height: 50px;
   position: absolute;
   top: 5px;
@@ -68,14 +67,12 @@
 .Timeline-item-content {
   align-items: center;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   margin-left: 28px;
+  overflow: hidden;
 }
-.Timeline-item-details-container {
+.Timeline-item-details {
   font-size: 0.9em;
-  margin-right: 40px;
-  max-width: 600px;
-  min-width: 250px;
   text-align: justify;
 }
 .Timeline-item-end::before {
@@ -90,14 +87,16 @@
   width: 15px;
 }
 .Timeline-item-img {
-  width: 200px;
+  max-height: 180px;
+  width: 180px;
 }
 .Timeline-item-title {
   font-size: 1.2em;
-  margin-bottom: 20px;
 }
 .Timeline-item-year {
   color: $primary-medium;
+  font-family: $default-font;
+  font-size: 1em;
   margin-bottom: 5px;
   margin-right: auto;
 }
@@ -106,10 +105,14 @@
   border-radius: 50%;
   content: '';
   display: inline-block;
-  height: 20px;
+  height: 19px;
+  margin-left: 1px;
   margin-right: 8px;
   vertical-align: -3px;
-  width: 20px;
+  width: 19px;
+}
+.Timeline-item-container .Timeline-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 .Timeline-outer-button {
   background: linear-gradient(to right, $light-2 0, $light-2 61px, $primary-light 61px, $primary-light 122px, $light-2 122px, $light-2 183px);
@@ -160,6 +163,7 @@
   border-bottom: 1px solid #E0E0E0;
   font-size: 1.1em;
   margin: 0px 30px 30px 30px;
+  padding-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
@@ -203,7 +207,7 @@
     background: $primary-light radial-gradient(circle, transparent 1%, $primary-light 1%) center/15000%;
   }
 }
-// Connector size.
+// Connector size
 @media (min-width: 800px) {
   .Timeline-buttons {
     min-width: 600px;
@@ -261,5 +265,36 @@
   }
   .Timeline-connector-right-transition {
     background-position: 52px bottom;
+  }
+}
+// Timeline content.
+@media (min-width: 700px) {
+  .Timeline-item-content {
+    flex-wrap: nowrap;
+  }
+  .Timeline-item-details {
+    flex-grow: 1;
+    max-width: 600px;
+  }
+  .Timeline-item-img {
+    margin: 0px 30px;
+  }
+  .Timeline-item-img-container {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 699px) {
+  .Timeline-item-content {
+    flex-wrap: wrap-reverse;
+  }
+  .Timeline-item-details {
+    flex-grow: 1;
+    max-width: 500px;
+  }
+  .Timeline-item-img {
+    margin: 5px 0;
+  }
+  .Timeline-item-img-container {
+    margin-top: 0;
   }
 }
