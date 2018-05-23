@@ -121,7 +121,7 @@
   margin-bottom: 20px;
 }
 .Timeline-outer-button {
-  background: linear-gradient(to right, $light-2 0, $light-2 61px, $primary-light 61px, $primary-light 122px, $light-2 122px, $light-2 183px);
+  background: linear-gradient(to right, $transparent 0, $transparent 61px, $primary-light 61px, $primary-light 122px, $transparent 122px, $transparent 183px);
   background-size: 183px 100%;
   border-radius: 50%;
   display: inline;
@@ -175,7 +175,7 @@
   top: 0px;
 }
 .Timeline-section-title {
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid #BDBDBD;
   font-size: 1.1em;
   margin: 0 30px 30px 0;
   padding-bottom: 10px;
@@ -228,7 +228,7 @@
     min-width: 600px;
   }
   .Timeline-connector {
-    background: linear-gradient(to right, $light-2 0px, $light-2 212px, $primary-light 212px, $primary-light 424px, $light-2 424px, $light-2 636px);
+    background: linear-gradient(to right, $transparent 0px, $transparent 212px, $primary-light 212px, $primary-light 424px, $transparent 424px, $transparent 636px);
     background-size: 636px 100%;
     width: 210px;
   }
@@ -248,7 +248,7 @@
     min-width: 400px;
   }
   .Timeline-connector {
-    background: linear-gradient(to right, $light-2 0px, $light-2 112px, $primary-light 112px, $primary-light 224px, $light-2 224px, $light-2 336px);
+    background: linear-gradient(to right, $transparent 0px, $transparent 112px, $primary-light 112px, $primary-light 224px, $transparent 224px, $transparent 336px);
     background-size: 336px 100%;
     width: 110px;
   }
@@ -268,7 +268,7 @@
     min-width: 280px;
   }
   .Timeline-connector {
-    background: linear-gradient(to right, $light-2 0px, $light-2 52px, $primary-light 52px, $primary-light 104px, $light-2 104px, $light-2 156px);
+    background: linear-gradient(to right, $transparent 0px, $transparent 52px, $primary-light 52px, $primary-light 104px, $transparent 104px, $transparent 156px);
     background-size: 156px 100%;
     width: 50px;
   }
