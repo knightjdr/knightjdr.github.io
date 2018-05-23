@@ -36,10 +36,46 @@ const Timeline = ({
       />
     </div>
     <div className="Timeline-content">
-      <div className="Timeline-section-title">
-        { Details[activeSection].title }
+      <div
+        className="Timeline-panel-container"
+        style={{
+          transform: `translateX(${(activeSection - 1) * 33.33}%)`,
+        }}
+      >
+        <div
+          className="Timeline-panel"
+          style={{
+            opacity: activeSection === 2 ? 1 : 0,
+          }}
+        >
+          <div className="Timeline-section-title">
+            { Details[2].title }
+          </div>
+          { TimelineItems(Details[2].items, itemSelection, handleItem) }
+        </div>
+        <div
+          className="Timeline-panel"
+          style={{
+            opacity: activeSection === 1 ? 1 : 0,
+          }}
+        >
+          <div className="Timeline-section-title">
+            { Details[1].title }
+          </div>
+          { TimelineItems(Details[1].items, itemSelection, handleItem) }
+        </div>
+        <div
+          className="Timeline-panel"
+          style={{
+            opacity: activeSection === 0 ? 1 : 0,
+          }}
+        >
+          <div className="Timeline-section-title">
+            { Details[0].title }
+          </div>
+          { TimelineItems(Details[0].items, itemSelection, handleItem) }
+        </div>
       </div>
-      { TimelineItems(Details[activeSection].items, itemSelection, handleItem) }
     </div>
   </div>
 );

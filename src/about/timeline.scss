@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   padding-top: 30px;
+  max-width: 1000px;
 }
 .Timeline-buttons {
   height: 60px;
@@ -51,6 +52,9 @@
   flex-direction: column;
   font-family: $default-font;
   margin-top: 30px;
+  max-width: 1000px;
+  overflow-x: hidden;
+  width: calc(100vw - 40px);
 }
 .Timeline-item-container {
   position: relative;
@@ -59,10 +63,11 @@
   border-left: 5px solid $primary-medium;
   content: '';
   display: block;
-  left: 7.5px;
+  height: calc(100% - 20px);
+  left: 8px;
+  pointer-events: none;
   position: absolute;
   top: 5px;
-  height: calc(100% - 20px);
 }
 .Timeline-item-content {
   align-items: center;
@@ -99,6 +104,7 @@
   font-size: 1em;
   margin-bottom: 5px;
   margin-right: auto;
+  z-index: 5;
 }
 .Timeline-item-year::before {
   background-color: $primary-medium;
@@ -148,6 +154,15 @@
   height: 35px;
   width: 35px;
 }
+.Timeline-panel {
+  transition: opacity 0.225s linear;
+  width: calc(100vw - 40px);
+}
+.Timeline-panel-container {
+  display: flex;
+  transition: transform 0.6s linear;
+  width: 300%;
+}
 .Timeline-publication-outer {
   right: 0;
 }
@@ -162,7 +177,7 @@
 .Timeline-section-title {
   border-bottom: 1px solid #E0E0E0;
   font-size: 1.1em;
-  margin: 0px 30px 30px 30px;
+  margin: 0 30px 30px 0;
   padding-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
@@ -269,21 +284,27 @@
 }
 // Timeline content.
 @media (min-width: 700px) {
+  .Timeline-item-container {
+    margin-left: 20px;
+  }
   .Timeline-item-content {
     flex-wrap: nowrap;
   }
   .Timeline-item-details {
     flex-grow: 1;
-    max-width: 600px;
+    max-width: 700px;
   }
   .Timeline-item-img {
-    margin: 0px 30px;
+    margin-left: 30px;
   }
   .Timeline-item-img-container {
     margin-top: 20px;
   }
 }
 @media (max-width: 699px) {
+  .Timeline-item-container {
+    margin-left: 0;
+  }
   .Timeline-item-content {
     flex-wrap: wrap-reverse;
   }
@@ -295,6 +316,7 @@
     margin: 5px 0;
   }
   .Timeline-item-img-container {
+    margin-bottom: 15px;
     margin-top: 0;
   }
 }

@@ -10,7 +10,7 @@ const TimelineItem = (items, indexSelection, handleItem) => (
       if (index === indexSelection) {
         imgStyle = {
           maxHeight: 180,
-          transition: 'max-height .25s',
+          transition: 'margin .25s, max-height .25s',
         };
         detailStyle = {
           fontSize: '1em',
@@ -21,7 +21,7 @@ const TimelineItem = (items, indexSelection, handleItem) => (
         imgStyle = {
           margin: 0,
           maxHeight: 0,
-          transition: 'max-height .5s .25s',
+          transition: 'margin .5s .25s, max-height .5s .25s',
         };
         detailStyle = {
           fontSize: 0,
