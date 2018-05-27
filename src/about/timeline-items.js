@@ -35,7 +35,7 @@ const TimelineItem = (items, indexSelection, handleItem) => (
           key={item.title}
         >
           <button
-            className="Timeline-item-year nobutton"
+            className="nobutton Timeline-item-year"
             onClick={() => { handleItem(index); }}
             type="button"
           >

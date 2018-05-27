@@ -35,8 +35,8 @@ const Details = [
       },
       {
         details: `During my PhD I was awarded a Vanier Canada Graduate
-          Scholarship that is given for demonstrating leadership skills and
-          scholarly achievement in graduate studies.`,
+          Scholarship that is given for scholarly achievement and leadership
+          in graduate studies.`,
         img: Vanier,
         imgAlt: 'Vanier scholarship logo',
         link: 'http://www.vanier.gc.ca/en/home-accueil.html',
