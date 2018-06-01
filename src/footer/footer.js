@@ -1,18 +1,53 @@
 import React from 'react';
 import ReactTos from 'react-tos';
+import { NavLink } from 'react-router-dom';
 
+import CV from './assets/cv.svg';
 import Email from './assets/email.svg';
 import Github from './assets/github.svg';
+import LinkedIn from './assets/linkedin.svg';
 import Scholar from './assets/scholar.svg';
 
 import './footer.css';
 
+const scrollTop = () => {
+  window.scrollTo(0, 0);
+};
+
 const Footer = () => (
-  <div className="Footer-container">
+  <footer
+    className="Footer-container"
+    role="contentinfo"
+  >
     <ReactTos
       className="Footer-flex-container"
       config={{ startingScale: 0.95 }}
     >
+      <div className="Footer-link">
+        <NavLink
+          onClick={scrollTop}
+          to="/cv"
+        >
+          <img
+            alt="CV"
+            src={CV}
+          />
+        </NavLink>
+        <div>
+          CV
+        </div>
+      </div>
+      <div className="Footer-link">
+        <a href="mailto:knightjdr@gmail.com?subject=About jamesknight.ca">
+          <img
+            alt="E-mail"
+            src={Email}
+          />
+        </a>
+        <div>
+          E-mail
+        </div>
+      </div>
       <div className="Footer-link">
         <a
           href="https://github.com/knightjdr"
@@ -38,21 +73,24 @@ const Footer = () => (
           />
         </a>
         <div>
-          Google Scholar
+          G-Scholar
         </div>
       </div>
       <div className="Footer-link">
-        <a href="mailto:knightjdr@gmail.com?subject=About jamesknight.ca">
+        <a
+          href="https://www.linkedin.com/in/james-knight-174996156"
+          rel="nofollow noreferrer"
+        >
           <img
-            alt="E-mail"
-            src={Email}
+            alt="LinkedIn"
+            src={LinkedIn}
           />
         </a>
         <div>
-          E-mail
+          LinkedIn
         </div>
       </div>
     </ReactTos>
-  </div>
+  </footer>
 );
 export default Footer;

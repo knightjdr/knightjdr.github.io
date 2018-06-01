@@ -1,6 +1,18 @@
 @import 'style/_fonts.scss';
 @import 'style/_theme.scss';
 
+.Skills-code-green {
+  color: #98c376;
+}
+.Skills-code-grey {
+  color: #a7aeba;
+}
+.Skills-code-purple {
+  color: #c678dd;
+}
+.Skills-code-red {
+  color: #e06c75;
+}
 .Skills-container {
   background-color: $light-1;
   font-family: $cursive-font;
@@ -12,9 +24,79 @@
   display: flex;
   flex-direction: column;
 }
-.Skills-details {
+.Skills-terminal {
+  background-color: #282c34;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+  height: 400px;
   max-width: 900px;
-  text-align: justify;
+  min-width: 280px;
+  width: 500px;
+}
+.Skills-terminal-bar {
+  background-color: #f6f6f6;
+  border: 1px solid #282c34;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 5px;
+  position: relative;
+  width: calc(100% - 12px);
+}
+.Skills-terminal-bar-title {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.Skills-terminal-button {
+  border-radius: 50%;
+  font-size: 1.2em;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  width: 15px;
+}
+.Skills-terminal-button-container {
+  display: inline-flex;
+  float: left;
+  margin-top: 4px;
+}
+.Skills-terminal-button-container > div:not(:last-child) {
+  margin-right: 5px;
+}
+.Skills-terminal-close {
+  @extend .Skills-terminal-button;
+  background-color: #ee6b60;
+  border: 1px solid #d25448;
+}
+.Skills-terminal-code {
+  font-family: $console-font;
+  padding: 5px 10px;
+}
+.Skills-terminal-code > div:not(:last-child) {
+  margin-bottom: 3px;
+}
+.Skills-terminal-maximize {
+  @extend .Skills-terminal-button;
+  background-color: #64ca57;
+  border: 1px solid #57a943;
+  color: #596273;
+  padding-left: 1px;
+  padding-top: 1px;
+  transform: rotateZ(-45deg);
+}
+.Skills-terminal-minimize {
+  @extend .Skills-terminal-button;
+  background-color: #f6c050;
+  border: 1px solid #d9a345;
+}
+.Skills-space {
+  margin-right: 5px;
+}
+.Skills-tab {
+  margin-left: 10px;
 }
 .Skills-title {
   font-family: $default-font;

@@ -12,12 +12,46 @@ const Skills = () => (
       <div className="Skills-title">
         Skills
       </div>
-      <div className="Skills-details">
-        Although formally trained as a molecular biologist, I have been programming
-        since 2000. In 2015 I became a full-time progammer and now work as a
-        bioinformatician at the Lunenfeld-Tanenbaum Research Institute in Toronto
-        creating web apps that help biologists to analyze, manage and visualize their
-        data.
+      <div className="Skills-terminal">
+        <div className="Skills-terminal-bar">
+          <div className="Skills-terminal-bar-title">
+            skills.js
+          </div>
+          <div className="Skills-terminal-button-container">
+            <div className="Skills-terminal-close">
+              ×
+            </div>
+            <div className="Skills-terminal-minimize">
+              −
+            </div>
+            <div className="Skills-terminal-maximize">
+              ⬌
+            </div>
+          </div>
+        </div>
+        <div className="Skills-terminal-code">
+          <div>
+            <span className="Skills-code-purple Skills-space">const</span>
+            <span className="Skills-code-red Skills-space">Skills</span>
+            <span className="Skills-code-grey">= {'{'}</span>
+          </div>
+          <div className="Skills-tab">
+            <span className="Skills-code-green Skills-space">backEnd:</span>
+            <span className="Skills-code-grey">[],</span>
+          </div>
+          <div className="Skills-tab">
+            <span className="Skills-code-green Skills-space">frontEnd:</span>
+            <span className="Skills-code-grey">[],</span>
+          </div>
+          <div>
+            <span className="Skills-code-grey">{'}'};</span>
+          </div>
+          <div>
+            <span className="Skills-code-purple Skills-space">export default</span>
+            <span className="Skills-code-red">Skills</span>
+            <span className="Skills-code-grey">;</span>
+          </div>
+        </div>
       </div>
     </ReactTos>
   </div>

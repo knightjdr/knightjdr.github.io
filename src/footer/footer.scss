@@ -13,11 +13,24 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.Footer-flex-container > div:not(:last-child) {
-  margin-right: 20px;
-}
 .Footer-link {
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 449px) {
+  .Footer-flex-container {
+    flex-direction: column;
+  }
+  .Footer-flex-container > div:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 450px) {
+  .Footer-flex-container {
+    flex-direction: row;
+  }
+  .Footer-flex-container > div:not(:last-child) {
+    margin-right: 20px;
+  }
 }
