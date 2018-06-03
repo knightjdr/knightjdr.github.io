@@ -10,12 +10,19 @@ import Talks from './talks';
 
 import './cv.css';
 
+const links = [
+  {
+    route: '/blog',
+    text: 'Blog',
+  },
+];
+
 const CV = () => (
   <div className="CV-container">
     <Navbar
       background
       fixed={false}
-      links={[]}
+      links={links}
     />
     <div className="CV-content">
       <div>

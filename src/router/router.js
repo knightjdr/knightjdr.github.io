@@ -6,6 +6,7 @@ import CaptureRouteNotFound from './capture-not-found';
 
 // routes
 import App from '../App';
+import Blog from '../blog/blog';
 import CV from '../cv/cv';
 import Missing from '../404/404';
 
@@ -24,6 +25,11 @@ const Routes = () => (
           exact
           path="/"
           component={App}
+        />
+        <Route
+          exact
+          path="/blog"
+          component={Blog}
         />
         <Route
           exact

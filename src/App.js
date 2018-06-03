@@ -1,19 +1,23 @@
 import React from 'react';
 
 import About from './about/about';
+import Blog from './blog/blog-landing';
 import Footer from './footer/footer';
 import Landing from './landing/landing';
 import Navbar from './navbar/navbar-container';
 import Projects from './projects/projects';
-import Publications from './publications/publications';
 import Skills from './skills/skills';
 
 import './App.css';
 
 const links = [
   {
+    route: '/blog',
+    text: 'Blog',
+  },
+  {
     route: '/cv',
-    text: 'Curriculum Vitae',
+    text: 'CV',
   },
 ];
 
@@ -27,7 +31,7 @@ const App = () => (
     <About />
     <Projects />
     <Skills />
-    <Publications />
+    <Blog />
     <Footer />
   </div>
 );

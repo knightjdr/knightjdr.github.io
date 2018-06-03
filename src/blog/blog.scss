@@ -1,30 +1,30 @@
 @import 'style/_fonts.scss';
 @import 'style/_theme.scss';
 
-.Publications-container {
+.Blog-container {
   background-color: $primary-medium;
   color: $text-light;
   font-family: $cursive-font;
   font-size: 1.1em;
   padding: 30px;
 }
-.Publications-flex-container {
+.Blog-flex-container {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-.Publications-details {
+.Blog-details {
   max-width: 900px;
   text-align: justify;
 }
-.Publications-title {
+.Blog-title {
   font-family: $default-font;
   font-size: 1.3em;
   font-weight: bold;
   margin-bottom: 20px;
   position: relative;
 }
-.Publications-title:before {
+.Blog-title:before {
   content : '';
   position: absolute;
   left    : 12.5%;

@@ -29,7 +29,7 @@ const Navbar = ({
     ));
   const logo = background ? LogoAccent() : Logo();
   return (
-    <div
+    <nav
       className={`Navbar ${className}`}
       style={{
         position: fixed ? 'fixed' : 'absolute',
@@ -44,7 +44,7 @@ const Navbar = ({
       <div className="Navbar-link-container">
         { linksElement }
       </div>
-    </div>
+    </nav>
   );
 };
 

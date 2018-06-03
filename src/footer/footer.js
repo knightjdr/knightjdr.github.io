@@ -73,7 +73,7 @@ const Footer = () => (
           />
         </a>
         <div>
-          G-Scholar
+          Scholar
         </div>
       </div>
       <div className="Footer-link">
