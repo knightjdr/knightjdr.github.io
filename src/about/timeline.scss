@@ -320,6 +320,9 @@
     flex-grow: 1;
     max-width: 700px;
   }
+  .Timeline-expander {
+    left: calc(50% - 28px);
+  }
   .Timeline-item-img {
     margin-left: 30px;
   }
@@ -338,6 +341,9 @@
     flex-grow: 1;
     max-width: 500px;
   }
+  .Timeline-expander {
+    left: calc(50% - 18px);
+  }
   .Timeline-item-img {
     margin: 5px 0;
   }
@@ -350,9 +356,7 @@
 @media (min-width: 500px) {
   .Timeline-expander {
     display: block;
-    margin: 0 150px;
     position: absolute;
-    width: calc(100% - 300px);
   }
   .Timeline-expander-button {
     padding: 5px 10px;
@@ -365,9 +369,8 @@
 @media (max-width: 499px) {
   .Timeline-expander {
     display: inline;
-    margin: 0;
+    left: 0;
     position: relative;
-    width: auto;
   }
   .Timeline-expander-button {
     padding: 0 2px;
