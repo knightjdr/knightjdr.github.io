@@ -56,6 +56,28 @@
   overflow-x: hidden;
   width: calc(100vw - 60px);
 }
+.Timeline-expander {
+  position: absolute;
+  text-align: center;
+  top: 2px;
+}
+.Timeline-expander-button {
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  box-shadow: none;
+  color: #9E9E9E;
+  cursor: pointer;
+  height: auto;
+  transition: all 0.5s;
+  width: auto;
+}
+.Timeline-expander-button:focus {
+  outline: 0;
+}
+.Timeline-item {
+  position: relative;
+}
 .Timeline-item-container {
   position: relative;
 }
@@ -322,5 +344,32 @@
   .Timeline-item-img-container {
     margin-bottom: 15px;
     margin-top: 0;
+  }
+}
+// Expander button
+@media (min-width: 500px) {
+  .Timeline-expander {
+    display: block;
+    margin: 0 150px;
+    position: absolute;
+    width: calc(100% - 300px);
+  }
+  .Timeline-expander-button {
+    padding: 5px 10px;
+  }
+  .Timeline-expander-button:hover {
+    background-color: #E0E0E0;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 499px) {
+  .Timeline-expander {
+    display: inline;
+    margin: 0;
+    position: relative;
+    width: auto;
+  }
+  .Timeline-expander-button {
+    padding: 0 2px;
   }
 }

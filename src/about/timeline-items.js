@@ -5,9 +5,13 @@ import './timeline.css';
 const TimelineItem = (items, indexSelection, handleItem) => (
   <div className="Timeline-item-container">
     { items.map((item, index) => {
+      let expandStyle;
       let imgStyle;
       let detailStyle;
       if (index === indexSelection) {
+        expandStyle = {
+          opacity: 0,
+        };
         imgStyle = {
           maxHeight: 180,
           transition: 'margin .25s, max-height .25s',
@@ -18,6 +22,9 @@ const TimelineItem = (items, indexSelection, handleItem) => (
           transition: 'font-size .25s, opacity .5s .25s',
         };
       } else {
+        expandStyle = {
+          opacity: 1,
+        };
         imgStyle = {
           margin: 0,
           maxHeight: 0,
@@ -41,6 +48,18 @@ const TimelineItem = (items, indexSelection, handleItem) => (
           >
             { item.year }
           </button>
+          <div
+            className="Timeline-expander"
+            style={expandStyle}
+          >
+            <button
+              className="Timeline-expander-button"
+              onClick={() => { handleItem(index); }}
+              type="button"
+            >
+              •••
+            </button>
+          </div>
           <div
             className="Timeline-item-content"
             style={detailStyle}

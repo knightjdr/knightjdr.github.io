@@ -30,7 +30,12 @@ const CV = () => (
         Lunenfeld-Tanenbaum Research Institute<br />
         600 University Avenue, Room 970A<br />
         Toronto, Ontario, Canada<br />
-        <a href="mailto:knightjdr@gmail.com?subject=About jamesknight.ca">contact</a>
+        <a
+          className="CV-email"
+          href="mailto:knightjdr@gmail.com?subject=About jamesknight.ca"
+        >
+          contact
+        </a>
       </div>
       <Degrees />
       <Experience />

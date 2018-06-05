@@ -19,7 +19,7 @@
   font-family: $default-font;
   font-size: 1.1em;
   font-weight: bold;
-  margin: 0px 5px;
+  margin: 0px 15px;
   text-decoration: none;
   transition: color 0.3s linear;
 }
@@ -65,4 +65,14 @@
 }
 .Navbar-transparent a.Navbar-link:hover {
   color: $accent;
+}
+@media print {
+  .Navbar {
+    display: none;
+  }
+}
+@media screen {
+  .Navbar {
+    display: inline;
+  }
 }
