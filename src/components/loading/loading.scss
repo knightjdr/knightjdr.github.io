@@ -1,0 +1,48 @@
+@import 'style/_theme.scss';
+
+.Loading-container {
+  display: inline-flex;
+  vertical-align: bottom;
+}
+.Loading-container > *:not(:last-child) {
+  margin-right: 5px;
+}
+.Loading-svg {
+  height: 20px;
+  width: 20px;
+}
+.Loading-dot {
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: Loading-dot;
+  animation-timing-function: linear;
+  fill: $primary-medium;
+  opacity: 0;
+  r: 25%;
+  transform: translate(50%, 50%);
+}
+.Loading-dot-left {
+  @extend .Loading-dot;
+}
+.Loading-dot-middle {
+  @extend .Loading-dot;
+  animation-delay: 0.3s,
+}
+.Loading-dot-right {
+  @extend .Loading-dot;
+  animation-delay: 0.6s,
+}
+@keyframes Loading-dot {
+  0% {
+    opacity: 0;
+    r: 25%;
+  }
+  50% {
+    opacity: 1;
+    r: 50%;
+  }
+  100% {
+    opacity: 0;
+    r: 25%;
+  }
+}

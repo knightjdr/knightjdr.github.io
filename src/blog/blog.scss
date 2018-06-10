@@ -2,34 +2,9 @@
 @import 'style/_theme.scss';
 
 .Blog-container {
-  background-color: $primary-medium;
-  color: $text-light;
-  font-family: $cursive-font;
-  font-size: 1.1em;
-  padding: 30px;
-}
-.Blog-flex-container {
-  align-items: center;
+  background-color: $light-2;
   display: flex;
-  flex-direction: column;
-}
-.Blog-details {
-  max-width: 900px;
-  text-align: justify;
-}
-.Blog-title {
   font-family: $default-font;
-  font-size: 1.3em;
-  font-weight: bold;
-  margin-bottom: 20px;
-  position: relative;
-}
-.Blog-title:before {
-  content : '';
-  position: absolute;
-  left    : 12.5%;
-  bottom  : 0;
-  height  : 2px;
-  width   : 75%;
-  border-bottom: 2px solid $text-light;
+  justify-content: center;
+  min-height: 100vh;
 }

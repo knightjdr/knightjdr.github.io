@@ -1,0 +1,35 @@
+@import 'style/_fonts.scss';
+@import 'style/_theme.scss';
+
+.Blog-landing-container {
+  background-color: $primary-medium;
+  color: $text-light;
+  font-family: $cursive-font;
+  font-size: 1.1em;
+  padding: 30px;
+}
+.Blog-landing-flex-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.Blog-landing-details {
+  max-width: 900px;
+  text-align: justify;
+}
+.Blog-landing-title {
+  font-family: $default-font;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+}
+.Blog-landing-title:before {
+  content : '';
+  position: absolute;
+  left    : 12.5%;
+  bottom  : 0;
+  height  : 2px;
+  width   : 75%;
+  border-bottom: 2px solid $text-light;
+}

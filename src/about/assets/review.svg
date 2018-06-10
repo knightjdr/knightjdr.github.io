@@ -1,8 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="180px" height="180px" viewBox="0 0 180 180" enable-background="new 0 0 180 180" xml:space="preserve">
+<svg xmlns="http://www.w3.org/2000/svg" width="180px" height="180px" viewBox="0 0 180 180" xml:space="preserve">
 <rect y="89.776" fill="#30985F" width="180" height="90.224"/>
 <rect fill="#95D8F0" width="180" height="91.371"/>
 <g>
@@ -5220,19 +5216,19 @@
 <path fill="#8BC53F" stroke="#009345" d="M90.099,88.952c0,16.604,2.708,26.202,4.334,30.344c3.832,9.769,1.623-13.468,1.623-30.073
 	c0-16.607,8.661-54.964-1.623-30.062C93.221,62.096,90.099,72.345,90.099,88.952z"/>
 <circle fill="#F6921E" stroke="#F05A28" cx="89.912" cy="58.896" r="3.79"/>
-<polygon fill="#D2C955" stroke="#AEA237" stroke-width="0.5" stroke-miterlimit="10" points="144.488,120.891 136.895,107.738 
+<polygon fill="#D2C955" stroke="#AEA237" stroke-width="0.5" stroke-miterlimit="10" points="144.488,120.891 136.895,107.738
 	144.488,94.582 159.678,94.582 167.271,107.738 159.678,120.891 "/>
 <g>
 	<g>
 		<g>
-			<polyline fill="none" stroke="#D2C954" stroke-miterlimit="10" points="145.271,91.572 147.271,89.306 145.271,87.037 
+			<polyline fill="none" stroke="#D2C954" stroke-miterlimit="10" points="145.271,91.572 147.271,89.306 145.271,87.037
 				147.271,84.768 145.271,82.498 147.271,80.224 145.271,77.951 			"/>
 		</g>
 		<line fill="none" stroke="#D2C954" stroke-miterlimit="10" x1="145.007" y1="94.582" x2="145.007" y2="90.947"/>
 	</g>
 	<g>
 		<g>
-			<polyline fill="none" stroke="#D2C954" stroke-miterlimit="10" points="159.342,91.572 161.342,89.306 159.342,87.037 
+			<polyline fill="none" stroke="#D2C954" stroke-miterlimit="10" points="159.342,91.572 161.342,89.306 159.342,87.037
 				161.342,84.768 159.342,82.498 161.342,80.224 159.342,77.951 			"/>
 		</g>
 		<line fill="none" stroke="#D2C954" stroke-miterlimit="10" x1="159.076" y1="94.582" x2="159.076" y2="90.947"/>
