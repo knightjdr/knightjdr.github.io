@@ -20,9 +20,9 @@ const talkElement = list => (
     return (
       <div key={talk.key}>
         {authorString} ({talk.date}). {talk.title}.
-        <span className="CV-talks-conference">
+        <strong className="CV-talks-conference">
           {talk.conference},
-        </span>
+        </strong>
         {talk.place}.
       </div>
     );

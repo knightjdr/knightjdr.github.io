@@ -20,9 +20,9 @@ const pubElement = list => (
     return (
       <div key={pub.key}>
         {authorString} ({pub.date}). {pub.title}.
-        <span className="CV-publications-journal">
+        <strong className="CV-publications-journal">
           {pub.journal},
-        </span>
+        </strong>
         {pub.pages}.
       </div>
     );
