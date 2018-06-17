@@ -9,81 +9,81 @@ import './skills.css';
 const Skills = ({
   lines,
 }) => (
-  <div className="Skills-container">
+  <div className="skills">
     <ReactTos
-      className="Skills-flex-container"
+      className="skills__inner"
       config={{ startingScale: 0.95 }}
     >
-      <div className="Skills-title">
+      <div className="skills__title">
         Skills
       </div>
-      <div className="Skills-terminal">
-        <div className="Skills-terminal-bar">
-          <div className="Skills-terminal-bar-title">
+      <div className="skills__terminal">
+        <div className="skills__terminal-bar">
+          <div className="skills__terminal-bar-title">
             coding.js
           </div>
-          <div className="Skills-terminal-button-container">
-            <div className="Skills-terminal-close">
+          <div className="skills__terminal-buttons">
+            <div className="skills__terminal-close">
               ×
             </div>
-            <div className="Skills-terminal-minimize">
+            <div className="skills__terminal-minimize">
               −
             </div>
-            <div className="Skills-terminal-maximize">
+            <div className="skills__terminal-maximize">
               ⬌
             </div>
           </div>
         </div>
-        <div className="Skills-terminal-lines">
+        <div className="skills__terminal-lines">
           { [...Array(lines)].map((line, index) => (
             <div
-              className="Skills-line-number"
+              className="skills__line-number"
               key={Shortid.generate()}
             >
               {index + 1}
             </div>
           ))}
         </div>
-        <div className="Skills-terminal-code">
+        <div className="skills__terminal-code">
           <div>
-            <span className="Skills-code-purple Skills-space">const</span>
-            <span className="Skills-code-red Skills-space">CodingSkills</span>
-            <span className="Skills-code-grey">= &#123;</span>
+            <span className="skills__terminal-code_purple skills__terminal-code_space">const</span>
+            <span className="skills__terminal-code_red skills__terminal-code_space">CodingSkills</span>
+            <span className="skills__terminal-code_grey">= &#123;</span>
           </div>
-          <div className="Skills-tab">
-            <span className="Skills-code-green Skills-space">backEnd:</span>
-            <span className="Skills-code-grey">&#123;</span>
+          <div className="skills__terminal-code_tab">
+            <span className="skills__terminal-code_green skills__terminal-code_space">backEnd:</span>
+            <span className="skills__terminal-code_grey">&#123;</span>
           </div>
-          <div className="Skills-tab2">
-            <span className="Skills-code-green Skills-space">current:</span>
-            <span className="Skills-code-grey">[</span>
-            <div className="Skills-list-wrapper">
+          <div className="skills__terminal-code_tab2">
+            <span className="skills__terminal-code_green skills__terminal-code_space">current:</span>
+            <span className="skills__terminal-code_grey">[</span>
+            <div className="skills__terminal-code-list">
               <div>&apos;Express&apos;</div>
               <div>&apos;MongoDB&apos;</div>
               <div>&apos;Node.js&apos;</div>
             </div>
-            <span className="Skills-code-grey Skills-space">],</span>
+            <span className="skills__terminal-code_grey skills__terminal-code_space">],</span>
           </div>
-          <div className="Skills-tab2">
-            <span className="Skills-code-green Skills-space">past:</span>
-            <span className="Skills-code-grey">[</span>
-            <div className="Skills-list-wrapper">
+          <div className="skills__terminal-code_tab2">
+            <span className="skills__terminal-code_green skills__terminal-code_space">past:</span>
+            <span className="skills__terminal-code_grey">[</span>
+            <div className="skills__terminal-code-list">
               <div>&apos;MySQL&apos;</div>
               <div>&apos;PHP&apos;</div>
             </div>
-            <span className="Skills-code-grey Skills-space">],</span>
+            <span className="skills__terminal-code_grey skills__terminal-code_space">],</span>
           </div>
-          <div className="Skills-tab">
-            <span className="Skills-code-grey">&#125;,</span>
+          <div className="skills__terminal-code_tab">
+            <span className="skills__terminal-code_grey">&#125;,</span>
           </div>
-          <div className="Skills-tab">
-            <span className="Skills-code-green Skills-space">frontEnd:</span>
-            <span className="Skills-code-grey">&#123;</span>
+          <div className="skills__terminal-code_tab">
+            <span className="skills__terminal-code_green skills__terminal-code_space">frontEnd:</span>
+            <span className="skills__terminal-code_grey">&#123;</span>
           </div>
-          <div className="Skills-tab2">
-            <span className="Skills-code-green Skills-space">current:</span>
-            <span className="Skills-code-grey">[</span>
-            <div className="Skills-list-wrapper">
+          <div className="skills__terminal-code_tab2">
+            <span className="skills__terminal-code_green skills__terminal-code_space">current:</span>
+            <span className="skills__terminal-code_grey">[</span>
+            <div className="skills__terminal-code-list">
               <div>&apos;CSS&apos;</div>
               <div>&apos;D3.js&apos;</div>
               <div>&apos;HTML5&apos;</div>
@@ -91,55 +91,55 @@ const Skills = ({
               <div>&apos;SCSS&apos;</div>
               <div>&apos;Vanilla JS&apos;</div>
             </div>
-            <span className="Skills-code-grey Skills-space">],</span>
+            <span className="skills__terminal-code_grey skills__terminal-code_space">],</span>
           </div>
-          <div className="Skills-tab2">
-            <span className="Skills-code-green Skills-space">past:</span>
-            <span className="Skills-code-grey">[</span>
-            <div className="Skills-list-wrapper">
+          <div className="skills__terminal-code_tab2">
+            <span className="skills__terminal-code_green skills__terminal-code_space">past:</span>
+            <span className="skills__terminal-code_grey">[</span>
+            <div className="skills__terminal-code-list">
               <div>&apos;AngularJS&apos;</div>
               <div>&apos;jQuery&apos;</div>
             </div>
-            <span className="Skills-code-grey Skills-space">],</span>
+            <span className="skills__terminal-code_grey skills__terminal-code_space">],</span>
           </div>
-          <div className="Skills-tab">
-            <span className="Skills-code-grey">&#125;,</span>
+          <div className="skills__terminal-code_tab">
+            <span className="skills__terminal-code_grey">&#125;,</span>
           </div>
-          <div className="Skills-tab">
-            <span className="Skills-code-green Skills-space">languages:</span>
-            <span className="Skills-code-grey">&#123;</span>
+          <div className="skills__terminal-code_tab">
+            <span className="skills__terminal-code_green skills__terminal-code_space">languages:</span>
+            <span className="skills__terminal-code_grey">&#123;</span>
           </div>
-          <div className="Skills-tab2">
-            <span className="Skills-code-green Skills-space">current:</span>
-            <span className="Skills-code-grey">[</span>
-            <div className="Skills-list-wrapper">
+          <div className="skills__terminal-code_tab2">
+            <span className="skills__terminal-code_green skills__terminal-code_space">current:</span>
+            <span className="skills__terminal-code_grey">[</span>
+            <div className="skills__terminal-code-list">
               <div>&apos;Go&apos;</div>
               <div>&apos;Perl&apos;</div>
               <div>&apos;R&apos;</div>
             </div>
-            <span className="Skills-code-grey Skills-space">],</span>
+            <span className="skills__terminal-code_grey skills__terminal-code_space">],</span>
           </div>
-          <div className="Skills-tab2">
-            <span className="Skills-code-green Skills-space">past:</span>
-            <span className="Skills-code-grey">[</span>
-            <div className="Skills-list-wrapper">
+          <div className="skills__terminal-code_tab2">
+            <span className="skills__terminal-code_green skills__terminal-code_space">past:</span>
+            <span className="skills__terminal-code_grey">[</span>
+            <div className="skills__terminal-code-list">
               <div>&apos;C&apos;</div>
               <div>&apos;Java&apos;</div>
               <div>&apos;MATLAB&apos;</div>
               <div>&apos;Python&apos;</div>
             </div>
-            <span className="Skills-code-grey Skills-space">],</span>
+            <span className="skills__terminal-code_grey skills__terminal-code_space">],</span>
           </div>
-          <div className="Skills-tab">
-            <span className="Skills-code-grey">&#125;,</span>
-          </div>
-          <div>
-            <span className="Skills-code-grey">&#125;;</span>
+          <div className="skills__terminal-code_tab">
+            <span className="skills__terminal-code_grey">&#125;,</span>
           </div>
           <div>
-            <span className="Skills-code-purple Skills-space">export default</span>
-            <span className="Skills-code-red">CodingSkills</span>
-            <span className="Skills-code-grey">;</span>
+            <span className="skills__terminal-code_grey">&#125;;</span>
+          </div>
+          <div>
+            <span className="skills__terminal-code_purple skills__terminal-code_space">export default</span>
+            <span className="skills__terminal-code_red">CodingSkills</span>
+            <span className="skills__terminal-code_grey">;</span>
           </div>
         </div>
       </div>

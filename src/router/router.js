@@ -2,7 +2,7 @@ import { AnimatedSwitch } from 'react-router-transition';
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import CaptureRouteNotFound from './capture-not-found';
+import CaptureRouteNotFound from './__not-found/router__not-found';
 
 // routes
 import App from '../App';
@@ -19,7 +19,7 @@ const Routes = () => (
         atEnter={{ opacity: 0 }}
         atLeave={{ opacity: 0 }}
         atActive={{ opacity: 1 }}
-        className="switch-wrapper"
+        className="switch"
       >
         <Route
           exact

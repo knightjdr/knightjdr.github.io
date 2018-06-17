@@ -16,15 +16,16 @@ const scrollTop = () => {
 
 const Footer = () => (
   <footer
-    className="Footer-container"
+    className="footer"
     role="contentinfo"
   >
     <ReactTos
-      className="Footer-flex-container"
+      className="footer__inner"
       config={{ startingScale: 0.95 }}
     >
-      <div className="Footer-link">
+      <div className="footer__item">
         <NavLink
+          className="footer__link"
           onClick={scrollTop}
           to="/cv"
         >
@@ -37,10 +38,14 @@ const Footer = () => (
           CV
         </div>
       </div>
-      <div className="Footer-link">
-        <a href="mailto:knightjdr@gmail.com?subject=About jamesknight.ca">
+      <div className="footer__item">
+        <a
+          className="footer__link"
+          href="mailto:knightjdr@gmail.com?subject=About jamesknight.ca"
+        >
           <img
             alt="E-mail"
+            className="footer__image"
             src={Email}
           />
         </a>
@@ -48,13 +53,15 @@ const Footer = () => (
           E-mail
         </div>
       </div>
-      <div className="Footer-link">
+      <div className="footer__item">
         <a
+          className="footer__link"
           href="https://github.com/knightjdr"
           rel="nofollow noreferrer"
         >
           <img
             alt="GitHub"
+            className="footer__image"
             src={Github}
           />
         </a>
@@ -62,13 +69,15 @@ const Footer = () => (
           GitHub
         </div>
       </div>
-      <div className="Footer-link">
+      <div className="footer__item">
         <a
+          className="footer__link"
           href="https://scholar.google.ca/citations?user=M6Y_Y5cAAAAJ"
           rel="nofollow noreferrer"
         >
           <img
             alt="Google Scholar"
+            className="footer__image"
             src={Scholar}
           />
         </a>
@@ -76,13 +85,15 @@ const Footer = () => (
           Scholar
         </div>
       </div>
-      <div className="Footer-link">
+      <div className="footer__item">
         <a
+          className="footer__link"
           href="https://www.linkedin.com/in/james-knight-174996156"
           rel="nofollow noreferrer"
         >
           <img
             alt="LinkedIn"
+            className="footer__image"
             src={LinkedIn}
           />
         </a>
@@ -91,7 +102,7 @@ const Footer = () => (
         </div>
       </div>
     </ReactTos>
-    <div className="Footer-copyright">
+    <div className="footer__copyright">
       © James Knight, 2018.
     </div>
   </footer>

@@ -1,0 +1,10 @@
+.cv__award {
+  display: flex;
+  padding-left: 0 5px;
+}
+.cv__awards > div:not(:last-child) {
+  margin-bottom: 10px;
+}
+.cv__awards-date {
+  width: 150px;
+}

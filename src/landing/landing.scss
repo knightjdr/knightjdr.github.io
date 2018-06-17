@@ -1,6 +1,7 @@
+@import 'style/_reset.scss';
 @import 'style/_theme.scss';
 
-.Landing {
+.landing {
   align-items: center;
   background-color: $primary;
   background-image: url('../assets/png/kuji.png');
@@ -10,241 +11,40 @@
   min-height: calc(38.05vw + 120px); // 20px for desc. margin, 100px for padding
   justify-content: center;
 }
-.Landing-description {
+.landing__description {
   height: 2.6vw;
   left: 6%;
   margin-top: 25px;
   position: relative;
   width: 30vw;
 }
-.Landing-image {
+.landing__image {
+  @extend .img-reset;
+}
+.landing__main-image {
   height: 27.2vw;
   width: 45vw;
 }
-.Landing-name {
+.landing__name {
   height: 6vw;
   position: relative;
   right: 3%;
   width: 40vw;
 }
-.beaker-fluid {
-  animation: bubble-color 30s linear infinite;
-}
-.beaker-bubble1 {
-  animation: bubble1 10s linear infinite, bubble-color 30s linear infinite;
-  opacity: 0;
-  transform: translate(0, 0);
-}
-.beaker-bubble2 {
-  animation: bubble2 10s linear 2.9s infinite, bubble-color 30s linear infinite;
-  opacity: 0;
-  transform: translate(0, 0);
-}
-.beaker-bubble3 {
-  animation: bubble3 10s linear 3.2s infinite, bubble-color 30s linear infinite;
-  opacity: 0;
-  transform: translate(0, 30px);
-}
-.beaker-bubble4 {
-  animation: bubble4 10s linear 4.2s infinite, bubble-color 30s linear infinite;
-  opacity: 0;
-  transform: translate(10px, 50px);
-}
-.beaker-bubble5 {
-  animation: bubble5 10s linear 5.6s infinite, bubble-color 30s linear infinite;
-  opacity: 0;
-  transform: translate(0px, 65px);
-}
-.beaker-bubble6 {
-  animation: bubble6 10s linear 7s infinite, bubble-color 30s linear infinite;
-  opacity: 0;
-  transform: translate(-10px, 75px);
-}
-.beaker-bubble7 {
-  animation: bubble7 10s linear 8.4s infinite, bubble-color 30s linear infinite;
-  opacity: 0;
-  transform: translate(0, 0);
-}
-.james-head {
-  animation: head 4s ease-in-out 0s infinite;
-  transform-origin: 310.5px 100px;
-}
-@keyframes bubble-color {
-  0% {
-    fill: $accent;
-  }
-  30% {
-    fill: $accent-2;
-  }
-  60% {
-    fill: $light-1;
-  }
-  100% {
-    fill: $accent;
-  }
-}
-@keyframes name-fade-out {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes bubble1 {
-  0% {
-    opacity: 0;
-    transform: scale(1);
-    transform: translate(0, 0);
-  }
-  30% {
-    opacity: 1;
-    transform: scale(1);
-    transform: translate(6px, -23px);
-  }
-  70% {
-    transform: scale(0.8);
-    transform: translate(11px, -53px);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-    transform: translate(2px, -75px);
-  }
-}
-@keyframes bubble2 {
-  0% {
-    opacity: 0;
-    transform: translate(0, 0);
-  }
-  30% {
-    opacity: 1;
-    transform: translate(-3px, -23px);
-  }
-  70% {
-    transform: translate(-3px, -53px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0px, -75px);
-  }
-}
-@keyframes bubble3 {
-  0% {
-    opacity: 0;
-    transform: translate(0, 30px);
-  }
-  30% {
-    opacity: 1;
-    transform: translate(2px, 2px);
-  }
-  70% {
-    transform: translate(3px, -28px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(2px, -50px);
-  }
-}
-@keyframes bubble4 {
-  0% {
-    opacity: 0;
-    transform: translate(10px, 50px);
-  }
-  30% {
-    opacity: 1;
-    transform: translate(2px, 27px);
-  }
-  70% {
-    transform: translate(0px, 3px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(10px, -30px);
-  }
-}
-@keyframes bubble5 {
-  0% {
-    opacity: 0;
-    transform: translate(0px, 65px);
-  }
-  30% {
-    opacity: 1;
-    transform: translate(5px, 42px);
-  }
-  70% {
-    transform: translate(8px, 19px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0px, -10px);
-  }
-}
-@keyframes bubble6 {
-  0% {
-    opacity: 0;
-    transform: translate(-10px, 75px);
-  }
-  30% {
-    opacity: 1;
-    transform: translate(-5px, 53px);
-  }
-  70% {
-    transform: translate(-5px, 23px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
-@keyframes bubble7 {
-  0% {
-    opacity: 0;
-    transform: translate(0, 0);
-  }
-  30% {
-    opacity: 1;
-    transform: translate(-5px, -23px);
-  }
-  70% {
-    transform: translate(-8px, -46px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-30px, -75px);
-  }
-}
-@keyframes head {
-  0% {
-    transform: rotateX(0) rotateY(0) rotateZ(0);
-  }
-  33% {
-    transform: rotateX(5deg) rotateY(12deg) rotateZ(-2deg);
-  }
-  67% {
-    transform: rotateX(-6deg) rotateY(-10deg) rotateZ(1deg);
-  }
-  100% {
-    transform: rotateX(0) rotateY(0) rotateZ(0);
-  }
-}
 @media (max-width: 700px) {
-  .Landing {
+  .landing {
     min-height: calc(49.7vw + 120px); // 20px for desc. margin, 100px for padding
   }
-  .Landing-description {
+  .landing__description {
     height: 3.5vw;
     left: 1%;
     width: 40vw;
   }
-  .Landing-image {
+  .landing__main-image {
     height: 36.3vw;
     width: 60vw;
   }
-  .Landing-name {
+  .landing__name {
     height: 9.9vw;
     right: 0%;
     width: 60vw;

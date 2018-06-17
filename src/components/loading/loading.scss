@@ -1,43 +1,43 @@
 @import 'style/_theme.scss';
 
-.Loading-container {
+.loading {
   display: inline-flex;
   vertical-align: bottom;
 }
-.Loading-container > *:not(:last-child) {
+.loading > *:not(:last-child) {
   margin-right: 5px;
 }
-.Loading-svg {
+.loading__svg {
   height: 20px;
   width: 20px;
 }
-.Loading-dot {
+.loading__dot {
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
-  animation-name: Loading-dot;
+  animation-name: loading_dot-anim;
   animation-timing-function: linear;
   opacity: 0;
   r: 25%;
   transform: translate(50%, 50%);
 }
-.Loading-dot-default {
+.loading__dot_theme-medium {
   fill: $primary-medium;
 }
-.Loading-dot-light {
+.loading__dot_theme-light {
   fill: $light-1;
 }
-.Loading-dot-left {
-  @extend .Loading-dot;
+.loading__dot-left {
+  @extend .loading__dot;
 }
-.Loading-dot-middle {
-  @extend .Loading-dot;
+.loading__dot-middle {
+  @extend .loading__dot;
   animation-delay: 0.3s,
 }
-.Loading-dot-right {
-  @extend .Loading-dot;
+.loading__dot-right {
+  @extend .loading__dot;
   animation-delay: 0.6s,
 }
-@keyframes Loading-dot {
+@keyframes loading_dot-anim {
   0% {
     opacity: 0;
     r: 25%;

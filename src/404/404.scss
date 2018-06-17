@@ -1,7 +1,8 @@
 @import 'style/_fonts.scss';
+@import 'style/_reset.scss';
 @import 'style/_theme.scss';
 
-.Missing {
+.missing {
   align-items: center;
   background-color: $primary-dark;
   background-image: url('../assets/png/bright-squares.png');
@@ -10,12 +11,13 @@
   flex-direction: column;
   height: calc(100vh - 80px);
   justify-content: center;
+  min-height: 300px;
   padding: 40px;
   width: calc(100vw - 80px);
 }
-.Missing-home-button {
+.missing__home-button {
+  @extend .button-reset;
   background-color: $primary-light;
-  border: none;
   border-radius: 4px;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
   color: $text-light;
@@ -26,38 +28,21 @@
   transition: background-color 0.4s;
   width: auto;
 }
-.Missing-home-button:focus {
-  outline: 0;
-}
-.Missing-home-button:hover {
+.missing__home-button:hover {
   background-color: $primary-medium;
 }
-.Missing-image {
+.missing__home-link {
+  @extend .link-reset;
+}
+.missing__image {
+  @extend .img-reset;
+  height: 35%;
   margin-bottom: 30px;
 }
-.Missing-title {
-  font-family: $title-font;
-  font-size: 4em;
-}
-.Missing-text {
+.missing__text {
   font-family: $default-font;
   font-size: 1.5em;
   margin-bottom: 20px;
   max-width: 600px;
   text-align: center;
-}
-@media (min-width: 700px) {
-  .Missing-image {
-    width: 50%;
-  }
-}
-@media (min-width: 500px) and (max-width: 699px) {
-  .Missing-image {
-    width: 60%;
-  }
-}
-@media (max-width: 499px) {
-  .Missing-image {
-    width: 250px;
-  }
 }

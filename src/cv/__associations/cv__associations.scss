@@ -1,0 +1,10 @@
+.cv__associations-date {
+  width: 200px;
+}
+.cv__associations-item {
+  display: flex;
+  padding-left: 0 5px;
+}
+.cv__associations > div:not(:last-child) {
+  margin-bottom: 10px;
+}

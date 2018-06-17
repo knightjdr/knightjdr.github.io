@@ -1,0 +1,20 @@
+@import 'style/_theme.scss';
+
+.cv__publications-heading {
+  border-bottom: 1px solid $primary-medium;
+  font-style: italic;
+}
+.cv__publications-inner {
+  padding: 0 5px;
+  text-align: justify;
+}
+.cv__publications-journal {
+  font-style: italic;
+  margin: 0 3px;
+}
+.cv__publications-list > div {
+  margin-top: 10px;
+}
+.cv__publications-second {
+  margin-top: 20px;
+}

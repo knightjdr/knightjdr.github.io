@@ -1,40 +1,47 @@
 @import 'style/_fonts.scss';
+@import 'style/_reset.scss';
 @import 'style/_theme.scss';
 
-.Footer-container {
+.footer {
   background-color: $primary-light;
   color: $text-light;
   font-family: $cursive-font;
   font-size: 1.1em;
   padding: 30px 30px 20px 30px;
 }
-.Footer-copyright {
+.footer__copyright {
   margin-top: 15px;
   text-align: center;
 }
-.Footer-flex-container {
+.footer__image {
+  @extend .img-reset;
+}
+.footer__inner {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.Footer-link {
+.footer__item {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
+.footer__link {
+  @extend .link-reset;
+}
 @media (max-width: 449px) {
-  .Footer-flex-container {
+  .footer__inner {
     flex-direction: column;
   }
-  .Footer-flex-container > div:not(:last-child) {
+  .footer__inner > div:not(:last-child) {
     margin-bottom: 10px;
   }
 }
 @media (min-width: 450px) {
-  .Footer-flex-container {
+  .footer__inner {
     flex-direction: row;
   }
-  .Footer-flex-container > div:not(:last-child) {
+  .footer__inner > div:not(:last-child) {
     margin-right: 20px;
   }
 }

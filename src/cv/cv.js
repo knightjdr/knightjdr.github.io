@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Associations from './associations';
-import Awards from './awards';
-import Degrees from './degrees';
-import Experience from './experience';
+import Associations from './__associations/cv__associations';
+import Awards from './__awards/cv__awards';
+import Degrees from './__degrees/cv__degrees';
+import Experience from './__experience/cv__experience';
 import Navbar from '../navbar/navbar-container';
-import Publications from './publications';
-import Talks from './talks';
+import Publications from './__publications/cv__publications';
+import Talks from './__talks/cv__talks';
 
 import './cv.css';
 
@@ -18,20 +18,20 @@ const links = [
 ];
 
 const CV = () => (
-  <div className="CV-container">
+  <div className="cv">
     <Navbar
       background
       fixed={false}
       links={links}
     />
-    <div className="CV-content">
+    <div className="cv__inner">
       <div>
         James D. R. Knight, PhD<br />
         Lunenfeld-Tanenbaum Research Institute<br />
         600 University Avenue, Room 970A<br />
         Toronto, Ontario, Canada<br />
         <a
-          className="CV-email"
+          className="cv__email"
           href="mailto:knightjdr@gmail.com?subject=About jamesknight.ca"
         >
           contact

@@ -1,25 +1,27 @@
 import React from 'react';
 
-import ComputerBack from './images/computer-back';
-import Description from '../assets/svg/description-min.svg';
-import Name from '../assets/svg/name-min.svg';
+import Description from './assets/description-min.svg';
+import MainImage from './__image/landing__image';
+import Name from './assets/name-min.svg';
 
 import './landing.css';
 
 const Landing = () => (
-  <div className="Landing">
-    <div className="Landing-name">
+  <div className="landing">
+    <div className="landing__name">
       <img
         alt="James Knight, PhD"
+        className="landing__image"
         src={Name}
       />
     </div>
-    <div className="Landing-image">
-      <ComputerBack />
+    <div className="landing__main-image">
+      <MainImage />
     </div>
-    <div className="Landing-description">
+    <div className="landing__description">
       <img
         alt="Programmer and scientist"
+        className="landing__image"
         src={Description}
       />
     </div>

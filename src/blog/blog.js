@@ -4,7 +4,7 @@ import { Route, Switch, withRouter } from 'react-router-dom';
 
 import Navbar from '../navbar/navbar-container';
 import BlogList from './blog-list/blog-list-container';
-import RouteNotFound from '../router/route-not-found';
+import RouteNotFound from '../router/__not-found/router__not-found-route';
 
 import './blog.css';
 
