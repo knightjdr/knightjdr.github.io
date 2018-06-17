@@ -1,10 +1,14 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import ReactTos from 'react-tos';
+import Shortid from 'shortid';
 
 import './skills.css';
 
 
-const Skills = () => (
+const Skills = ({
+  lines,
+}) => (
   <div className="Skills-container">
     <ReactTos
       className="Skills-flex-container"
@@ -29,6 +33,16 @@ const Skills = () => (
               ⬌
             </div>
           </div>
+        </div>
+        <div className="Skills-terminal-lines">
+          { [...Array(lines)].map((line, index) => (
+            <div
+              className="Skills-line-number"
+              key={Shortid.generate()}
+            >
+              {index + 1}
+            </div>
+          ))}
         </div>
         <div className="Skills-terminal-code">
           <div>
@@ -132,4 +146,9 @@ const Skills = () => (
     </ReactTos>
   </div>
 );
+
+Skills.propTypes = {
+  lines: PropTypes.number.isRequired,
+};
+
 export default Skills;

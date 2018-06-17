@@ -16,10 +16,15 @@
   animation-iteration-count: infinite;
   animation-name: Loading-dot;
   animation-timing-function: linear;
-  fill: $primary-medium;
   opacity: 0;
   r: 25%;
   transform: translate(50%, 50%);
+}
+.Loading-dot-default {
+  fill: $primary-medium;
+}
+.Loading-dot-light {
+  fill: $light-1;
 }
 .Loading-dot-left {
   @extend .Loading-dot;

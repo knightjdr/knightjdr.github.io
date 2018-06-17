@@ -23,16 +23,19 @@ const Timeline = ({
       <div className={`Timeline-connector Timeline-connector-left ${ConnectorClass(activeSection, lastSection, 0)}`} />
       <div className={`Timeline-connector Timeline-connector-right ${ConnectorClass(activeSection, lastSection, 1)}`} />
       <button
-        className="Timeline-button Timeline-education-button button-pointer"
+        className="Timeline-button Timeline-education-button"
         onClick={() => { handleClick(0); }}
+        type="button"
       />
       <button
-        className="Timeline-button Timeline-career-button button-pointer"
+        className="Timeline-button Timeline-career-button"
         onClick={() => { handleClick(1); }}
+        type="button"
       />
       <button
-        className="Timeline-button Timeline-publication-button button-pointer"
+        className="Timeline-button Timeline-publication-button"
         onClick={() => { handleClick(2); }}
+        type="button"
       />
     </div>
     <div className="Timeline-content">

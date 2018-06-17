@@ -1,0 +1,19 @@
+@import 'style/_reset.scss';
+@import 'style/_theme.scss';
+
+.navbar__logo-link {
+  @extend .link-reset;
+  float: left;
+  margin-top: 5px;
+}
+.navbar__logo:hover .navbar__logo-path {
+  fill: $accent;
+}
+.navbar__logo-path_theme-accent {
+  fill: $primary-light;
+  transition: fill 0.3s linear;
+}
+.navbar__logo-path_theme-primary {
+  fill: $primary-dark;
+  transition: fill 0.3s linear;
+}

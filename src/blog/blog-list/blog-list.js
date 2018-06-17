@@ -3,6 +3,7 @@ import React from 'react';
 
 import BlogListItem from './blog-list-item';
 import Loading from '../../components/loading/loading';
+import Warning from '../../components/warning/warning';
 
 import './blog-list.css';
 
@@ -20,7 +21,7 @@ const BlogList = ({
   } else if (status.error) {
     blogListElement = (
       <div className="Blog-list-message">
-        <div className="Warning" />
+        <Warning />
         <div>
           There was an error retrieving the blog archive. Please try again later.
         </div>

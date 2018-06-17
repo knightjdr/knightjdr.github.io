@@ -113,9 +113,6 @@
   .CV-content {
     margin-top: 0;
   }
-  .CV-email-link {
-    display: none;
-  }
   .CV-email {
     color: black;
     display: inline;
@@ -132,7 +129,8 @@
   .CV-content {
     margin-top: 50px;
   }
-  .CV-email-link {
-    display: inline;
+  .CV-email {
+    color: $primary-medium;
+    text-decoration: none;
   }
 }

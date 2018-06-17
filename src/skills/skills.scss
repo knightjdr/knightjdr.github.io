@@ -35,6 +35,7 @@
   height: auto;
   max-width: 900px;
   min-width: 280px;
+  position: relative;
 }
 .Skills-terminal-bar {
   background-color: #f6f6f6;
@@ -75,11 +76,32 @@
   border: 1px solid #d25448;
 }
 .Skills-terminal-code {
+  counter-reset: lines;
   font-family: $console-font;
-  padding: 10px 10px;
+  padding: 10px 10px 10px 30px;
 }
 .Skills-terminal-code > div:not(:last-child) {
   margin-bottom: 3px;
+}
+.Skills-line-number {
+  color: #BDBDBD;
+  counter-increment: lines;
+  content: counter(lines);
+  display: block;
+  font-family: $default-font;
+  flex-grow: 1;
+  font-size: 14px;
+  height: 14px;
+  padding: 2px 0;
+  opacity: 0.35;
+}
+.Skills-terminal-lines {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  left: 0px;
+  position: absolute;
+  width: 20px;
 }
 .Skills-terminal-maximize {
   @extend .Skills-terminal-button;
@@ -115,6 +137,7 @@
   border-bottom: 2px solid $text-dark;
 }
 @media (min-width: 680px) {
+
   .Skills-list-wrapper {
     display: inline-flex;
     flex-direction: row;
@@ -132,6 +155,10 @@
   }
   .Skills-terminal {
     width: auto;
+  }
+  .Skills-terminal-lines {
+    height: calc(100% - 43px);
+    top: 35px;
   }
 }
 @media (min-width: 400px) and (max-width: 679px) {
@@ -154,6 +181,10 @@
     min-width: 360px;
     width: auto;
   }
+  .Skills-terminal-lines {
+    height: calc(100% - 46px);
+    top: 36px;
+  }
 }
 @media (max-width: 399px) {
   .Skills-list-wrapper {
@@ -174,5 +205,9 @@
   .Skills-terminal {
     min-width: 260px;
     width: auto;
+  }
+  .Skills-terminal-lines {
+    height: calc(100% - 46px);
+    top: 36px;
   }
 }

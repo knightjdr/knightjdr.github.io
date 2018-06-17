@@ -32,8 +32,8 @@ class NavbarContainer extends Component {
       <Navbar
         background={this.props.background}
         fixed={this.props.fixed}
+        isSmallScreen={this.state.isSmallScreen}
         links={this.props.links}
-        smallScreen={this.state.isSmallScreen}
       />
     );
   }

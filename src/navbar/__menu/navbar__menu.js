@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import Bars from './bars';
+import Bars from './navbar__menu-bars';
 
-import './small-screen-menu.css';
+import './navbar__menu.css';
 
 const SmallScreenMenu = ({
   links,
@@ -12,28 +12,30 @@ const SmallScreenMenu = ({
   showMenu,
   viewMenu,
 }) => (
-  <div className="Navbar-menu-container">
+  <div className="navbar__menu">
     <button
-      className="Navbar-menu-button"
+      className="navbar__menu-button"
       onClick={showMenu}
+      type="button"
     >
       {Bars()}
     </button>
     <button
-      className="Navbar-menu-backdrop"
+      className="navbar__menu-backdrop"
       onClick={closeBackdrop}
       style={{
         pointerEvents: viewMenu ? 'auto' : 'none',
       }}
+      type="button"
     >
       <div
-        className={`Navbar-menu ${viewMenu ? 'Navbar-menu-show' : 'Navbar-menu-hide'}`}
+        className={`navbar__menu-inner ${viewMenu ? 'navbar__menu-inner_show' : 'navbar__menu-inner_hide'}`}
       >
         <ul>
           {
             links.map(link => (
               <NavLink
-                className="Navbar-menu-navlink"
+                className="navbar__menu-link"
                 key={link.text}
                 to={link.route}
               >

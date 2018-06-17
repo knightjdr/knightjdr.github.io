@@ -1,0 +1,74 @@
+@import 'style/_fonts.scss';
+@import 'style/_reset.scss';
+@import 'style/_theme.scss';
+
+.navbar__menu {
+  cursor: pointer;
+  margin-top: 5px;
+}
+.navbar__menu-backdrop {
+  @extend .button-reset;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: default;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+}
+.navbar__menu-bars {
+  transition: fill 0.3s linear;
+}
+.navbar__menu-button {
+  @extend .button-reset;
+}
+.navbar__menu-button:hover .navbar__menu-bars {
+  fill: $accent;
+}
+.navbar__menu-inner {
+  background-color: $light-2;
+  border-radius: 4px;
+  box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.4);
+  opacity: 0;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  transition: all 0.2s linear;
+  transform-origin: top right;
+  z-index: 11;
+}
+.navbar__menu-inner > ul {
+  font-family: $default-font;
+  font-size: 1.5em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar__menu-inner li {
+  color: $text-dark;
+  padding: 5px 10px;
+  transition: color 0.3s linear;
+}
+.navbar__menu-inner li:hover {
+  color: $primary-light;
+}
+.navbar__menu-inner_hide {
+  opacity: 0;
+  transform: scale(0);
+}
+.navbar__menu-inner_show {
+  opacity: 1;
+  transform: scale(1);
+}
+.navbar__menu-link {
+  @extend .link-reset;
+  text-decoration: none;
+}
+.navbar_theme-dark .navbar__menu-bars {
+  fill: $primary-light;
+}
+.navbar_theme-transparent .navbar__menu-bars {
+  fill: $primary-dark;
+}

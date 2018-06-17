@@ -91,6 +91,9 @@ const Footer = () => (
         </div>
       </div>
     </ReactTos>
+    <div className="Footer-copyright">
+      © James Knight, 2018.
+    </div>
   </footer>
 );
 export default Footer;

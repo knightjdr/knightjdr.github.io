@@ -13,12 +13,14 @@
     "react-router-dom": "^4.2.2",
     "react-router-transition": "^1.2.1",
     "react-scripts": "1.1.4",
-    "react-tos": "^0.1.0"
+    "react-tos": "^0.1.0",
+    "shortid": "^2.2.8"
   },
   "scripts": {
     "build": "npm-run-all build-css build-js",
     "build-js": "react-scripts build",
     "build-css": "node-sass-chokidar --include-path ./src src/ -o src/",
+    "deploy": "git subtree push --prefix build origin gh-pages",
     "eject": "react-scripts eject",
     "start": "npm-run-all -p watch-css start-js",
     "start-js": "react-scripts start",

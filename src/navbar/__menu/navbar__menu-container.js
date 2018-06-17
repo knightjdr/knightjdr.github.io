@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
-import SmallScreenMenu from './small-screen-menu';
+import Menu from './navbar__menu';
 
 class SmallScreenMenuContainer extends Component {
   constructor(props) {
@@ -22,7 +22,7 @@ class SmallScreenMenuContainer extends Component {
   }
   render() {
     return (
-      <SmallScreenMenu
+      <Menu
         links={this.props.links}
         closeBackdrop={this.closeBackdrop}
         showMenu={this.showMenu}

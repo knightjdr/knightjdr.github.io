@@ -1,0 +1,35 @@
+@import 'style/_fonts.scss';
+@import 'style/_reset.scss';
+@import 'style/_theme.scss';
+
+.navbar-link {
+  @extend .link-reset;
+  font-family: $default-font;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0px 15px;
+  text-decoration: none;
+  transition: color 0.3s linear;
+}
+.navbar-links {
+  position: absolute;
+  right: 10px;
+}
+.navbar_theme-dark a.navbar-link:link {
+  color: $primary-light;
+}
+.navbar_theme-dark a.navbar-link:visited {
+  color: $primary-light;
+}
+.navbar_theme-dark a.navbar-link:hover {
+  color: $accent;
+}
+.navbar_theme-transparent a.navbar-link:link {
+  color: $primary-dark;
+}
+.navbar_theme-transparent a.navbar-link:visited {
+  color: $primary-dark;
+}
+.navbar_theme-transparent a.navbar-link:hover {
+  color: $accent;
+}

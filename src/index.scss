@@ -1,45 +1,22 @@
 @import 'style/_theme.scss';
 
+html {
+  -webkit-text-size-adjust: 100%;
+}
 body {
   color: $text-dark;
   margin: 0;
-  padding: 0;
-}
-.nobutton {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
-.nobutton:focus {
-  outline: 0;
 }
 // Remove mobile highlight on touch.
-input,
-textarea,
+a,
 button,
+input,
 select,
-a {
+textarea {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-// Button cursor
-@media (min-width: 700px) {
-  .button-pointer {
-    cursor: pointer;
-  }
-}
-@media (max-width: 699px) {
-  .button-pointer {
-    cursor: default;
-  }
-}
-// Printing
+// Printing.
 @page {
   margin-bottom: 2cm;
   margin-top: 2cm;
-}
-// Warning
-.Warning {
-  content: url('./assets/svg/icons/warning.svg');
-  height: 30px;
 }

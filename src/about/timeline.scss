@@ -1,4 +1,5 @@
 @import 'style/_fonts.scss';
+@import 'style/_reset.scss';
 @import 'style/_theme.scss';
 
 .Timeline {
@@ -13,8 +14,8 @@
   position: relative;
 }
 .Timeline-button {
+  @extend .button-reset;
   background-color: $primary-light;
-  border: none;
   border-radius: 50%;
   height: 50px;
   position: absolute;
@@ -62,18 +63,14 @@
   top: 2px;
 }
 .Timeline-expander-button {
+  @extend .button-reset;
   background-color: transparent;
-  border: none;
   border-radius: 6px;
   box-shadow: none;
   color: #9E9E9E;
-  cursor: pointer;
   height: auto;
   transition: all 0.5s;
   width: auto;
-}
-.Timeline-expander-button:focus {
-  outline: 0;
 }
 .Timeline-item {
   position: relative;
@@ -122,12 +119,12 @@
   font-size: 1.2em;
 }
 .Timeline-item-year {
+  @extend .button-reset;
   color: $primary-medium;
   font-family: $default-font;
   font-size: 1em;
   margin-bottom: 5px;
   margin-right: auto;
-  padding: 0;
   z-index: 5;
 }
 .Timeline-item-year::before {
@@ -166,7 +163,12 @@
 }
 .Timeline-career-button::after {
   background-image: url("./assets/briefcase.svg");
-  top: -1px;
+  height: 34px;
+  left: 50%;
+  margin-left: -17px;
+  position: absolute;
+  top: 6px;
+  width: 34px;
 }
 .Timeline-education-outer {
   left: 0;
@@ -176,8 +178,12 @@
 }
 .Timeline-education-button::after {
   background-image: url("./assets/school.svg");
-  height: 35px;
-  width: 35px;
+  height: 34px;
+  left: 50%;
+  margin-left: -17px;
+  position: absolute;
+  top: 8px;
+  width: 34px;
 }
 .Timeline-panel {
   transition: opacity 0.225s linear;
@@ -196,8 +202,12 @@
 }
 .Timeline-publication-button::after {
   background-image: url("./assets/book.svg");
-  left: 2px;
-  top: 0px;
+  height: 32px;
+  left: 50%;
+  margin-left: -14px;
+  position: absolute;
+  top: 8px;
+  width: 32px;
 }
 .Timeline-section-title {
   border-bottom: 1px solid #BDBDBD;
@@ -233,16 +243,8 @@
 .Timeline-connector-start-transition {
   transition-delay: 0s;
 }
-// button color.
-@media (max-width: 679px) {
-  .Timeline-button {
-    cursor: default;
-  }
-}
+// Button hover color on small screens.
 @media (min-width: 680px) {
-  .Timeline-button {
-    cursor: pointer;
-  }
   .Timeline-button:hover {
     background: $primary-dark;
     transform: scale(1.2);

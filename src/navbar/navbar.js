@@ -1,49 +1,30 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
-import Logo from './logo';
-import LogoAccent from './logo-accent';
-import SmallScreenMenu from './small-screen-menu-container';
+import Links from './__links/navbar__links';
+import Logo from './__logo/navbar__logo';
 
 import './navbar.css';
 
 const Navbar = ({
   background,
   fixed,
+  isSmallScreen,
   links,
-  smallScreen,
 }) => {
-  const className = background ? 'Navbar-default' : 'Navbar-transparent';
-  const linksElement = smallScreen ?
-    <SmallScreenMenu links={links} />
-    :
-    links.map(link => (
-      <NavLink
-        className="Navbar-link"
-        key={link.text}
-        to={link.route}
-      >
-        { link.text }
-      </NavLink>
-    ));
-  const logo = background ? LogoAccent() : Logo();
+  const className = background ? 'navbar_theme-dark' : 'navbar_theme-transparent';
   return (
     <nav
-      className={`Navbar ${className}`}
+      className={`navbar navbar_position-top ${className}`}
       style={{
         position: fixed ? 'fixed' : 'absolute',
       }}
     >
-      <NavLink
-        className="Navbar-logo-link"
-        to="/"
-      >
-        {logo}
-      </NavLink>
-      <div className="Navbar-link-container">
-        { linksElement }
-      </div>
+      <Logo color={background ? 'accent' : 'primary'} />
+      <Links
+        links={links}
+        isSmallScreen={isSmallScreen}
+      />
     </nav>
   );
 };
@@ -51,13 +32,13 @@ const Navbar = ({
 Navbar.propTypes = {
   background: PropTypes.bool.isRequired,
   fixed: PropTypes.bool.isRequired,
+  isSmallScreen: PropTypes.bool.isRequired,
   links: PropTypes.arrayOf(
     PropTypes.shape({
       route: PropTypes.string,
       text: PropTypes.string,
     }),
   ).isRequired,
-  smallScreen: PropTypes.bool.isRequired,
 };
 
 export default Navbar;
