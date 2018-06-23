@@ -2,9 +2,20 @@
 @import 'style/_theme.scss';
 
 .blog {
-  background-color: $light-2;
   display: flex;
   font-family: $default-font;
   justify-content: center;
   min-height: 100vh;
+}
+@media print {
+  .blog {
+    background-color: unset;
+    color: black;
+    font-size: 12px;
+  }
+}
+@media screen {
+  .blog {
+    background-color: $light-2;
+  }
 }
