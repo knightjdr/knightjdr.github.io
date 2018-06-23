@@ -27,7 +27,6 @@ const Routes = () => (
           component={App}
         />
         <Route
-          exact
           path="/blog"
           component={Blog}
         />

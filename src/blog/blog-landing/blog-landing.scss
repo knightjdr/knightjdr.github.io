@@ -1,0 +1,103 @@
+@import 'style/_fonts.scss';
+@import 'style/_reset.scss';
+@import 'style/_theme.scss';
+
+.blog-landing {
+  background-color: $primary-medium;
+  color: $text-light;
+  font-family: $default-font;
+  font-size: 1.1em;
+  padding: 30px 30px 50px 30px;
+}
+.blog-landing__archive {
+  @extend .link-reset;
+  align-items: center;
+  color: $text-light;
+  display: flex;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.blog-landing__archive svg {
+  height: 24px;
+}
+.blog-landing__archive > *:not(:last-child) {
+  margin-right: 5px;
+}
+.blog-landing__archive:hover > div,
+.blog-landing__archive:hover .blog-landing__img {
+  color: $accent;
+  fill: $accent;
+}
+.blog-landing__details {
+  font-size: 1em;
+  margin-top: 10px;
+  max-width: 900px;
+  text-align: justify;
+}
+.blog-latest__header {
+  display: flex;
+  font-family: $cursive-font;
+  font-size: 1.1em;
+  justify-content: space-between;
+}
+.blog-latest__header svg {
+  height: 20px;
+}
+.blog-landing__img {
+  fill: $text-light;
+}
+.blog-landing__inner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.blog-landing__item-date {
+  margin-top: -10px;
+}
+.blog-landing__item-details {
+  margin-top: 10px;
+  opacity: 0.5;
+  overflow: hidden;
+  text-align: justify;
+}
+.blog-landing__item-title {
+  font-size: 2em;
+  font-family: $title-font;
+}
+.blog-landing__more > a {
+  color: $text-light;
+  font-family: $cursive-font;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.blog-landing__more > a:hover {
+  color: $accent;
+  text-decoration: none;
+}
+.blog-landing__title {
+  font-family: $default-font;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+}
+.blog-landing__title:before {
+  content : '';
+  position: absolute;
+  left    : 12.5%;
+  bottom  : 0;
+  height  : 2px;
+  width   : 75%;
+  border-bottom: 2px solid $text-light;
+}
+@media (max-width: 629px) {
+  .blog-landing__item-details {
+    max-height: 7.5em;
+  }
+}
+@media (min-width: 630px) {
+  .blog-landing__item-details {
+    max-height: 4.5em;
+  }
+}

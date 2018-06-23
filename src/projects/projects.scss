@@ -1,30 +1,30 @@
 @import 'style/_fonts.scss';
 @import 'style/_theme.scss';
 
-.Projects-container {
+.projects {
   background-color: $primary-dark;
   color: $text-light;
   font-family: $cursive-font;
   font-size: 1.1em;
-  padding: 30px;
+  padding: 30px 30px 40px 30px;
 }
-.Projects-flex-container {
+.projects__inner {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-.Projects-details {
+.projects__details {
   max-width: 900px;
   text-align: justify;
 }
-.Projects-title {
+.projects__title {
   font-family: $default-font;
   font-size: 1.3em;
   font-weight: bold;
   margin-bottom: 20px;
   position: relative;
 }
-.Projects-title:before {
+.projects__title:before {
   content : '';
   position: absolute;
   left    : 12.5%;

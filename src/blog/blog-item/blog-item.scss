@@ -1,0 +1,38 @@
+@import 'style/_fonts.scss';
+@import 'style/_theme.scss';
+
+.blog-item {
+  min-height: calc(100vh - 60px);
+  padding: 10px 20px;
+  width: 100%;
+}
+.blog-item__inner {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin-top: 40px;
+}
+.blog-item__message {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+@media (max-width: 629px) {
+  .blog-item__message {
+    flex-direction: column;
+  }
+  .blog-item__message > .warning {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 630px) {
+  .blog-item__message {
+    flex-direction: row;
+  }
+  .blog-item__message > .warning {
+    margin-right: 10px;
+  }
+}

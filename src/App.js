@@ -1,7 +1,7 @@
 import React from 'react';
 
 import About from './about/about';
-import Blog from './blog/landing/blog-landing-container';
+import Blog from './blog/blog-landing/blog-landing-container';
 import Footer from './footer/footer';
 import Landing from './landing/landing';
 import Navbar from './navbar/navbar-container';

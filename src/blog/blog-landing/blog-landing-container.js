@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import BlogLanding from './blog-landing';
 import BlogStore from '../store/blog-store';
-import ConvertISODate from '../../helpers/convert-iso-date';
+import ConvertDate from '../../helpers/convert-iso-date';
 import Get from '../request/get';
 
 class BlogLandingContainer extends Component {
@@ -25,10 +25,14 @@ class BlogLandingContainer extends Component {
   getLatest = () => {
     Get('/blog/latest')
       .then((entry) => {
-        ConvertISODate(entry.latest.date);
-        BlogStore.latestEntry = entry.latest;
+        const entryLocale = Object.assign(
+          {},
+          entry,
+          { date: ConvertDate(entry.date) },
+        );
+        BlogStore.latestEntry = entryLocale;
         this.setState({
-          latest: Object.assign({}, entry.latest),
+          latest: entryLocale,
           loading: false,
         });
       })
