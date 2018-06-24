@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import BannerLeft from './__banner/blog-archive__banner-left';
+import BannerRight from './__banner/blog-archive__banner-right';
 import BlogItem from './blog-archive__item';
 import Loading from '../../components/loading/loading';
 import Warning from '../../components/warning/warning';
@@ -31,15 +33,20 @@ const BlogList = ({
   } else {
     archiveElement = (
       <div className="blog-archive__list">
-        {list.map(item => (BlogItem(item)))}
+        <div className="blog-item__list-header">
+          <BannerLeft />
+          <div className="blog-item__list-banner-grass" />
+          <BannerRight />
+        </div>
+        <div className="blog-archive__list-inner">
+          {list.map(item => (BlogItem(item)))}
+        </div>
       </div>
     );
   }
   return (
     <div className="blog-archive">
-      <div className="blog-archive__inner">
-        { archiveElement }
-      </div>
+      { archiveElement }
     </div>
   );
 };

@@ -5,7 +5,7 @@
   height: auto;
   margin-top: 40px;
   min-height: calc(100vh - 60px);
-  padding: 10px 20px;
+  padding: 10px 20px 30px 20px;
   overflow-x: hidden;
   width: 100%;
 }
@@ -15,7 +15,11 @@
   flex-direction: column;
   width: 100%;
 }
+.blog-item__article-date {
+  font-weight: 500;
+}
 .blog-item__article-details {
+  font-weight: 400;
   margin-top: 10px;
   text-align: justify;
 }
@@ -36,6 +40,7 @@
 .blog-item__article-img-container {
   display: inline-flex;
   justify-content: center;
+  height: 400px;
 }
 .blog-item__article-img-credit {
   font-size: 0.8em;
