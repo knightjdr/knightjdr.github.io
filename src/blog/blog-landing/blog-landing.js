@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 import Archive from './blog-archive__link';
 import Loading from '../../components/loading/loading';
+import ScrollTop from '../../helpers/scroll-top';
 
 import './blog-landing.css';
 
@@ -37,7 +38,10 @@ const Blog = ({
           {latest.details}
         </div>
         <div className="blog-landing__more">
-          <NavLink to={`blog/${encodeURI(latest.title)}`}>
+          <NavLink
+            onClick={ScrollTop}
+            to={`blog/${encodeURI(latest.title)}`}
+          >
             More...
           </NavLink>
         </div>

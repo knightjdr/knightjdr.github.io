@@ -11,8 +11,10 @@ const Navbar = ({
   fixed,
   isSmallScreen,
   links,
+  showLogo,
 }) => {
   const className = background ? 'navbar_theme-dark' : 'navbar_theme-transparent';
+  const logoElement = showLogo ? <Logo color={background ? 'accent' : 'primary'} /> : null;
   return (
     <nav
       className={`navbar navbar_position-top ${className}`}
@@ -20,7 +22,7 @@ const Navbar = ({
         position: fixed ? 'fixed' : 'absolute',
       }}
     >
-      <Logo color={background ? 'accent' : 'primary'} />
+      { logoElement }
       <Links
         links={links}
         isSmallScreen={isSmallScreen}
@@ -39,6 +41,7 @@ Navbar.propTypes = {
       text: PropTypes.string,
     }),
   ).isRequired,
+  showLogo: PropTypes.bool.isRequired,
 };
 
 export default Navbar;

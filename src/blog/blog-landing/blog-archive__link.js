@@ -1,9 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import ScrollTop from '../../helpers/scroll-top';
+
 const Archive = () => (
   <NavLink
     className="blog-landing__archive"
+    onClick={ScrollTop}
     to="/blog"
   >
     <div>

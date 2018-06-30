@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   margin-top: -10px;
   padding: 10px 0 5px 0;
   width: 100vw;
@@ -60,6 +60,7 @@
   font-size: 2em;
   font-family: $title-font;
   max-width: 900px;
+  text-align: left;
 }
 .blog-item__message {
   align-items: center;

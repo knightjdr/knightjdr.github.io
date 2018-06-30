@@ -24,6 +24,7 @@ const App = () => (
     <Navbar
       fixed={false}
       links={links}
+      showLogo={false}
     />
     <Landing />
     <About />

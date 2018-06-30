@@ -34,6 +34,7 @@ class NavbarContainer extends Component {
         fixed={this.props.fixed}
         isSmallScreen={this.state.isSmallScreen}
         links={this.props.links}
+        showLogo={this.props.showLogo}
       />
     );
   }
@@ -43,6 +44,7 @@ NavbarContainer.defaultProps = {
   background: false,
   fixed: true,
   links: [],
+  showLogo: true,
 };
 
 NavbarContainer.propTypes = {
@@ -54,6 +56,7 @@ NavbarContainer.propTypes = {
       text: PropTypes.string,
     }),
   ),
+  showLogo: PropTypes.bool,
 };
 
 export default NavbarContainer;

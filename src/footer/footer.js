@@ -7,12 +7,9 @@ import Email from './assets/email.svg';
 import Github from './assets/github.svg';
 import LinkedIn from './assets/linkedin.svg';
 import Scholar from './assets/scholar.svg';
+import ScrollTop from '../helpers/scroll-top';
 
 import './footer.css';
-
-const scrollTop = () => {
-  window.scrollTo(0, 0);
-};
 
 const Footer = () => (
   <footer
@@ -26,7 +23,7 @@ const Footer = () => (
       <div className="footer__item">
         <NavLink
           className="footer__link"
-          onClick={scrollTop}
+          onClick={ScrollTop}
           to="/cv"
         >
           <img

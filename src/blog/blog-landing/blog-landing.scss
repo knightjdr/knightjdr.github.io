@@ -16,7 +16,7 @@
   color: $text-light;
   display: flex;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.2s;
 }
 .blog-landing__archive svg {
   height: 24px;
@@ -32,7 +32,7 @@
 .blog-landing__details {
   font-size: 1em;
   margin-top: 10px;
-  max-width: 900px;
+  max-width: 950px;
   text-align: justify;
 }
 .blog-latest__header {
@@ -57,7 +57,7 @@
 }
 .blog-landing__item-details {
   margin-top: 10px;
-  opacity: 0.5;
+  opacity: 0.6;
   overflow: hidden;
   text-align: justify;
 }
@@ -70,7 +70,7 @@
   font-family: $cursive-font;
   font-size: 1.2em;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.2s;
 }
 .blog-landing__more > a:hover {
   color: $accent;

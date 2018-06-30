@@ -33,10 +33,26 @@ const BlogList = ({
   } else {
     archiveElement = (
       <div className="blog-archive__list">
-        <div className="blog-item__list-header">
+        <div className="blog-archive__list-header">
           <BannerLeft />
-          <div className="blog-item__list-banner-grass" />
           <BannerRight />
+          <div className="blog-archive__list-banner-grass" />
+          <div className="blog-archive__about">
+            <div className="blog-archive__about-title">
+              BLOG
+            </div>
+            <div className="blog-archive__about-description">
+              <div>
+                Programming,
+              </div>
+              <div>
+                Science
+              </div>
+              <div>
+                & Tech
+              </div>
+            </div>
+          </div>
         </div>
         <div className="blog-archive__list-inner">
           {list.map(item => (BlogItem(item)))}
