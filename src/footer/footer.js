@@ -54,7 +54,7 @@ const Footer = () => (
         <a
           className="footer__link"
           href="https://github.com/knightjdr"
-          rel="nofollow noreferrer"
+          rel="noopener noreferrer"
         >
           <img
             alt="GitHub"
@@ -70,7 +70,7 @@ const Footer = () => (
         <a
           className="footer__link"
           href="https://scholar.google.ca/citations?user=M6Y_Y5cAAAAJ"
-          rel="nofollow noreferrer"
+          rel="noopener noreferrer"
         >
           <img
             alt="Google Scholar"
@@ -86,7 +86,7 @@ const Footer = () => (
         <a
           className="footer__link"
           href="https://www.linkedin.com/in/james-knight-174996156"
-          rel="nofollow noreferrer"
+          rel="noopener noreferrer"
         >
           <img
             alt="LinkedIn"

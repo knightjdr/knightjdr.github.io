@@ -1,4 +1,5 @@
 @import 'style/_fonts.scss';
+@import 'style/_reset.scss';
 @import 'style/_theme.scss';
 
 .projects {
@@ -8,14 +9,61 @@
   font-size: 1.1em;
   padding: 30px 30px 40px 30px;
 }
+.projects__grid {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  max-width: 1000px;
+  width: 100%;
+}
+.projects__grid > div:not(:last-child) {
+  border-bottom: 1px solid rgba(248, 241, 229, 0.2);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.projects__grid-description {
+  align-items: center;
+  display: inline-flex;
+  max-width: 750px;
+}
+.projects__grid-description-inner {
+  font-family: $cursive-font;
+  font-size: 1.1em;
+  text-align: justify;
+}
+.projects__grid-image {
+  align-self: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  padding: 0 20px;
+  width: 250px;
+}
+.projects__grid-row {
+  display: inline-flex;
+}
+.projects__image {
+  @extend .img-reset;
+  height: 100%;
+}
 .projects__inner {
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
-.projects__details {
-  max-width: 900px;
-  text-align: justify;
+.projects__link {
+  @extend .link-reset;
+  color: $accent;
+  margin: 0 7px;
+  text-decoration: none;
+}
+.projects__link:hover {
+  color: $accent-2;
+}
+.project__link-period::after {
+  color: $text-light;
+  content: '.';
 }
 .projects__title {
   font-family: $default-font;
@@ -32,4 +80,18 @@
   height  : 2px;
   width   : 75%;
   border-bottom: 2px solid $text-light;
+}
+@media (max-width: 649px) {
+  .projects__grid-row {
+    flex-direction: column;
+  }
+  .projects__grid > div:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  .projects__grid-description {
+    justify-content: center;
+  }
+  .projects__grid-image {
+    margin-bottom: 20px;
+  }
 }

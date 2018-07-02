@@ -4,7 +4,7 @@
 .navbar__logo-link {
   @extend .link-reset;
   float: left;
-  margin-top: 5px;
+  margin-top: 3px;
 }
 .navbar__logo:hover .navbar__logo-path {
   fill: $accent;

@@ -1,3 +1,4 @@
+@import 'style/_fonts.scss';
 @import 'style/_reset.scss';
 @import 'style/_theme.scss';
 
@@ -7,46 +8,85 @@
   background-image: url('../assets/png/kuji.png');
   display: flex;
   flex-direction: column;
+  font-family: $title-font;
   height: 100vh;
   min-height: calc(38.05vw + 120px); // 20px for desc. margin, 100px for padding
   justify-content: center;
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
 }
 .landing__description {
-  height: 2.6vw;
+  color: $primary-dark;
+  font-size: 3.4vw;
   left: 6%;
-  margin-top: 25px;
+  margin-top: 15px;
   position: relative;
-  width: 30vw;
 }
-.landing__image {
-  @extend .img-reset;
+.landing__description > :first-child {
+  margin-right: 10px;
+}
+.landing__description > :first-child::after {
+  color: $light-1;
+  content: '&';
+  margin-left: 10px;
 }
 .landing__main-image {
   height: 27.2vw;
   width: 45vw;
 }
 .landing__name {
-  height: 6vw;
+  font-size: 5vw;
   position: relative;
   right: 3%;
-  width: 40vw;
+}
+.landing__name > :first-child {
+  color: $light-1;
+}
+.landing__name > :last-child {
+  color: $primary-dark;
+}
+.landing__name > :first-child::after {
+  color: $primary-dark;
+  content: ',';
+  margin-right: 10px;
 }
 @media (max-width: 700px) {
   .landing {
     min-height: calc(49.7vw + 120px); // 20px for desc. margin, 100px for padding
   }
   .landing__description {
-    height: 3.5vw;
+    font-size: 4vw;
     left: 1%;
-    width: 40vw;
   }
   .landing__main-image {
     height: 36.3vw;
     width: 60vw;
   }
   .landing__name {
-    height: 9.9vw;
+    font-size: 6vw;
     right: 0%;
-    width: 60vw;
+  }
+}
+@media (min-width: 500px) and (max-width: 599px) {
+  .landing__description {
+    font-size: 4.5vw;
+  }
+  .landing__name {
+    font-size: 7vw;
+  }
+}
+@media (min-width: 400px) and (max-width: 499px) {
+  .landing__description {
+    font-size: 5vw;
+  }
+  .landing__name {
+    font-size: 8vw;
+  }
+}
+@media (max-width: 399px) {
+  .landing__description {
+    font-size: 6vw;
+  }
+  .landing__name {
+    font-size: 10vw;
   }
 }
