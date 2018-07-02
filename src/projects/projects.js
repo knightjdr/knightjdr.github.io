@@ -47,7 +47,7 @@ const Projects = () => (
               protein-protein interaction data. This is the project that started
               my web development career. I am currently working on a new implementation
               of the site using React with Node.js and Go on the backend. The current
-              version of the site can be seen
+              version of the site can be seen{' '}
               <a
                 className="projects__link"
                 href="https://prohits-viz.lunenfeld.ca"
@@ -55,8 +55,8 @@ const Projects = () => (
                 target="_blank"
               >
                 here
-              </a>
-              (created 2016), while the first version can be seen
+              </a>{' '}
+              (created 2016), while the first version can be seen{' '}
               <a
                 className="projects__link"
                 href="http://prohitstools.mshri.on.ca/"
@@ -64,7 +64,7 @@ const Projects = () => (
                 target="_blank"
               >
                 here
-              </a>
+              </a>{' '}
               (created 2015).
             </ReactTos>
           </div>
@@ -77,7 +77,7 @@ const Projects = () => (
             >
               The human cell map is the Gingras lab project to map the cell
               using proximity biotinylation. I&apos;m responsible for analyzing the
-              data, creating the map and building the site, which can be viewed
+              data, creating the map and building the site, which can be viewed{' '}
               <a
                 className="projects__link project__link-period"
                 href="https://cell-map.org"
@@ -85,7 +85,7 @@ const Projects = () => (
                 target="_blank"
               >
                 here
-              </a>
+              </a>{' '}
               It was built using AngularJS, Node.js and MongoDB.
             </ReactTos>
           </div>
@@ -116,7 +116,7 @@ const Projects = () => (
               className="projects__grid-description-inner"
               config={transitionConfigRight}
             >
-              Checkout
+              Checkout{' '}
               <a
                 className="projects__link"
                 href="https://github.com/knightjdr"
@@ -124,7 +124,7 @@ const Projects = () => (
                 target="_blank"
               >
                 GitHub
-              </a>
+              </a>{' '}
               for my other public projects.
             </ReactTos>
           </div>
