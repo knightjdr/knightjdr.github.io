@@ -13,6 +13,7 @@
 .skills__backdrop-right {
   flex-grow: 1;
   position: relative;
+  z-index: 1;
 }
 .skills__backdrop-left > img,
 .skills__backdrop-right > img {
@@ -43,6 +44,7 @@
   max-width: 900px;
   min-width: 280px;
   position: relative;
+  z-index: 5;
 }
 .skills__terminal-bar {
   background-color: #f6f6f6;

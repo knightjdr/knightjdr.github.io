@@ -53,7 +53,7 @@ const Experience = () => (
       </div>
       <div className="cv__experience-inner">
         <div className="cv__experience-inner-left">
-          September 2011 - 2015
+          September 2011 - August 2015
         </div>
         <div>
           Toronto, Ontario, Canada
