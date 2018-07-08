@@ -3,13 +3,15 @@ import React from 'react';
 import ReactTos from 'react-tos';
 import Shortid from 'shortid';
 
-import './skills.css';
+import { BackdropLeft, BackdropRight } from './skills__backdrop';
 
+import './skills.css';
 
 const Skills = ({
   lines,
 }) => (
   <div className="skills">
+    <BackdropLeft />
     <ReactTos
       className="skills__inner"
       config={{ startingScale: 0.95 }}
@@ -144,6 +146,7 @@ const Skills = ({
         </div>
       </div>
     </ReactTos>
+    <BackdropRight />
   </div>
 );
 

@@ -4,6 +4,7 @@
 
 .blog-landing {
   background-color: $primary-medium;
+  background-image: url('../../assets/png/hexellence.png');
   color: $text-light;
   font-family: $default-font;
   font-weight: 500;
@@ -57,7 +58,7 @@
 }
 .blog-landing__item-details {
   margin-top: 10px;
-  opacity: 0.6;
+  opacity: 0.8;
   overflow: hidden;
   text-align: justify;
 }

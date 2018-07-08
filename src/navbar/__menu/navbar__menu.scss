@@ -4,6 +4,7 @@
 
 .navbar__menu {
   cursor: pointer;
+  margin-right: 5px;
   margin-top: 5px;
 }
 .navbar__menu-backdrop {
@@ -33,7 +34,7 @@
   box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.2);
   opacity: 0;
   position: absolute;
-  right: 8px;
+  right: 15px;
   top: 8px;
   transition: all 0.2s linear;
   transform-origin: top right;

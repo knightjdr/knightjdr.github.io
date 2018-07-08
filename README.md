@@ -1,3 +1,3 @@
-## My personal page (jamesknight.ca)
+## Portfolio page (jamesknight.ca)
 
-A page for my personal projects and where I test new things.
+A page to display my projects.
