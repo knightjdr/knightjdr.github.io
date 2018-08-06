@@ -7,7 +7,7 @@
   color: $text-light;
   font-family: $cursive-font;
   font-size: 1.1em;
-  padding: 40px 30px;
+  padding: 60px 40px 80px 40px;
 }
 .projects__grid {
   display: flex;
@@ -41,6 +41,7 @@
 }
 .projects__grid-row {
   display: inline-flex;
+  justify-content: center;
 }
 .projects__image {
   @extend .img-reset;
@@ -68,7 +69,7 @@
   font-family: $default-font;
   font-size: 1.3em;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   position: relative;
 }
 .projects__title:before {

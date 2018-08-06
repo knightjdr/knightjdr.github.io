@@ -9,7 +9,7 @@
   font-family: $default-font;
   font-weight: 500;
   font-size: 1.1em;
-  padding: 30px 30px 50px 30px;
+  padding: 60px 40px 80px 40px;
 }
 .blog-landing__archive {
   @extend .link-reset;
@@ -81,7 +81,7 @@
   font-family: $default-font;
   font-size: 1.3em;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   position: relative;
 }
 .blog-landing__title:before {

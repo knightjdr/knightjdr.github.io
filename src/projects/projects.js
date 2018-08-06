@@ -4,6 +4,7 @@ import ReactTos from 'react-tos';
 import Cellmap from './assets/cellmap-circle.svg';
 import Github from './assets/github.svg';
 import Prohitsviz from './assets/viz-circle.svg';
+import UIKnight from './assets/knight_circle-white.svg';
 
 import './projects.css';
 
@@ -75,6 +76,47 @@ const Projects = () => (
               className="projects__grid-description-inner"
               config={transitionConfigLeft}
             >
+              <a
+                className="projects__link"
+                href="https://knightjdr.github.io/ui-knight/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                UI Knight
+              </a>{' '}
+              is my library of custom React components. It is where
+              I work on my CSS and design skills, as well as being a place
+              for storing my reusable components. It was built with React
+              (of course) and React Styleguidist.
+            </ReactTos>
+          </div>
+          <ReactTos
+            className="projects__grid-image"
+            config={transitionConfigRight}
+          >
+            <img
+              alt="UI Knight"
+              className="projects__image"
+              src={UIKnight}
+            />
+          </ReactTos>
+        </div>
+        <div className="projects__grid-row">
+          <ReactTos
+            className="projects__grid-image"
+            config={transitionConfigLeft}
+          >
+            <img
+              alt="Cell map"
+              className="projects__image"
+              src={Cellmap}
+            />
+          </ReactTos>
+          <div className="projects__grid-description">
+            <ReactTos
+              className="projects__grid-description-inner"
+              config={transitionConfigRight}
+            >
               The human cell map is the Gingras lab project to map the cell
               using proximity biotinylation. I&apos;m responsible for analyzing the
               data, creating the map and building the site, which can be viewed{' '}
@@ -89,32 +131,12 @@ const Projects = () => (
               It was built using AngularJS, Node.js and MongoDB.
             </ReactTos>
           </div>
-          <ReactTos
-            className="projects__grid-image"
-            config={transitionConfigRight}
-          >
-            <img
-              alt="Cell map"
-              className="projects__image"
-              src={Cellmap}
-            />
-          </ReactTos>
         </div>
         <div className="projects__grid-row">
-          <ReactTos
-            className="projects__grid-image"
-            config={transitionConfigLeft}
-          >
-            <img
-              alt="GitHub"
-              className="projects__image"
-              src={Github}
-            />
-          </ReactTos>
           <div className="projects__grid-description">
             <ReactTos
               className="projects__grid-description-inner"
-              config={transitionConfigRight}
+              config={transitionConfigLeft}
             >
               Checkout{' '}
               <a
@@ -128,6 +150,16 @@ const Projects = () => (
               for my other public projects.
             </ReactTos>
           </div>
+          <ReactTos
+            className="projects__grid-image"
+            config={transitionConfigRight}
+          >
+            <img
+              alt="GitHub"
+              className="projects__image"
+              src={Github}
+            />
+          </ReactTos>
         </div>
       </div>
     </div>
