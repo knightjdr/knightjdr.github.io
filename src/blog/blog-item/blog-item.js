@@ -1,3 +1,5 @@
+/* eslint react/no-danger: 0 */
+import DOMPurify from 'dompurify';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -40,12 +42,14 @@ const BlogItem = ({
             </div>
           </div>
           {
-            item.img &&
+            item.src &&
             <div className="blog-item__article-img-container">
               <img
                 alt={item.imgAlt}
                 className="blog-item__article-img"
-                src={item.img}
+                size={item.sizes}
+                src={item.src}
+                srcSet={item.srcset}
               />
             </div>
           }
@@ -56,15 +60,15 @@ const BlogItem = ({
             </div>
           }
         </div>
-        <div className="blog-item__article-inner">
+        <article className="blog-item__article-inner">
           <Share title={item.title} />
           <div className="blog-item__article-date">
             {item.date}
           </div>
           <div className="blog-item__article-details">
-            {item.details}
+            <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.html) }} />
           </div>
-        </div>
+        </article>
       </div>
     );
   }
@@ -83,9 +87,11 @@ BlogItem.propTypes = {
   err: PropTypes.bool.isRequired,
   item: PropTypes.shape({
     date: PropTypes.string,
-    details: PropTypes.string,
-    img: PropTypes.string,
+    imgAlt: PropTypes.string,
     imgCredit: PropTypes.string,
+    sizes: PropTypes.string,
+    src: PropTypes.string,
+    srcset: PropTypes.string,
     title: PropTypes.string,
   }),
   loading: PropTypes.bool.isRequired,
