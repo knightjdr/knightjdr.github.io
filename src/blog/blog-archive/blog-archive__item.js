@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import ScrollTop from '../../helpers/scroll-top';
+
 import './blog-archive.css';
 
 const BlogItem = item => (
@@ -15,7 +17,10 @@ const BlogItem = item => (
       {item.details}
     </div>
     <div className="blog-archive__list-more">
-      <NavLink to={`blog/${encodeURI(item.title)}`}>
+      <NavLink
+        onClick={ScrollTop}
+        to={`blog/${encodeURI(item.title)}`}
+      >
         More...
       </NavLink>
     </div>

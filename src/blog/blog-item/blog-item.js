@@ -1,5 +1,4 @@
 /* eslint react/no-danger: 0 */
-import DOMPurify from 'dompurify';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -66,7 +65,7 @@ const BlogItem = ({
             {item.date}
           </div>
           <div className="blog-item__article-details">
-            <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.html) }} />
+            <div dangerouslySetInnerHTML={{ __html: item.html }} />
           </div>
         </article>
       </div>

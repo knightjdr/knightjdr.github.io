@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "ajv": "^6.4.0",
-    "dompurify": "^1.0.7",
     "isomorphic-fetch": "^2.2.1",
     "node-sass-chokidar": "^1.2.2",
     "npm-run-all": "^4.1.2",
@@ -36,7 +35,7 @@
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.10.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.7.0"
   },
   "jest": {

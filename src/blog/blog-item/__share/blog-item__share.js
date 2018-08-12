@@ -20,13 +20,6 @@ const Share = ({
     <div>
       Share:
     </div>
-    <TwitterShareButton
-      className="blog-item__share-button"
-      title={title}
-      url={`jamesknight.ca/blog/${encodeURI(title)}`}
-    >
-      <TwitterIcon size={32} round />
-    </TwitterShareButton>
     <FacebookShareButton
       className="blog-item__share-button"
       quote={title}
@@ -40,6 +33,13 @@ const Share = ({
     >
       <GooglePlusIcon size={32} round />
     </GooglePlusShareButton>
+    <TwitterShareButton
+      className="blog-item__share-button"
+      title={title}
+      url={`jamesknight.ca/blog/${encodeURI(title)}`}
+    >
+      <TwitterIcon size={32} round />
+    </TwitterShareButton>
     <EmailShareButton
       className="blog-item__share-button"
       subject={title}
