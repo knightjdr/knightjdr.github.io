@@ -135,6 +135,15 @@ const Skills = ({
           <div className="skills__terminal-code_tab">
             <span className="skills__terminal-code_grey">&#125;,</span>
           </div>
+          <div className="skills__terminal-code_tab">
+            <span className="skills__terminal-code_green skills__terminal-code_space">learning:</span>
+            <span className="skills__terminal-code_grey">[</span>
+            <div className="skills__terminal-code-list">
+              <div>&apos;GCP&apos;</div>
+              <div>&apos;WebAssembly&apos;</div>
+            </div>
+            <span className="skills__terminal-code_grey skills__terminal-code_space">],</span>
+          </div>
           <div>
             <span className="skills__terminal-code_grey">&#125;;</span>
           </div>

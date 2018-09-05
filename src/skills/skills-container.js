@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 import Skills from './skills';
 
-const largeLines = 15;
-const smallLines = 41;
-const smallScreenSize = 680;
+const LARGE_LINES = 16;
+const SMALL_LINES = 44;
+const SMALL_SCREEN_SIZE = 680;
 
 class SkillsContainer extends Component {
   constructor(props) {
@@ -25,7 +25,7 @@ class SkillsContainer extends Component {
     });
   }
   setLines = () => (
-    window.innerWidth < smallScreenSize ? smallLines : largeLines
+    window.innerWidth < SMALL_SCREEN_SIZE ? SMALL_LINES : LARGE_LINES
   )
   render() {
     return (
