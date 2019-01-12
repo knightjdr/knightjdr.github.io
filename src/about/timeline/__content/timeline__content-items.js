@@ -36,6 +36,7 @@ const Items = (items, indexSelection, handleItem) => (
           transition: 'opacity .25s, font-size .5s .25s',
         };
       }
+      const onClick = () => { handleItem(index); };
       return (
         <div
           className="timeline__content-item"
@@ -43,10 +44,10 @@ const Items = (items, indexSelection, handleItem) => (
         >
           <button
             className="timeline__content-item-year"
-            onClick={() => { handleItem(index); }}
+            onClick={onClick}
             type="button"
           >
-            { item.year }
+            {item.year}
           </button>
           <div
             className="timeline__content-expander"
@@ -54,7 +55,7 @@ const Items = (items, indexSelection, handleItem) => (
           >
             <button
               className="timeline__content-expander-button"
-              onClick={() => { handleItem(index); }}
+              onClick={onClick}
               type="button"
             >
               •••
@@ -65,24 +66,20 @@ const Items = (items, indexSelection, handleItem) => (
             style={detailStyle}
           >
             <div className="timeline__content-item-details">
-              <div className="timeline__content-item-title">
-                { item.title }
-              </div>
-              { item.details }
+              <h5>{item.title}</h5>
+              <p>{item.details}</p>
             </div>
             <div
               className="timeline__content-item-img"
               style={imgStyle}
             >
               <a
-                className="timeline__content-item-link"
                 href={item.link}
                 rel="noreferrer noopener"
                 target="_blank"
               >
                 <img
                   alt={item.imgAlt}
-                  className="timeline__content-item-img-inner"
                   src={item.img}
                 />
               </a>

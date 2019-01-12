@@ -11,6 +11,7 @@ class TimelineContainer extends Component {
       itemSelection: 0,
     };
   }
+
   handleClick = (index) => {
     this.setState(({ activeSection }) => ({
       activeSection: index,
@@ -18,19 +19,22 @@ class TimelineContainer extends Component {
       lastSection: activeSection,
     }));
   }
+
   handleItem = (index) => {
     this.setState({
       itemSelection: index,
     });
   }
+
   render() {
+    const { activeSection, itemSelection, lastSection } = this.state;
     return (
       <Timeline
-        activeSection={this.state.activeSection}
+        activeSection={activeSection}
         handleClick={this.handleClick}
         handleItem={this.handleItem}
-        itemSelection={this.state.itemSelection}
-        lastSection={this.state.lastSection}
+        itemSelection={itemSelection}
+        lastSection={lastSection}
       />
     );
   }

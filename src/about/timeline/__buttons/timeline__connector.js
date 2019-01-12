@@ -2,10 +2,10 @@ const Connector = (selection, last, index) => {
   let className = '';
   // Add transition.
   if (
-    selection === 0 ||
-    (
-      selection === 1 &&
-      index === 1
+    selection === 0
+    || (
+      selection === 1
+      && index === 1
     )
   ) {
     className = 'timeline__connector_transition-right';
@@ -15,15 +15,15 @@ const Connector = (selection, last, index) => {
 
   // Add delay
   if (
-    Math.abs(selection - last) === 2 &&
-    (
+    Math.abs(selection - last) === 2
+    && (
       (
-        selection === 0 &&
-        index === 0
-      ) ||
-      (
-        selection === 2 &&
-        index === 1
+        selection === 0
+        && index === 0
+      )
+      || (
+        selection === 2
+        && index === 1
       )
     )
   ) {

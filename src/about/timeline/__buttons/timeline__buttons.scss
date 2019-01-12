@@ -5,6 +5,7 @@
   @extend .button-reset;
   background-color: $primary-light;
   border-radius: 50%;
+  color: transparent;
   height: 50px;
   position: absolute;
   top: 5px;
@@ -77,7 +78,7 @@
   background-image: url("./assets/book.svg");
   height: 32px;
   left: 50%;
-  margin-left: -14px;
+  margin-left: -15px;
   position: absolute;
   top: 8px;
   width: 32px;
@@ -183,6 +184,7 @@
 }
 // Button hover color on small screens.
 @media (min-width: 680px) {
+  .timeline__button:focus,
   .timeline__button:hover {
     background: $primary-dark;
     transform: scale(1.2);

@@ -1,5 +1,5 @@
 import Dotplot from './assets/dotplot.svg';
-import Kinase from './assets/kinase.png';
+import Kinase from './assets/kinase.jpg';
 import LTRI from './assets/ltri.svg';
 import McMaster from './assets/mcmaster.svg';
 import NSERC from './assets/nserc.svg';

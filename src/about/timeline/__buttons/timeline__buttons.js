@@ -10,30 +10,42 @@ const Buttons = ({
   activeSection,
   handleClick,
   lastSection,
-}) => (
-  <div className="timeline__buttons">
-    <div className={`timeline__button-bg timeline__button-education-bg ${ButtonBg(activeSection, lastSection, 0)}`} />
-    <div className={`timeline__button-bg timeline__button-career-bg ${ButtonBg(activeSection, lastSection, 1)}`} />
-    <div className={`timeline__button-bg timeline__button-publication-bg ${ButtonBg(activeSection, lastSection, 2)}`} />
-    <div className={`timeline__connector timeline__connector-left ${Connector(activeSection, lastSection, 0)}`} />
-    <div className={`timeline__connector timeline__connector-right ${Connector(activeSection, lastSection, 1)}`} />
-    <button
-      className="timeline__button timeline__button-education"
-      onClick={() => { handleClick(0); }}
-      type="button"
-    />
-    <button
-      className="timeline__button timeline__button-career"
-      onClick={() => { handleClick(1); }}
-      type="button"
-    />
-    <button
-      className="timeline__button timeline__button-publication"
-      onClick={() => { handleClick(2); }}
-      type="button"
-    />
-  </div>
-);
+}) => {
+  const careerClick = () => { handleClick(1); };
+  const educationClick = () => { handleClick(0); };
+  const publicationClick = () => { handleClick(2); };
+  return (
+    <div className="timeline__buttons">
+      <div className={`timeline__button-bg timeline__button-education-bg ${ButtonBg(activeSection, lastSection, 0)}`} />
+      <div className={`timeline__button-bg timeline__button-career-bg ${ButtonBg(activeSection, lastSection, 1)}`} />
+      <div className={`timeline__button-bg timeline__button-publication-bg ${ButtonBg(activeSection, lastSection, 2)}`} />
+      <div className={`timeline__connector timeline__connector-left ${Connector(activeSection, lastSection, 0)}`} />
+      <div className={`timeline__connector timeline__connector-right ${Connector(activeSection, lastSection, 1)}`} />
+      <button
+        className="timeline__button timeline__button-education"
+        onClick={educationClick}
+        type="button"
+      >
+        Education
+      </button>
+      <button
+        className="timeline__button timeline__button-career"
+        onClick={careerClick}
+        type="button"
+      >
+        Career
+      </button>
+      <button
+        className="timeline__button timeline__button-publication"
+        onClick={publicationClick}
+        type="button"
+      >
+        Publications
+      </button>
+    </div>
+  );
+};
+
 
 Buttons.propTypes = {
   activeSection: PropTypes.number.isRequired,

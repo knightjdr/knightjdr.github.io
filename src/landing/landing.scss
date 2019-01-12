@@ -23,12 +23,10 @@
   height: 5vw;
 }
 .landing__description_fill .landing__description_dark {
-  fill: $primary-dark;
-  stroke: none;
+  animation: darkfill 0.4s forwards;
 }
 .landing__description_fill .landing__description_light {
-  fill: $light-1;
-  stroke: none;
+  animation: lightfill 0.4s forwards;
 }
 .landing__main-image {
   height: 27.2vw;
@@ -50,6 +48,26 @@
   color: $primary-dark;
   content: ',';
   margin-right: 10px;
+}
+@keyframes darkfill {
+  from {
+    fill: rgba(26, 64, 95, 0);
+    stroke-width: 3;
+  }
+  to {
+    fill: rgba(26, 64, 95, 1);
+    stroke-width: 0;
+  }
+}
+@keyframes lightfill {
+  from {
+    fill: rgba(248, 241, 229, 0);
+    stroke-width: 3;
+  }
+  to {
+    fill: rgba(248, 241, 229, 1);
+    stroke-width: 0;
+  }
 }
 @media (max-width: 700px) {
   .landing {
