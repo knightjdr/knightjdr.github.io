@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Description from './__description/landing__description-container';
 import MainImage from './__image/landing__image';
 
 import './landing.css';
@@ -13,10 +14,7 @@ const Landing = () => (
     <div className="landing__main-image">
       <MainImage />
     </div>
-    <h2 className="landing__description">
-      <span>Programmer</span>
-      <span>Scientist</span>
-    </h2>
+    <Description />
   </section>
 );
 export default Landing;

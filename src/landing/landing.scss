@@ -15,20 +15,20 @@
   text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
 }
 .landing__description {
-  color: $primary-dark;
-  font-size: 3.4vw;
-  font-weight: normal;
   left: 6%;
-  margin-top: 15px;
+  margin-top: 25px;
   position: relative;
 }
-.landing__description > :first-child {
-  margin-right: 10px;
+.landing__description svg {
+  height: 5vw;
 }
-.landing__description > :first-child::after {
-  color: $light-1;
-  content: '&';
-  margin-left: 10px;
+.landing__description_fill .landing__description_dark {
+  fill: $primary-dark;
+  stroke: none;
+}
+.landing__description_fill .landing__description_light {
+  fill: $light-1;
+  stroke: none;
 }
 .landing__main-image {
   height: 27.2vw;
@@ -56,7 +56,6 @@
     min-height: calc(49.7vw + 120px); // 20px for desc. margin, 100px for padding
   }
   .landing__description {
-    font-size: 5vw;
     left: 1%;
   }
   .landing__main-image {
@@ -69,24 +68,24 @@
   }
 }
 @media (min-width: 500px) and (max-width: 599px) {
-  .landing__description {
-    font-size: 4.5vw;
+  .landing__description svg {
+    height: 4.5vw;
   }
   .landing__name {
     font-size: 7.5vw;
   }
 }
 @media (min-width: 400px) and (max-width: 499px) {
-  .landing__description {
-    font-size: 5vw;
+  .landing__description svg {
+    height: 5vw;
   }
   .landing__name {
     font-size: 8.5vw;
   }
 }
 @media (max-width: 399px) {
-  .landing__description {
-    font-size: 6vw;
+  .landing__description svg {
+    height: 6vw;
   }
   .landing__name {
     font-size: 10vw;
