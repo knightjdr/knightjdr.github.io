@@ -23,12 +23,16 @@ const Logo = ({
       to="/"
     >
       <svg
+        aria-label="Letter J logo for James Knight"
         className={`navbar__logo ${classes[color].svg}`}
-        xmlns="http://www.w3.org/2000/svg"
-        width="19.9px"
         height="30px"
+        role="img"
         viewBox="0 0 331.676 500"
+        width="19.9px"
+        xmlns="http://www.w3.org/2000/svg"
       >
+        <title>Letter J</title>
+        <desc>logo for James Knight</desc>
         <g>
           <path
             className={`navbar__logo-path ${classes[color].path}`}

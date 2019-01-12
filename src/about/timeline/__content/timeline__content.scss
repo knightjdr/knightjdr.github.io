@@ -1,10 +1,7 @@
-@import 'style/_fonts.scss';
-
 .timeline__content {
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-family: $default-font;
   font-weight: 500;
   margin-top: 30px;
   max-width: 1000px;

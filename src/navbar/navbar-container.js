@@ -12,29 +12,41 @@ class NavbarContainer extends Component {
       isSmallScreen: this.smallScreen(),
     };
   }
+
   componentDidMount = () => {
     window.addEventListener('resize', this.onResize);
   }
+
   componentWillUnmount = () => {
     window.removeEventListener('resize', this.onResize);
   }
+
   onResize = () => {
     this.setState({
       isSmallScreen: this.smallScreen(),
     });
   }
+
   smallScreen = () => {
     const isSmall = window.innerWidth <= smallScreenSize;
     return isSmall;
   }
+
   render() {
+    const {
+      background,
+      fixed,
+      links,
+      showLogo,
+    } = this.props;
+    const { isSmallScreen } = this.state;
     return (
       <Navbar
-        background={this.props.background}
-        fixed={this.props.fixed}
-        isSmallScreen={this.state.isSmallScreen}
-        links={this.props.links}
-        showLogo={this.props.showLogo}
+        background={background}
+        fixed={fixed}
+        isSmallScreen={isSmallScreen}
+        links={links}
+        showLogo={showLogo}
       />
     );
   }

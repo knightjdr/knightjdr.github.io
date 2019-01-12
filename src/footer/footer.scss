@@ -9,6 +9,9 @@
   font-size: 1.1em;
   padding: 40px 40px 30px 40px;
 }
+.footer small {
+  display: block;
+}
 .footer__copyright {
   margin-top: 15px;
   text-align: center;
@@ -21,7 +24,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.footer__item {
+.footer__inner > div {
   align-items: center;
   display: flex;
   flex-direction: column;

@@ -1,13 +1,17 @@
 @import 'style/_reset.scss';
 @import 'style/_theme.scss';
 
+.navbar__logo:hover .navbar__logo-path,
+.navbar__logo-link:focus .navbar__logo-path {
+  fill: $accent;
+}
 .navbar__logo-link {
   @extend .link-reset;
   float: left;
   margin-top: 3px;
 }
-.navbar__logo:hover .navbar__logo-path {
-  fill: $accent;
+.navbar__logo-link:focus {
+  outline: none;
 }
 .navbar__logo-path_theme-accent {
   fill: $primary-light;

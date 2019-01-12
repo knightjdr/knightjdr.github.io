@@ -3,7 +3,14 @@ import React from 'react';
 import './landing__image.css';
 
 const ComputerBack = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 370">
+  <svg
+    aria-label="James Knight siting as his computer"
+    role="img"
+    viewBox="0 0 600 370"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>James Knight </title>
+    <desc>siting as his computer</desc>
     <style>
       { `
         .computer-back1{fill:#e1e6e9}

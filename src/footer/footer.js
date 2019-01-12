@@ -20,7 +20,7 @@ const Footer = () => (
       className="footer__inner"
       config={{ startingScale: 0.95 }}
     >
-      <div className="footer__item">
+      <div>
         <NavLink
           className="footer__link"
           onClick={ScrollTop}
@@ -35,7 +35,7 @@ const Footer = () => (
           CV
         </div>
       </div>
-      <div className="footer__item">
+      <div>
         <a
           className="footer__link"
           href="mailto:knightjdr@gmail.com?subject=About jamesknight.ca"
@@ -50,11 +50,10 @@ const Footer = () => (
           E-mail
         </div>
       </div>
-      <div className="footer__item">
+      <div>
         <a
           className="footer__link"
           href="https://github.com/knightjdr"
-          rel="noopener noreferrer"
         >
           <img
             alt="GitHub"
@@ -66,11 +65,10 @@ const Footer = () => (
           GitHub
         </div>
       </div>
-      <div className="footer__item">
+      <div>
         <a
           className="footer__link"
           href="https://scholar.google.ca/citations?user=M6Y_Y5cAAAAJ"
-          rel="noopener noreferrer"
         >
           <img
             alt="Google Scholar"
@@ -82,11 +80,10 @@ const Footer = () => (
           Scholar
         </div>
       </div>
-      <div className="footer__item">
+      <div>
         <a
           className="footer__link"
           href="https://www.linkedin.com/in/james-knight-174996156"
-          rel="noopener noreferrer"
         >
           <img
             alt="LinkedIn"
@@ -99,9 +96,9 @@ const Footer = () => (
         </div>
       </div>
     </ReactTos>
-    <div className="footer__copyright">
-      © James Knight, 2018.
-    </div>
+    <small className="footer__copyright">
+      © James Knight, 2019.
+    </small>
   </footer>
 );
 export default Footer;

@@ -1,7 +1,6 @@
 import React from 'react';
 
 import About from './about/about';
-import Blog from './blog/blog-landing/blog-landing-container';
 import Footer from './footer/footer';
 import Landing from './landing/landing';
 import Navbar from './navbar/navbar-container';
@@ -12,17 +11,13 @@ import './App.css';
 
 const links = [
   {
-    route: '/blog',
-    text: 'Blog',
-  },
-  {
     route: '/cv',
     text: 'CV',
   },
 ];
 
 const App = () => (
-  <div className="app">
+  <main className="app">
     <Navbar
       fixed={false}
       links={links}
@@ -32,8 +27,7 @@ const App = () => (
     <About />
     <Projects />
     <Skills />
-    <Blog />
     <Footer />
-  </div>
+  </main>
 );
 export default App;

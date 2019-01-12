@@ -1,3 +1,4 @@
+@import 'style/_fonts.scss';
 @import 'style/_theme.scss';
 
 html {
@@ -5,6 +6,7 @@ html {
 }
 body {
   color: $text-dark;
+  font-family: $default-font;
   margin: 0;
 }
 // Remove mobile highlight on touch.

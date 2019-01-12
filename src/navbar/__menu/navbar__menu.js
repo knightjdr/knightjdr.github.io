@@ -28,25 +28,21 @@ const SmallScreenMenu = ({
       }}
       type="button"
     >
-      <div
-        className={`navbar__menu-inner ${viewMenu ? 'navbar__menu-inner_show' : 'navbar__menu-inner_hide'}`}
-      >
-        <ul>
-          {
-            links.map(link => (
-              <NavLink
-                className="navbar__menu-link"
-                key={link.text}
-                to={link.route}
-              >
-                <li>
-                  {link.text}
-                </li>
-              </NavLink>
-            ))
-          }
-        </ul>
-      </div>
+      <ul className={`navbar__menu-inner ${viewMenu ? 'navbar__menu-inner_show' : 'navbar__menu-inner_hide'}`}>
+        {
+          links.map(link => (
+            <NavLink
+              className="navbar__menu-link"
+              key={link.text}
+              to={link.route}
+            >
+              <li>
+                {link.text}
+              </li>
+            </NavLink>
+          ))
+        }
+      </ul>
     </button>
   </div>
 );

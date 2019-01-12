@@ -10,18 +10,19 @@ const Links = ({
   isSmallScreen,
   links,
 }) => {
-  const linksElement = isSmallScreen ?
-    <Menu links={links} />
-    :
-    links.map(link => (
-      <NavLink
-        className="navbar-link"
-        key={link.text}
-        to={link.route}
-      >
-        { link.text }
-      </NavLink>
-    ));
+  const linksElement = isSmallScreen
+    ? <Menu links={links} />
+    : (
+      links.map(link => (
+        <NavLink
+          className="navbar-link"
+          key={link.text}
+          to={link.route}
+        >
+          { link.text }
+        </NavLink>
+      ))
+    );
   return (
     <div className="navbar-links">
       { linksElement }
