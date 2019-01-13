@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactTos from 'react-tos';
 
-import Cellmap from './assets/cellmap-circle.svg';
+import GeneInfo from './assets/gene-info.svg';
 import Github from './assets/github.svg';
 import Prohitsviz from './assets/viz-circle.svg';
-import UIKnight from './assets/knight_circle-white.svg';
 
 import './projects.css';
 
@@ -20,12 +19,10 @@ const transitionConfigRight = {
 };
 
 const Projects = () => (
-  <div className="projects">
+  <section className="projects">
     <div className="projects__inner">
       <ReactTos config={{ startingScale: 0.95 }}>
-        <div className="projects__title">
-          Projects
-        </div>
+        <h3>Projects</h3>
       </ReactTos>
       <div className="projects__grid">
         <div className="projects__grid-row">
@@ -44,29 +41,25 @@ const Projects = () => (
               className="projects__grid-description-inner"
               config={transitionConfigRight}
             >
-              ProHits-viz is a suite of interactive webtools for analyzing and visualizing
-              protein-protein interaction data. This is the project that started
-              my web development career. I am currently working on a new implementation
-              of the site using React with Node.js and Go on the backend. The current
-              version of the site can be seen{' '}
-              <a
-                className="projects__link"
-                href="https://prohits-viz.lunenfeld.ca"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                here
-              </a>{' '}
-              (created 2016), while the first version can be seen{' '}
-              <a
-                className="projects__link"
-                href="http://prohitstools.mshri.on.ca/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                here
-              </a>{' '}
-              (created 2015).
+              <p>
+                ProHits-viz is a suite of interactive webtools for analyzing and visualizing
+                protein-protein interaction data. This is the project that started
+                my web development career. I am currently working on a new implementation
+                of the site using React with Node.js and Golang on the backend. The current
+                version of the site can be seen at
+                {' '}
+                <a href="https://prohits-viz.org">
+                  prohits-viz.org
+                </a>
+                {' '}
+                (in progress 2019), while the first version can be seen at
+                {' '}
+                <a href="https://prohits-viz.lunenfeld.ca">
+                  prohits-viz.lunenfeld.ca
+                </a>
+                {' '}
+                (created 2017).
+              </p>
             </ReactTos>
           </div>
         </div>
@@ -76,18 +69,16 @@ const Projects = () => (
               className="projects__grid-description-inner"
               config={transitionConfigLeft}
             >
-              <a
-                className="projects__link"
-                href="https://knightjdr.github.io/ui-knight/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                UI Knight
-              </a>{' '}
-              is my library of custom React components. It is where
-              I work on my CSS and design skills, as well as being a place
-              for storing my reusable components. It was built with React
-              (of course) and React Styleguidist.
+              <p>
+                <a href="https://chrome.google.com/webstore/detail/gene-info/jggendahejbhkghnachhlomkkheomchp?hl=en-US">
+                  Gene Info
+                </a>
+                {' '}
+                is a Chrome Extension that allows molecular biologists
+                to retrieve gene information on any webpage simply by
+                double clicking a gene name. It was built with vanilla
+                JavaScript.
+              </p>
             </ReactTos>
           </div>
           <ReactTos
@@ -95,9 +86,9 @@ const Projects = () => (
             config={transitionConfigRight}
           >
             <img
-              alt="UI Knight"
+              alt="Gene Info"
               className="projects__image"
-              src={UIKnight}
+              src={GeneInfo}
             />
           </ReactTos>
         </div>
@@ -107,9 +98,9 @@ const Projects = () => (
             config={transitionConfigLeft}
           >
             <img
-              alt="Cell map"
+              alt="GitHub"
               className="projects__image"
-              src={Cellmap}
+              src={Github}
             />
           </ReactTos>
           <div className="projects__grid-description">
@@ -117,52 +108,18 @@ const Projects = () => (
               className="projects__grid-description-inner"
               config={transitionConfigRight}
             >
-              The human cell map is the Gingras lab project to map the cell
-              using proximity biotinylation. I&apos;m responsible for analyzing the
-              data, creating the map and building the site, which can be viewed{' '}
-              <a
-                className="projects__link project__link-period"
-                href="https://cell-map.org"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                here
-              </a>{' '}
-              It was built using AngularJS, Node.js and MongoDB.
-            </ReactTos>
-          </div>
-        </div>
-        <div className="projects__grid-row">
-          <div className="projects__grid-description">
-            <ReactTos
-              className="projects__grid-description-inner"
-              config={transitionConfigLeft}
-            >
-              Checkout{' '}
-              <a
-                className="projects__link"
-                href="https://github.com/knightjdr"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+              Checkout
+              {' '}
+              <a href="https://github.com/knightjdr">
                 GitHub
-              </a>{' '}
+              </a>
+              {' '}
               for my other public projects.
             </ReactTos>
           </div>
-          <ReactTos
-            className="projects__grid-image"
-            config={transitionConfigRight}
-          >
-            <img
-              alt="GitHub"
-              className="projects__image"
-              src={Github}
-            />
-          </ReactTos>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 );
 export default Projects;

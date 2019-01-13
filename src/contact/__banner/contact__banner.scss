@@ -1,59 +1,59 @@
-.blog-archive__banner-cloud1 {
+.contact__banner-cloud1 {
   animation: cloud1 28s linear infinite;
 }
-.blog-archive__banner-cloud2 {
+.contact__banner-cloud2 {
   animation: cloud2 30s linear infinite;
   transform: translateX(90px);
 }
-.blog-archive__banner-cloud3 {
+.contact__banner-cloud3 {
   animation: cloud2 34s linear infinite;
 }
-.blog-archive__banner-smoke {
+.contact__banner-smoke {
   animation: smoke 16s ease-out infinite;
   transform: scale(0) translate(0, 10px);
 }
-.blog-archive_banner-left {
+.contact_banner-left {
   min-height: 400px;
 }
-.blog-archive_banner-right {
+.contact_banner-right {
   margin-left: auto;
   min-height: 400px;
 }
-.blog-archive__banner-left-svg0 {
+.contact__banner-left-svg0 {
   fill: #4D97CB;
 }
-.blog-archive__banner-left-svg1 {
+.contact__banner-left-svg1 {
   fill:#1A405F;
 }
-.blog-archive__banner-left-svg2 {
+.contact__banner-left-svg2 {
   fill:#F8F1E5;
 }
-.blog-archive__banner-left-svg3 {
+.contact__banner-left-svg3 {
   fill:#337BAE;
 }
-.blog-archive__banner-right-svg0 {
+.contact__banner-right-svg0 {
   fill: #4D97CB;
 }
-.blog-archive__banner-right-svg1 {
+.contact__banner-right-svg1 {
   fill: #1A405F;
 }
-.blog-archive__banner-right-svg2 {
+.contact__banner-right-svg2 {
   fill: #F8F1E5;
 }
-.blog-archive__banner-right-svg3 {
+.contact__banner-right-svg3 {
   fill: #98BCBF;
 }
-.blog-archive__banner-right-svg5 {
+.contact__banner-right-svg5 {
   fill: #337BAE;
 }
-.blog-archive__banner-right-windmill * {
+.contact__banner-right-windmill * {
   fill: #337BAE;
 }
-.blog-archive__banner-right-windmill1_transform-rotate {
+.contact__banner-right-windmill1_transform-rotate {
   animation: spin 5s linear infinite;
   transform-origin: 125px 265px;
 }
-.blog-archive__banner-right-windmill2_transform-rotate {
+.contact__banner-right-windmill2_transform-rotate {
   animation: spin 5s linear infinite;
   transform-origin: 339px 219px;
 }
@@ -116,7 +116,7 @@
 }
 /* Banner images */
 @media (max-width: 679px) {
-  .blog-archive_banner-right {
+  .contact_banner-right {
     left: 287px;
     position: absolute;
   }

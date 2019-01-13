@@ -14,7 +14,7 @@
   padding: 40px;
   width: calc(100vw - 80px);
 }
-.missing__home-button {
+.missing button {
   @extend .button-reset;
   background-color: $primary-light;
   border-radius: 4px;
@@ -22,24 +22,29 @@
   color: $text-light;
   font-size: 1.3em;
   height: auto;
-  padding: 5px 10px;
+  padding: 8px 10px;
   transition: background-color 0.4s;
   width: auto;
 }
-.missing__home-button:hover {
+.missing button:focus,
+.missing button:hover {
   background-color: $primary-medium;
+  outline: 0;
 }
-.missing__home-link {
+.missing a {
   @extend .link-reset;
 }
-.missing__image {
+.missing a:focus {
+  outline: 0;
+}
+.missing img {
   @extend .img-reset;
   height: 35%;
   margin-bottom: 30px;
 }
-.missing__text {
+.missing p {
   font-size: 1.5em;
-  margin-bottom: 20px;
+  margin-bottom: 0 0 20px 0;
   max-width: 600px;
   text-align: center;
 }

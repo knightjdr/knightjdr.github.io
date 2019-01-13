@@ -31,6 +31,14 @@
 }
 .footer__link {
   @extend .link-reset;
+  
+}
+.footer__link + div {
+  border-bottom: 2px solid transparent;
+}
+.footer__link:focus + div,
+.footer__link:hover + div {
+  border-bottom: 2px solid $primary;
 }
 @media (max-width: 449px) {
   .footer__inner {

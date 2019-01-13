@@ -1,6 +1,7 @@
 import React from 'react';
 
 import About from './about/about';
+import Contact from './contact/contact';
 import Footer from './footer/footer';
 import Landing from './landing/landing';
 import Navbar from './navbar/navbar-container';
@@ -27,6 +28,7 @@ const App = () => (
     <About />
     <Projects />
     <Skills />
+    <Contact />
     <Footer />
   </main>
 );
