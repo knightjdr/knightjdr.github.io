@@ -18,14 +18,14 @@
 .cv__inner > div:not(:last-child) {
   margin-bottom: 20px;
 }
-header > h1 {
+.cv header > h1 {
   font-size: 1.5em;
   margin: 0;
 }
-section {
+.cv section {
   margin-top: 20px;
 }
-section > h2 {
+.cv section > h2 {
   border-bottom: 2px solid $primary-dark;
   font-family: $title-font;
   font-size: 1.2em;
