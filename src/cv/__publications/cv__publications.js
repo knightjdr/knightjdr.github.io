@@ -18,36 +18,30 @@ const pubElement = list => (
       }
     });
     return (
-      <div key={pub.key}>
+      <li key={pub.key}>
         {authorString} ({pub.date}). {pub.title}.
-        <strong className="cv__publications-journal">
+        <span className="cv__publications-journal">
           {pub.journal},
-        </strong>
+        </span>
         {pub.pages}.
-      </div>
+      </li>
     );
   })
 );
 
 const Publications = () => (
-  <div className="cv__publications">
-    <div className="cv__section-heading">
-      Publications
-    </div>
+  <section className="cv__publications">
+    <h2>Publications</h2>
     <div className="cv__publications-inner">
-      <div className="cv__publications-heading">
-        First authored
-      </div>
-      <div className="cv__publications-list">
+      <h3>First authored</h3>
+      <ol className="cv__publications-list">
         { pubElement(List.first) }
-      </div>
-      <div className="cv__publications-heading cv__publications-second">
-        Co-authored
-      </div>
-      <div className="cv__publications-list">
+      </ol>
+      <h3>Co-authored</h3>
+      <ol className="cv__publications-list">
         { pubElement(List.co) }
-      </div>
+      </ol>
     </div>
-  </div>
+  </section>
 );
 export default Publications;

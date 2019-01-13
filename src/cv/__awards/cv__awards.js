@@ -3,26 +3,24 @@ import React from 'react';
 import './cv__awards.css';
 
 const Awards = () => (
-  <div className="cv__awards">
-    <div className="cv__section-heading">
-      Awards
+  <section className="cv__awards">
+    <h2>Awards</h2>
+    <div className="cv__award">
+      <div className="cv__awards-date">
+        2015
+      </div>
+      <div>
+        <div>Travel award to attend Human Proteome Organization World Congress</div>
+        <div>Awarding Body: Canadian National Proteomics Network</div>
+      </div>
     </div>
     <div className="cv__award">
       <div className="cv__awards-date">
         2015
       </div>
       <div>
-        Travel award to attend Human Proteome Organization World Congress<br />
-        Awarding Body: Canadian National Proteomics Network
-      </div>
-    </div>
-    <div className="cv__award">
-      <div className="cv__awards-date">
-        2015
-      </div>
-      <div>
-        TD Bank Health Research Fellowship at the LTRI<br />
-        Awarding Body: Lunenfeld-Tanenbaum Research Institute
+        <div>TD Bank Health Research Fellowship at the LTRI</div>
+        <div>Awarding Body: Lunenfeld-Tanenbaum Research Institute</div>
       </div>
     </div>
     <div className="cv__award">
@@ -30,8 +28,8 @@ const Awards = () => (
         2012 - 2014
       </div>
       <div>
-        Postdoctoral Research Fellowship<br />
-        Awarding Body: Heart and Stroke Foundation of Canada
+        <div>Postdoctoral Research Fellowship</div>
+        <div>Awarding Body: Heart and Stroke Foundation of Canada</div>
       </div>
     </div>
     <div className="cv__award">
@@ -39,8 +37,8 @@ const Awards = () => (
         2011
       </div>
       <div>
-        Faculty of Graduate and Postdoctoral Studies Dean’s Scholarship<br />
-        Awarding Body: University of Ottawa
+        <div>Faculty of Graduate and Postdoctoral Studies Dean’s Scholarship</div>
+        <div>Awarding Body: University of Ottawa</div>
       </div>
     </div>
     <div className="cv__award">
@@ -48,8 +46,8 @@ const Awards = () => (
         2009 - 2011
       </div>
       <div>
-        Vanier Canada Graduate Scholarship<br />
-        Awarding Body: Canadian Institutes of Health Research
+        <div>Vanier Canada Graduate Scholarship</div>
+        <div>Awarding Body: Canadian Institutes of Health Research</div>
       </div>
     </div>
     <div className="cv__award">
@@ -57,8 +55,8 @@ const Awards = () => (
         2006 - 2009
       </div>
       <div>
-        Canada Research Studentship<br />
-        Awarding Body: Multiple Sclerosis Society of Canada
+        <div>Canada Research Studentship</div>
+        <div>Awarding Body: Multiple Sclerosis Society of Canada</div>
       </div>
     </div>
     <div className="cv__award">
@@ -66,8 +64,8 @@ const Awards = () => (
         2005 - 2011
       </div>
       <div>
-        Excellence Scholarship<br />
-        Awarding Body: University of Ottawa
+        <div>Excellence Scholarship</div>
+        <div>Awarding Body: University of Ottawa</div>
       </div>
     </div>
     <div className="cv__award">
@@ -75,8 +73,8 @@ const Awards = () => (
         2005
       </div>
       <div>
-        Canada Graduate Scholarship Master’s award<br />
-        Awarding Body: Canadian Institutes of Health Research
+        <div>Canada Graduate Scholarship Master’s award</div>
+        <div>Awarding Body: Canadian Institutes of Health Research</div>
       </div>
     </div>
     <div className="cv__award">
@@ -84,9 +82,9 @@ const Awards = () => (
         2002
       </div>
       <div>
-        Undergraduate Student Research Award<br />
-        Awarding Body: National Science and Engineering Research Council<br />
-        For research to be undertaken with the supervision of Dr David Earn
+        <div>Undergraduate Student Research Award</div>
+        <div>Awarding Body: National Science and Engineering Research Council</div>
+        <div>For research to be undertaken with the supervision of Dr David Earn</div>
       </div>
     </div>
     <div className="cv__award">
@@ -94,9 +92,9 @@ const Awards = () => (
         2001
       </div>
       <div>
-        The George P. and Leatha M. Keys Scholarship<br />
-        Awarding Body: McMaster University<br />
-        Awarded for outstanding achievement in Honours Mathematics
+        <div>The George P. and Leatha M. Keys Scholarship</div>
+        <div>Awarding Body: McMaster University</div>
+        <div>Awarded for outstanding achievement in Honours Mathematics</div>
       </div>
     </div>
     <div className="cv__award">
@@ -104,9 +102,9 @@ const Awards = () => (
         2001
       </div>
       <div>
-        The Herbert A. Ricker Scholarship<br />
-        Awarding Body: McMaster University<br />
-        Awarded for scholarship and character in Science
+        <div>The Herbert A. Ricker Scholarship</div>
+        <div>Awarding Body: McMaster University</div>
+        <div>Awarded for scholarship and character in Science</div>
       </div>
     </div>
     <div className="cv__award">
@@ -114,9 +112,9 @@ const Awards = () => (
         2001
       </div>
       <div>
-        Undergraduate Student Research Award<br />
-        Awarding Body: National Science and Engineering Research Council<br />
-        For research to be undertaken with the supervision of Dr Brian Golding
+        <div>Undergraduate Student Research Award</div>
+        <div>Awarding Body: National Science and Engineering Research Council</div>
+        <div>For research to be undertaken with the supervision of Dr Brian Golding</div>
       </div>
     </div>
     <div className="cv__award">
@@ -124,8 +122,8 @@ const Awards = () => (
         2000
       </div>
       <div>
-        Senate Scholarship<br />
-        Awarding Body: McMaster University
+        <div>Senate Scholarship</div>
+        <div>Awarding Body: McMaster University</div>
       </div>
     </div>
     <div className="cv__award">
@@ -133,9 +131,9 @@ const Awards = () => (
         2000
       </div>
       <div>
-        Undergraduate Student Research Award<br />
-        Awarding Body: National Science and Engineering Research Council<br />
-        For research to be undertaken with the supervision of Dr Brian Golding
+        <div>Undergraduate Student Research Award</div>
+        <div>Awarding Body: National Science and Engineering Research Council</div>
+        <div>For research to be undertaken with the supervision of Dr Brian Golding</div>
       </div>
     </div>
     <div className="cv__award">
@@ -143,10 +141,10 @@ const Awards = () => (
         1998
       </div>
       <div>
-        Science Incentive Scholarship<br />
-        Awarding Body: McMaster University
+        <div>Science Incentive Scholarship</div>
+        <div>Awarding Body: McMaster University</div>
       </div>
     </div>
-  </div>
+  </section>
 );
 export default Awards;

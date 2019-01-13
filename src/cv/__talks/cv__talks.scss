@@ -4,8 +4,19 @@
 }
 .cv__talks-conference {
   font-style: italic;
+  font-weight: bold;
   margin: 0 3px;
 }
-.cv__talks-list > div {
-  margin-top: 10px;
+.cv__talks ol {
+  list-style: none;
+  padding-left: 0;
+}
+.cv__talks ol li {
+  margin: 8px 0;
+}
+
+@media (max-width: 600px) {
+  .cv__talks-inner {
+    text-align: left;
+  }
 }

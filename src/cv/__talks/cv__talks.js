@@ -18,27 +18,25 @@ const talkElement = list => (
       }
     });
     return (
-      <div key={talk.key}>
+      <li key={talk.key}>
         {authorString} ({talk.date}). {talk.title}.
-        <strong className="cv__talks-conference">
+        <span className="cv__talks-conference">
           {talk.conference},
-        </strong>
+        </span>
         {talk.place}.
-      </div>
+      </li>
     );
   })
 );
 
 const Talks = () => (
-  <div className="cv__talks">
-    <div className="cv__section-heading">
-      Talks
-    </div>
+  <section className="cv__talks">
+    <h2>Talks</h2>
     <div className="cv__talks-inner">
-      <div className="cv__talks-list">
+      <ol className="cv__talks-list">
         { talkElement(List) }
-      </div>
+      </ol>
     </div>
-  </div>
+  </section>
 );
 export default Talks;

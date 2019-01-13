@@ -18,7 +18,14 @@
 .cv__inner > div:not(:last-child) {
   margin-bottom: 20px;
 }
-.cv__section-heading {
+header > h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+section {
+  margin-top: 20px;
+}
+section > h2 {
   border-bottom: 2px solid $primary-dark;
   font-family: $title-font;
   font-size: 1.2em;
@@ -26,6 +33,7 @@
   padding-left: 2px;
   text-transform: uppercase;
 }
+
 @media print {
   .cv {
     background-color: unset;
@@ -54,5 +62,10 @@
   .cv__email {
     color: $primary-medium;
     text-decoration: none;
+  }
+  .cv__email:focus,
+  .cv__email:hover {
+    outline: 0;
+    text-decoration: underline;
   }
 }

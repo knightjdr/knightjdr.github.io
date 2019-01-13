@@ -3,15 +3,11 @@ import React from 'react';
 import './cv__experience.css';
 
 const Experience = () => (
-  <div className="cv__experience">
-    <div className="cv__section-heading">
-      Research experience
-    </div>
+  <section className="cv__experience">
+    <h2>Research experience</h2>
     <div className="cv__experience-details">
       <div className="cv__experience-inner">
-        <div className="cv__experience-inner-left cv__experience-title">
-          Bioinformatician
-        </div>
+        <h3 className="cv__experience-inner-left">Bioinformatician</h3>
         <div>
           Lunenfeld-Tanenbaum Research Institute
         </div>
@@ -44,9 +40,7 @@ const Experience = () => (
     </div>
     <div className="cv__experience-details">
       <div className="cv__experience-inner">
-        <div className="cv__experience-inner-left cv__experience-title">
-          Postdoctoral fellow
-        </div>
+        <h3 className="cv__experience-inner-left">Postdoctoral fellow</h3>
         <div>
           Lunenfeld-Tanenbaum Research Institute
         </div>
@@ -82,9 +76,7 @@ const Experience = () => (
     </div>
     <div className="cv__experience-details">
       <div className="cv__experience-inner">
-        <div className="cv__experience-inner-left cv__experience-title">
-          PhD thesis
-        </div>
+        <h3 className="cv__experience-inner-left">PhD thesis</h3>
         <div>
           Ottawa Hospital Research Institute
         </div>
@@ -117,9 +109,7 @@ const Experience = () => (
     </div>
     <div className="cv__experience-details">
       <div className="cv__experience-inner">
-        <div className="cv__experience-inner-left cv__experience-title">
-          Summer student
-        </div>
+        <h3 className="cv__experience-inner-left">Summer student</h3>
         <div>
           McMaster University
         </div>
@@ -144,9 +134,7 @@ const Experience = () => (
     </div>
     <div className="cv__experience-details">
       <div className="cv__experience-inner">
-        <div className="cv__experience-inner-left cv__experience-title">
-          Summer student
-        </div>
+        <h3 className="cv__experience-inner-left">Summer student</h3>
         <div>
           University of York
         </div>
@@ -172,9 +160,7 @@ const Experience = () => (
     </div>
     <div className="cv__experience-details">
       <div className="cv__experience-inner">
-        <div className="cv__experience-inner-left cv__experience-title">
-          Undergraduate thesis
-        </div>
+        <h3 className="cv__experience-inner-left">Undergraduate thesis</h3>
         <div>
           McMaster University
         </div>
@@ -199,9 +185,7 @@ const Experience = () => (
     </div>
     <div className="cv__experience-details">
       <div className="cv__experience-inner">
-        <div className="cv__experience-inner-left cv__experience-title">
-          Summer student
-        </div>
+        <h3 className="cv__experience-inner-left">Summer student</h3>
         <div>
           McMaster University
         </div>
@@ -224,6 +208,6 @@ const Experience = () => (
         </li>
       </ul>
     </div>
-  </div>
+  </section>
 );
 export default Experience;

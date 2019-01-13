@@ -3,10 +3,8 @@ import React from 'react';
 import './cv__degrees.css';
 
 const Degrees = () => (
-  <div>
-    <div className="cv__section-heading">
-      Academic Degrees
-    </div>
+  <section>
+    <h2>Academic Degrees</h2>
     <div className="cv__degrees">
       <div>
         PhD
@@ -36,6 +34,6 @@ const Degrees = () => (
         Biology and Mathematics, McMaster University
       </div>
     </div>
-  </div>
+  </section>
 );
 export default Degrees;
