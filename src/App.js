@@ -6,7 +6,7 @@ import Footer from './footer/footer';
 import Landing from './landing/landing';
 import Navbar from './navbar/navbar-container';
 import Projects from './projects/projects';
-import Skills from './skills/skills-container';
+import Skills from './skills/skills';
 
 import './App.css';
 

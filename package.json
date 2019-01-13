@@ -2,6 +2,11 @@
   "name": "knightjdr.github.io",
   "homepage": "https://knightjdr.github.io/",
   "version": "0.1.0",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knightjdr/knightjdr.github.io.git"
+  },
   "private": false,
   "dependencies": {
     "ajv": "^6.4.0",
@@ -17,7 +22,6 @@
     "react-scripts": "^2.1.3",
     "react-share": "^2.2.0",
     "react-tos": "^0.1.0",
-    "shortid": "^2.2.8",
     "vivus": "^0.4.4"
   },
   "scripts": {

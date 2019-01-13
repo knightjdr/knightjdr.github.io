@@ -1,29 +1,21 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import ReactTos from 'react-tos';
-import Shortid from 'shortid';
 
 import { BackdropLeft, BackdropRight } from './skills__backdrop';
 
 import './skills.css';
 
-const Skills = ({
-  lines,
-}) => (
-  <div className="skills">
+const Skills = () => (
+  <section className="skills">
     <BackdropLeft />
     <ReactTos
       className="skills__inner"
       config={{ startingScale: 0.95 }}
     >
-      <div className="skills__title">
-        Skills
-      </div>
+      <h3>Skills</h3>
       <div className="skills__terminal">
-        <div className="skills__terminal-bar">
-          <div className="skills__terminal-bar-title">
-            coding.js
-          </div>
+        <header>
+          <h4>coding.js</h4>
           <div className="skills__terminal-buttons">
             <div className="skills__terminal-close">
               ×
@@ -35,17 +27,7 @@ const Skills = ({
               ⬌
             </div>
           </div>
-        </div>
-        <div className="skills__terminal-lines">
-          { [...Array(lines)].map((line, index) => (
-            <div
-              className="skills__line-number"
-              key={Shortid.generate()}
-            >
-              {index + 1}
-            </div>
-          ))}
-        </div>
+        </header>
         <div className="skills__terminal-code">
           <div>
             <span className="skills__terminal-code_purple skills__terminal-code_space">const</span>
@@ -147,7 +129,7 @@ const Skills = ({
           <div>
             <span className="skills__terminal-code_grey">&#125;;</span>
           </div>
-          <div>
+          <div className="skill__terminal-code-export">
             <span className="skills__terminal-code_purple skills__terminal-code_space">export default</span>
             <span className="skills__terminal-code_red">CodingSkills</span>
             <span className="skills__terminal-code_grey">;</span>
@@ -156,11 +138,7 @@ const Skills = ({
       </div>
     </ReactTos>
     <BackdropRight />
-  </div>
+  </section>
 );
-
-Skills.propTypes = {
-  lines: PropTypes.number.isRequired,
-};
 
 export default Skills;
