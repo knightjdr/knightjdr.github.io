@@ -11,15 +11,19 @@ class DescriptionContainer extends Component {
     this.state = { classes: ['landing__description'] };
   }
 
-  componentDidMount() {
+  componentDidMount = () => {
     const options = {
       duration: 100,
     };
-    new Vivus('landing__description', options, () => {
+    this.vivus = new Vivus('landing__description', options, () => {
       this.setState(({ classes }) => ({
         classes: [...classes, 'landing__description_fill'],
       }));
     });
+  }
+
+  componentWillUnmount = () => {
+    this.vivus.destroy();
   }
 
   render() {
