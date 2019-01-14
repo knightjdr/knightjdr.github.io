@@ -9,6 +9,7 @@ import Projects from './projects/projects';
 import Skills from './skills/skills';
 
 import './App.css';
+import './no-script.css';
 
 const links = [
   {

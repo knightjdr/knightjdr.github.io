@@ -1,0 +1,27 @@
+@import 'style/_fonts.scss';
+@import 'style/_theme.scss';
+
+.no-script {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: $default-font;
+}
+.no-script a {
+  color: $primary-dark;
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+}
+.no-script a:focus,
+.no-script a:hover {
+  color: $primary-medium;
+  text-decoration: underline;
+}
+.no-script h1 {
+  font-size: 2em;
+}
+.no-script section {
+  max-width: 900px;
+  text-align: justify;
+}

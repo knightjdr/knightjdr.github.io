@@ -98,6 +98,7 @@ const Skills = () => (
             <span className="skills__terminal-code_grey">[</span>
             <div className="skills__terminal-code-list">
               <div>&apos;Go&apos;</div>
+              <div>&apos;JavaScript&apos;</div>
               <div>&apos;Perl&apos;</div>
               <div>&apos;R&apos;</div>
             </div>
