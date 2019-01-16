@@ -52,13 +52,19 @@ const Projects = () => (
                   prohits-viz.org
                 </a>
                 {' '}
-                (in progress 2019), while the first version can be seen at
+                (in progress 2019), while the previous version can be seen at
                 {' '}
                 <a href="https://prohits-viz.lunenfeld.ca">
                   prohits-viz.lunenfeld.ca
                 </a>
                 {' '}
-                (created 2017).
+                (created 2017), and the first version can be seen at
+                {' '}
+                <a href="http://prohitstools.mshri.on.ca">
+                  prohitstools.mshri.on.ca
+                </a>
+                {' '}
+                (created 2015).
               </p>
             </ReactTos>
           </div>
