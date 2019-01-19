@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/github.b19d6fba.svg"
   },
   {
-    "revision": "4066739540f85ddc0739",
-    "url": "/static/css/main.87ebf23f.chunk.css"
+    "revision": "ac51276ea8a04ed25001",
+    "url": "/static/css/main.41eb6753.chunk.css"
   },
   {
     "revision": "1f727b6b74fd3da904d7",
@@ -80,8 +80,8 @@ self.__precacheManifest = [
     "url": "/static/media/gene-info.f713ac76.svg"
   },
   {
-    "revision": "4066739540f85ddc0739",
-    "url": "/static/js/main.40667395.chunk.js"
+    "revision": "ac51276ea8a04ed25001",
+    "url": "/static/js/main.ac51276e.chunk.js"
   },
   {
     "revision": "6e5e7b5b3c39496f7d3c44182007ca28",
@@ -160,7 +160,7 @@ self.__precacheManifest = [
     "url": "/static/media/description.d8d9c582.svg"
   },
   {
-    "revision": "ba1a12bcf1e5bf08edbedce4a5b399a4",
+    "revision": "1242e75e83f9fe8e5aea7aaaf886a0a5",
     "url": "/index.html"
   }
 ];
