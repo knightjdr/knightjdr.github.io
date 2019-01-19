@@ -25,7 +25,7 @@ const Experience = () => (
       </div>
       <ul>
         <li>
-          Develop computational software to aid data molecular biologists
+          Develop computational software to aid molecular biologists
           with analysis and visualization
         </li>
         <li>

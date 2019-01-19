@@ -66,10 +66,7 @@
 }
 .skills__terminal-button {
   border-radius: 50%;
-  font-size: 1.2em;
   height: 15px;
-  line-height: 15px;
-  text-align: center;
   width: 15px;
 }
 .skills__terminal-buttons {
@@ -82,8 +79,12 @@
 }
 .skills__terminal-close {
   @extend .skills__terminal-button;
-  background-color: #ee6b60;
+  background-color: #f3948c;
+  background-image: url('./assets/times.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
   border: 1px solid #d25448;
+  position: relative;
 }
 .skills__terminal-code {
   counter-reset: lines;
@@ -125,15 +126,18 @@
 .skills__terminal-maximize {
   @extend .skills__terminal-button;
   background-color: #64ca57;
+  background-image: url('./assets/arrows-alt-h.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
   border: 1px solid #57a943;
-  color: #596273;
-  padding-left: 1px;
-  padding-top: 1px;
-  transform: rotateZ(-45deg);
+  transform: rotate(-45deg);
 }
 .skills__terminal-minimize {
   @extend .skills__terminal-button;
   background-color: #f6c050;
+  background-image: url('./assets/minus.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
   border: 1px solid #d9a345;
 }
 .skills h3 {

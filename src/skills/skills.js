@@ -17,15 +17,9 @@ const Skills = () => (
         <header>
           <h4>coding.js</h4>
           <div className="skills__terminal-buttons">
-            <div className="skills__terminal-close">
-              ×
-            </div>
-            <div className="skills__terminal-minimize">
-              −
-            </div>
-            <div className="skills__terminal-maximize">
-              ⬌
-            </div>
+            <div className="skills__terminal-close" />
+            <div className="skills__terminal-minimize" />
+            <div className="skills__terminal-maximize" />
           </div>
         </header>
         <div className="skills__terminal-code">
@@ -69,7 +63,6 @@ const Skills = () => (
             <span className="skills__terminal-code_grey">[</span>
             <div className="skills__terminal-code-list">
               <div>&apos;CSS&apos;</div>
-              <div>&apos;D3.js&apos;</div>
               <div>&apos;HTML5&apos;</div>
               <div>&apos;React&apos;</div>
               <div>&apos;SCSS&apos;</div>
@@ -82,6 +75,7 @@ const Skills = () => (
             <span className="skills__terminal-code_grey">[</span>
             <div className="skills__terminal-code-list">
               <div>&apos;AngularJS&apos;</div>
+              <div>&apos;D3.js&apos;</div>
               <div>&apos;jQuery&apos;</div>
             </div>
             <span className="skills__terminal-code_grey skills__terminal-code_space">],</span>
