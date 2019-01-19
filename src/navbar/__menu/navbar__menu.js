@@ -31,15 +31,14 @@ const SmallScreenMenu = ({
       <ul className={`navbar__menu-inner ${viewMenu ? 'navbar__menu-inner_show' : 'navbar__menu-inner_hide'}`}>
         {
           links.map(link => (
-            <NavLink
-              className="navbar__menu-link"
-              key={link.text}
-              to={link.route}
-            >
-              <li>
+            <li key={link.text}>
+              <NavLink
+                className="navbar__menu-link"
+                to={link.route}
+              >
                 {link.text}
-              </li>
-            </NavLink>
+              </NavLink>
+            </li>
           ))
         }
       </ul>

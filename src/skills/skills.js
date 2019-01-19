@@ -31,7 +31,7 @@ const Skills = () => (
         <div className="skills__terminal-code">
           <div>
             <span className="skills__terminal-code_purple skills__terminal-code_space">const</span>
-            <span className="skills__terminal-code_red skills__terminal-code_space">CodingSkills</span>
+            <span className="skills__terminal-code_red skills__terminal-code_space">skills</span>
             <span className="skills__terminal-code_grey">= &#123;</span>
           </div>
           <div className="skills__terminal-code_tab">
@@ -132,7 +132,7 @@ const Skills = () => (
           </div>
           <div className="skill__terminal-code-export">
             <span className="skills__terminal-code_purple skills__terminal-code_space">export default</span>
-            <span className="skills__terminal-code_red">CodingSkills</span>
+            <span className="skills__terminal-code_red">skills</span>
             <span className="skills__terminal-code_grey">;</span>
           </div>
         </div>

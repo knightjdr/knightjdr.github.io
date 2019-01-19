@@ -76,6 +76,7 @@
   }
   .landing__description {
     left: 1%;
+    margin-top: 18px;
   }
   .landing__main-image {
     height: 40vw;
@@ -86,26 +87,23 @@
     right: 0%;
   }
 }
-@media (min-width: 500px) and (max-width: 599px) {
+@media (max-width: 599px) {
   .landing__description svg {
-    height: 4.5vw;
+    height: 7vw;
   }
   .landing__name {
     font-size: 7.5vw;
   }
 }
-@media (min-width: 400px) and (max-width: 499px) {
+@media (max-width: 499px) {
   .landing__description svg {
-    height: 5vw;
+    height: 8vw;
   }
   .landing__name {
     font-size: 8.5vw;
   }
 }
 @media (max-width: 399px) {
-  .landing__description svg {
-    height: 6vw;
-  }
   .landing__name {
     font-size: 10vw;
   }
