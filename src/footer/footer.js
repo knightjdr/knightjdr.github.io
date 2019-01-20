@@ -28,7 +28,9 @@ const Footer = () => (
         >
           <img
             alt="CV"
+            height="32"
             src={CV}
+            width="27"
           />
         </NavLink>
         <div>
@@ -43,7 +45,9 @@ const Footer = () => (
           <img
             alt="E-mail"
             className="footer__image"
+            height="32"
             src={Email}
+            width="32"
           />
         </a>
         <div>
@@ -58,7 +62,9 @@ const Footer = () => (
           <img
             alt="GitHub"
             className="footer__image"
+            height="32"
             src={Github}
+            width="33"
           />
         </a>
         <div>
@@ -73,7 +79,9 @@ const Footer = () => (
           <img
             alt="Google Scholar"
             className="footer__image"
+            height="32"
             src={Scholar}
+            width="40"
           />
         </a>
         <div>
@@ -88,7 +96,9 @@ const Footer = () => (
           <img
             alt="LinkedIn"
             className="footer__image"
+            height="32"
             src={LinkedIn}
+            width="28"
           />
         </a>
         <div>

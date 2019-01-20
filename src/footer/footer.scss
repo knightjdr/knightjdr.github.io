@@ -29,9 +29,12 @@
   display: flex;
   flex-direction: column;
 }
+.footer__inner > div:not(:last-child) {
+  margin-right: 20px;
+}
 .footer__link {
   @extend .link-reset;
-  
+  display: block;
 }
 .footer__link + div {
   border-bottom: 2px solid transparent;
@@ -46,13 +49,6 @@
   }
   .footer__inner > div:not(:last-child) {
     margin-bottom: 10px;
-  }
-}
-@media (min-width: 450px) {
-  .footer__inner {
-    flex-direction: row;
-  }
-  .footer__inner > div:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 0;
   }
 }
