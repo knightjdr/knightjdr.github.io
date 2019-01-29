@@ -30,7 +30,10 @@ const pubElement = list => (
 );
 
 const Publications = () => (
-  <section className="cv__publications">
+  <section
+    className="cv__publications"
+    id="publications"
+  >
     <h2>Publications</h2>
     <div className="cv__publications-inner">
       <h3>First authored</h3>

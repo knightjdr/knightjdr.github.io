@@ -6,6 +6,7 @@
   font-size: 1.4em;
   font-weight: bold;
   margin: 0px 15px;
+  outline: none;
   text-decoration: none;
   transition: color 0.2s ease-out;
 }
@@ -13,21 +14,21 @@
   position: absolute;
   right: 5px;
 }
-.navbar_theme-dark a.navbar-link:link {
-  color: $primary-light;
-}
+.navbar_theme-dark a.navbar-link:link,
 .navbar_theme-dark a.navbar-link:visited {
   color: $primary-light;
 }
+.navbar_theme-dark a.navbar-link:active,
+.navbar_theme-dark a.navbar-link:focus,
 .navbar_theme-dark a.navbar-link:hover {
   color: $accent;
 }
-.navbar_theme-transparent a.navbar-link:link {
-  color: $primary-dark;
-}
+.navbar_theme-transparent a.navbar-link:link,
 .navbar_theme-transparent a.navbar-link:visited {
   color: $primary-dark;
 }
+.navbar_theme-transparent a.navbar-link:active,
+.navbar_theme-transparent a.navbar-link:focus,
 .navbar_theme-transparent a.navbar-link:hover {
   color: $accent;
 }

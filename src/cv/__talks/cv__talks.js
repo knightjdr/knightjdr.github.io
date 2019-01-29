@@ -30,7 +30,10 @@ const talkElement = list => (
 );
 
 const Talks = () => (
-  <section className="cv__talks">
+  <section
+    className="cv__talks"
+    id="talks"
+  >
     <h2>Talks</h2>
     <div className="cv__talks-inner">
       <ol className="cv__talks-list">

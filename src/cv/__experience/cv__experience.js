@@ -3,7 +3,10 @@ import React from 'react';
 import './cv__experience.css';
 
 const Experience = () => (
-  <section className="cv__experience">
+  <section
+    className="cv__experience"
+    id="experience"
+  >
     <h2>Research experience</h2>
     <div className="cv__experience-details">
       <div className="cv__experience-inner">

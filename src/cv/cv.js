@@ -38,6 +38,13 @@ const CV = () => (
           </a>
         </address>
       </header>
+      <ul className="cv__links">
+        <li><a href="#degrees">Degrees</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#talks">Talks</a></li>
+      </ul>
       <Degrees />
       <Experience />
       <Awards />

@@ -3,7 +3,7 @@ import React from 'react';
 import './cv__awards.css';
 
 const Awards = () => (
-  <section>
+  <section id="awards">
     <h2>Awards</h2>
     <div className="cv__awards">
       <div>

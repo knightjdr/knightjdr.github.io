@@ -3,7 +3,7 @@ import React from 'react';
 import './cv__degrees.css';
 
 const Degrees = () => (
-  <section>
+  <section id="degrees">
     <h2>Academic Degrees</h2>
     <div className="cv__degrees">
       <div>

@@ -6,11 +6,11 @@ const PubList = {
         'Samavarchi-Tehrani P',
         'Gingras AC',
       ],
-      date: 'In Preparation',
-      journal: 'TBD',
+      date: 'Submitted',
+      journal: 'BioRxiv 532523 [Preprint]',
       key: 'tbdKnightInprep',
-      pages: 'tbd',
-      title: 'Gene Info: a Chrome extension for retrieving gene information on any website',
+      pages: 'https://doi.org/10.1101/532523',
+      title: 'Gene Info: Easy retrieval of gene product information on any website',
     },
     {
       authors: [
