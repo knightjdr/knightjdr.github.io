@@ -72,14 +72,14 @@
   .cv__inner {
     margin-top: 50px;
   }
-  .cv a:link,
-  .cv a:visited {
+  .cv__inner a:link,
+  .cv__inner a:visited {
     color: $primary-medium;
     text-decoration: none;
   }
-  .cv a:active,
-  .cv a:focus,
-  .cv a:hover {
+  .cv__inner a:active,
+  .cv__inner a:focus,
+  .cv__inner a:hover {
     outline: 0;
     text-decoration: underline;
   }
