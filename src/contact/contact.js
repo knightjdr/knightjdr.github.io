@@ -12,7 +12,7 @@ const Contact = () => (
     <div className="contact__banner-grass" />
     <div className="contact__about">
       <h3>Questions or comments?</h3>
-      <a href="mailto:knightjdr@gmail.com?subject=About jamesknight.ca">contact me</a>
+      <a href="mailto:knightjdr@gmail.com?subject=About jamesknight.dev">contact me</a>
     </div>
   </section>
 );

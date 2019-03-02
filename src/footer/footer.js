@@ -40,7 +40,7 @@ const Footer = () => (
       <div>
         <a
           className="footer__link"
-          href="mailto:knightjdr@gmail.com?subject=About jamesknight.ca"
+          href="mailto:knightjdr@gmail.com?subject=About jamesknight.dev"
         >
           <img
             alt="E-mail"

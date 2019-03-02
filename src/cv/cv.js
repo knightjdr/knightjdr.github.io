@@ -32,7 +32,7 @@ const CV = () => (
           <div>Toronto, Ontario, Canada</div>
           <a
             className="cv__email"
-            href="mailto:knightjdr@gmail.com?subject=About jamesknight.ca"
+            href="mailto:knightjdr@gmail.com?subject=About jamesknight.dev"
           >
             contact
           </a>
