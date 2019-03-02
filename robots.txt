@@ -1,1 +1,2 @@
-Sitemap: https://nbcc.lunenfeld.ca/sitemap.xml
+Sitemap: https://jamesknight.ca/sitemap-ca.xml
+Sitemap: https://jamesknight.dev/sitemap-dev.xml
