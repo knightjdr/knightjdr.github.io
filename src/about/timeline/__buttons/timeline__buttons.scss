@@ -88,7 +88,7 @@
   right: 0;
 }
 .timeline__button_transition-center {
-  background-position: 122px bottom;
+  background-position: 122px center;
 }
 .timeline__button_transition-end {
   transition-delay: 0.45s;
@@ -97,17 +97,16 @@
   transition-delay: 0.225s;
 }
 .timeline__button_transition-left {
-  background-position: 61px bottom;
+  background-position: 61px center;
 }
 .timeline__button_transition-right {
-  background-position: 183px bottom;
+  background-position: 183px center;
 }
 .timeline__button_transition-start {
   transition-delay: 0s;
 }
 .timeline__buttons {
   height: 60px;
-  margin-bottom: 5px;
   position: relative;
 }
 .timeline__connector {
@@ -140,10 +139,10 @@
     left: 330px;
   }
   .timeline__connector_transition-left {
-    background-position: 636px bottom;
+    background-position: 636px center;
   }
   .timeline__connector_transition-right {
-    background-position: 212px bottom;
+    background-position: 212px center;
   }
 }
 @media (min-width: 500px) and (max-width: 799px) {
@@ -159,10 +158,10 @@
     left: 230px;
   }
   .timeline__connector_transition-left {
-    background-position: 336px bottom;
+    background-position: 336px center;
   }
   .timeline__connector_transition-right {
-    background-position: 112px bottom;
+    background-position: 112px center;
   }
 }
 @media (max-width: 499px) {
@@ -178,10 +177,10 @@
     left: 170px;
   }
   .timeline__connector_transition-left {
-    background-position: 156px bottom;
+    background-position: 156px center;
   }
   .timeline__connector_transition-right {
-    background-position: 52px bottom;
+    background-position: 52px center;
   }
 }
 // Button hover color on small screens.
