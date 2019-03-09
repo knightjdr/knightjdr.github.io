@@ -65,7 +65,6 @@ const Skills = () => (
               <div>&apos;CSS&apos;</div>
               <div>&apos;HTML5&apos;</div>
               <div>&apos;React&apos;</div>
-              <div>&apos;SCSS&apos;</div>
               <div>&apos;Vanilla JS&apos;</div>
             </div>
             <span className="skills__terminal-code_grey skills__terminal-code_space">],</span>
@@ -116,6 +115,7 @@ const Skills = () => (
             <span className="skills__terminal-code_green skills__terminal-code_space">learning:</span>
             <span className="skills__terminal-code_grey">[</span>
             <div className="skills__terminal-code-list">
+              <div>&apos;Docker&apos;</div>
               <div>&apos;GCP&apos;</div>
               <div>&apos;WebAssembly&apos;</div>
             </div>

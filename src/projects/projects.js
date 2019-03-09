@@ -41,7 +41,7 @@ const Projects = () => (
               className="projects__grid-description-inner"
               config={transitionConfigRight}
             >
-              <p>
+              <p className="projects__desktop">
                 ProHits-viz is a suite of interactive webtools for analyzing and visualizing
                 protein-protein interaction data. This is the project that started
                 my web development career. I am currently working on a new implementation
@@ -65,6 +65,18 @@ const Projects = () => (
                 </a>
                 {' '}
                 (created 2015).
+              </p>
+              <p className="projects__mobile">
+                ProHits-viz is a suite of interactive webtools for analyzing and visualizing
+                protein-protein interaction data. This is the project that started
+                my web development career. I am currently working on a new implementation
+                of the site using React with Node.js and Golang on the backend. The current
+                version of the site can be seen at
+                {' '}
+                <a href="https://prohits-viz.org">
+                  prohits-viz.org
+                </a>
+                .
               </p>
             </ReactTos>
           </div>

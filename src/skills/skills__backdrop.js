@@ -1,7 +1,7 @@
 import React from 'react';
 
 import CSS from './assets/css.svg';
-import D3 from './assets/d3.svg';
+import Docker from './assets/docker.svg';
 import Go from './assets/go.svg';
 import HTML from './assets/html5.svg';
 import JS from './assets/js.svg';
@@ -9,7 +9,7 @@ import NodeJS from './assets/node.svg';
 import Perl from './assets/perl.svg';
 import R from './assets/r.svg';
 import ReactLogo from './assets/react.svg';
-import Sass from './assets/sass.svg';
+import WA from './assets/wa.svg';
 
 export const BackdropLeft = () => (
   <div className="skills__backdrop-left">
@@ -26,7 +26,7 @@ export const BackdropRight = () => (
     <img alt="Perl" src={Perl} style={{ left: '30%', top: '20%' }} />
     <img alt="R" src={R} style={{ left: '70%', top: '35%' }} />
     <img alt="HTML" src={HTML} style={{ left: '40%', top: '60%' }} />
-    <img alt="Sass" src={Sass} style={{ left: '55%', top: '80%' }} />
-    <img alt="D3" src={D3} style={{ left: '15%', top: '90%' }} />
+    <img alt="WA" src={WA} style={{ left: '55%', top: '80%' }} />
+    <img alt="Docker" src={Docker} style={{ left: '15%', top: '90%' }} />
   </div>
 );

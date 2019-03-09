@@ -1,2 +1,1 @@
-Sitemap: https://jamesknight.ca/sitemap-ca.xml
-Sitemap: https://jamesknight.dev/sitemap-dev.xml
+Sitemap: https://jamesknight.dev/sitemap.xml

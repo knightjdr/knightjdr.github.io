@@ -9,6 +9,9 @@
   font-size: 1.1em;
   padding: 60px 40px 80px 40px;
 }
+.projects__desktop {
+  display: block;
+}
 .projects__grid {
   display: flex;
   flex-direction: column;
@@ -88,6 +91,17 @@
   height  : 2px;
   width   : 75%;
   border-bottom: 2px solid $text-light;
+}
+.projects__mobile {
+  display: none;
+}
+@media (max-width: 749px) {
+  .projects__desktop {
+    display: none;
+  }
+  .projects__mobile {
+    display: block;
+  }
 }
 @media (max-width: 649px) {
   .projects__grid-row {
