@@ -24,6 +24,9 @@
 .landing__description_fill .landing__description_light {
   animation: lightfill 0.4s forwards;
 }
+.landing__name {
+  margin-bottom: 12px;
+}
 @keyframes darkfill {
   from {
     fill: rgba(26, 64, 95, 0);
@@ -42,11 +45,6 @@
   to {
     fill: rgba(248, 241, 229, 1);
     stroke-width: 0;
-  }
-}
-@media (min-width: 701px) {
-  .landing__name {
-    margin-bottom: 12px;
   }
 }
 @media (max-width: 700px) {
@@ -82,7 +80,7 @@
 
 @media (orientation: portrait) {
   .landing__description svg {
-    height: auto;
+    height: 10.3vw; // 0.136 * width
     width: 75vw;
   }
   .landing__main-image {
@@ -90,7 +88,7 @@
     width: 80vw;
   }
   .landing__name svg {
-    height: auto;
+    height: 9.1vw; // 0.113 * widtg
     width: 80vw;
   }
 }
