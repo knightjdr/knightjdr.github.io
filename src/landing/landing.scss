@@ -13,6 +13,9 @@
   min-height: 500px;
   justify-content: center;
 }
+.landing svg {
+  display: block;
+}
 .landing__description {
   left: 6%;
   margin-top: 20px;
@@ -48,16 +51,9 @@
   }
 }
 @media (max-width: 700px) {
-  .landing {
-    min-height: calc(49.7vw + 120px); // 20px for desc. margin, 100px for padding
-  }
   .landing__description {
     left: 1%;
     margin-top: 15px;
-  }
-  .landing__name {
-    margin-bottom: 8px;
-    right: 0%;
   }
 }
 
@@ -88,7 +84,7 @@
     width: 80vw;
   }
   .landing__name svg {
-    height: 9.1vw; // 0.113 * widtg
+    height: 9.1vw; // 0.113 * width
     width: 80vw;
   }
 }
