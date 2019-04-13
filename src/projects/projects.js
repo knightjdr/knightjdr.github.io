@@ -92,7 +92,7 @@ const Projects = () => (
                   GIX
                 </a>
                 {' '}
-                is a browser Extension that allows molecular biologists
+                is a browser extension that allows molecular biologists
                 to retrieve gene information on any webpage simply by
                 double clicking a gene name. It was built with vanilla
                 JavaScript.
