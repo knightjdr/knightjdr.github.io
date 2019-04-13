@@ -88,11 +88,11 @@ const Projects = () => (
               config={transitionConfigLeft}
             >
               <p>
-                <a href="https://chrome.google.com/webstore/detail/gene-info/jggendahejbhkghnachhlomkkheomchp?hl=en-US">
-                  Gene Info
+                <a href="https://gene-info.org">
+                  GIX
                 </a>
                 {' '}
-                is a Chrome Extension that allows molecular biologists
+                is a browser Extension that allows molecular biologists
                 to retrieve gene information on any webpage simply by
                 double clicking a gene name. It was built with vanilla
                 JavaScript.

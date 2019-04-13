@@ -4,13 +4,14 @@ const PubList = {
       authors: [
         'Knight JDR',
         'Samavarchi-Tehrani P',
+        'Tyers M',
         'Gingras AC',
       ],
       date: 'Submitted',
       journal: 'BioRxiv 532523 [Preprint]',
       key: 'tbdKnightInprep',
       pages: 'https://doi.org/10.1101/532523',
-      title: 'Gene Info: Easy retrieval of gene product information on any website',
+      title: 'Gene Information eXtension (GIX): effortless retrieval of gene product information on any website',
     },
     {
       authors: [
@@ -149,10 +150,10 @@ const PubList = {
         'Filippakopoulos P',
         'Gingras AC',
       ],
-      date: '2018',
+      date: '2019',
       journal: 'Molecular Cell',
-      key: 'molcellLambert2018',
-      pages: 'Epub ahead of print',
+      key: 'molcellLambert2019',
+      pages: '73:621-638',
       title: 'Interactome Rewiring Following Pharmacological Targeting of BET Bromodomains',
     },
     {
