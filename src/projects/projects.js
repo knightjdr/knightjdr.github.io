@@ -43,7 +43,12 @@ const Projects = () => (
             >
               <p className="projects__desktop">
                 ProHits-viz is a suite of interactive webtools for analyzing and visualizing
-                protein-protein interaction data. This is the project that started
+                protein-protein interaction data that was featured in
+                {' '}
+                <a href="https://www.nature.com/articles/nmeth.4330.epdf?author_access_token=Mxscfd4TsFnZDOMRVLu6q9RgN0jAjWel9jnR3ZoTv0N_r0kXKLsUVDr0iDmCOCg724OKwf_HwmR4LS6tUTcLnv0lZ95VTwz0lijrGL0nG0hlWQsNj9aa71B1ICe2lxjt">
+                  Nature Methods
+                </a>
+                . This is the project that started
                 my web development career. I am currently working on a new implementation
                 of the site using React with Node.js and Golang on the backend. The current
                 version of the site can be seen at
@@ -52,24 +57,11 @@ const Projects = () => (
                   prohits-viz.org
                 </a>
                 {' '}
-                (in progress 2019), while the previous version can be seen at
-                {' '}
-                <a href="https://prohits-viz.lunenfeld.ca">
-                  prohits-viz.lunenfeld.ca
-                </a>
-                {' '}
-                (created 2017), and the first version can be seen at
-                {' '}
-                <a href="http://prohitstools.mshri.on.ca">
-                  prohitstools.mshri.on.ca
-                </a>
-                {' '}
-                (created 2015).
+                (in progress 2019).
               </p>
               <p className="projects__mobile">
                 ProHits-viz is a suite of interactive webtools for analyzing and visualizing
-                protein-protein interaction data. This is the project that started
-                my web development career. I am currently working on a new implementation
+                protein-protein interaction data. I am currently working on a new implementation
                 of the site using React with Node.js and Golang on the backend. The current
                 version of the site can be seen at
                 {' '}
