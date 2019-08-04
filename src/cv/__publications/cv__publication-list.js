@@ -7,10 +7,10 @@ const PubList = {
         'Tyers M',
         'Gingras AC',
       ],
-      date: 'In press',
+      date: '2019',
       journal: 'Nature Methods',
       key: 'natmethods2019',
-      pages: 'https://doi.org/10.1101/532523',
+      pages: '16:665-666',
       title: 'Gene Information eXtension (GIX): effortless retrieval of gene product information on any website',
     },
     {
@@ -127,6 +127,25 @@ const PubList = {
     },
   ],
   co: [
+    {
+      authors: [
+        'Hesketh GG',
+        'Papazotos F',
+        'Pawling J',
+        'Rajendran D',
+        'Knight JDR',
+        'Martinez S',
+        'Taipale M',
+        'Schramek D',
+        'Dennis J',
+        'Gingras AC',
+      ],
+      date: 'Submitted',
+      journal: '',
+      key: 'heskethSubmitted',
+      pages: '',
+      title: 'Free and lysosome-derived amino acids activate mTORC1 through distinct pathways',
+    },
     {
       authors: [
         'Lambert JP',

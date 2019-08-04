@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import List from './cv__publication-list';
 
@@ -19,11 +19,27 @@ const pubElement = list => (
     });
     return (
       <li key={pub.key}>
-        {authorString} ({pub.date}). {pub.title}.
-        <span className="cv__publications-journal">
-          {pub.journal},
-        </span>
-        {pub.pages}.
+        {authorString}
+        {' '}
+        (
+        {pub.date}
+        ).
+        {' '}
+        {pub.title}
+        .
+        {
+          pub.journal
+          && (
+            <Fragment>
+              <span className="cv__publications-journal">
+                {pub.journal}
+                ,
+              </span>
+              {pub.pages}
+              .
+            </Fragment>
+          )
+        }
       </li>
     );
   })
