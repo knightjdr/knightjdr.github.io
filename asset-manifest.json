@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.fa8f5590.chunk.css",
+    "main.css": "/static/css/main.4fb3351d.chunk.css",
     "main.js": "/static/js/main.e34e9c6a.chunk.js",
     "main.js.map": "/static/js/main.e34e9c6a.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
@@ -8,9 +8,9 @@
     "static/js/2.e0c41560.chunk.js": "/static/js/2.e0c41560.chunk.js",
     "static/js/2.e0c41560.chunk.js.map": "/static/js/2.e0c41560.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8c0266a8017fddee3ea170b60759e5e4.js": "/precache-manifest.8c0266a8017fddee3ea170b60759e5e4.js",
+    "precache-manifest.af8ddb6ec712344018c1925c7b7ede08.js": "/precache-manifest.af8ddb6ec712344018c1925c7b7ede08.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.fa8f5590.chunk.css.map": "/static/css/main.fa8f5590.chunk.css.map",
+    "static/css/main.4fb3351d.chunk.css.map": "/static/css/main.4fb3351d.chunk.css.map",
     "static/media/skills.css": "/static/media/times.db428eb3.svg",
     "static/media/contact.css": "/static/media/banner-grass.14aabfd5.svg",
     "static/media/timeline__buttons.css": "/static/media/school.5e501ad4.svg",
