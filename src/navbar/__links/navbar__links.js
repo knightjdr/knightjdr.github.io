@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Menu from '../__menu/navbar__menu-container';
 
@@ -14,13 +14,13 @@ const Links = ({
     ? <Menu links={links} />
     : (
       links.map(link => (
-        <NavLink
+        <Link
           className="navbar-link"
           key={link.text}
           to={link.route}
         >
           { link.text }
-        </NavLink>
+        </Link>
       ))
     );
   return (

@@ -1,6 +1,5 @@
-import { AnimatedSwitch } from 'react-router-transition';
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import CaptureRouteNotFound from './__not-found/router__not-found';
 
@@ -9,17 +8,10 @@ import App from '../App';
 import CV from '../cv/cv';
 import Missing from '../404/404';
 
-import './router.css';
-
 const Routes = () => (
   <Router>
     <CaptureRouteNotFound>
-      <AnimatedSwitch
-        atEnter={{ opacity: 0 }}
-        atLeave={{ opacity: 0 }}
-        atActive={{ opacity: 1 }}
-        className="switch"
-      >
+      <Switch>
         <Route
           exact
           path="/"
@@ -34,7 +26,7 @@ const Routes = () => (
           path="*"
           component={Missing}
         />
-      </AnimatedSwitch>
+      </Switch>
     </CaptureRouteNotFound>
   </Router>
 );

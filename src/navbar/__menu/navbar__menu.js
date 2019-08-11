@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Bars from './navbar__menu-bars';
 
@@ -32,12 +32,12 @@ const SmallScreenMenu = ({
         {
           links.map(link => (
             <li key={link.text}>
-              <NavLink
+              <Link
                 className="navbar__menu-link"
                 to={link.route}
               >
                 {link.text}
-              </NavLink>
+              </Link>
             </li>
           ))
         }

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactTos from 'react-tos';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import CV from './assets/cv.svg';
 import Email from './assets/email.svg';
@@ -21,7 +21,7 @@ const Footer = () => (
       config={{ startingScale: 0.95 }}
     >
       <div>
-        <NavLink
+        <Link
           className="footer__link"
           onClick={ScrollTop}
           to="/cv"
@@ -32,7 +32,7 @@ const Footer = () => (
             src={CV}
             width="27"
           />
-        </NavLink>
+        </Link>
         <div>
           CV
         </div>

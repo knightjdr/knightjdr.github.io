@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Computer404 from './assets/computer404-min.svg';
 
@@ -14,14 +14,14 @@ const Missing = () => (
     <p>
       Unfortunately the page you were looking for could not be found.
     </p>
-    <NavLink
+    <Link
       className="missing__home-link"
       to="/"
     >
       <button type="button">
         Home
       </button>
-    </NavLink>
+    </Link>
   </main>
 );
 export default Missing;

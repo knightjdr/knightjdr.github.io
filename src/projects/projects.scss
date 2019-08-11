@@ -27,7 +27,9 @@
 .projects__grid-description {
   align-items: center;
   display: inline-flex;
+  margin-left: 15px;
   max-width: 750px;
+  width: calc(100% - 304px);
 }
 .projects__grid-description-inner {
   font-family: $cursive-font;
@@ -55,6 +57,7 @@
   display: flex;
   height: 100%;
   justify-content: center;
+  max-height: 250px;
   padding: 0 20px;
   width: 250px;
 }
@@ -112,6 +115,8 @@
   }
   .projects__grid-description {
     justify-content: center;
+    margin-left: 0;
+    width: 100%;
   }
   .projects__grid-image {
     margin-bottom: 20px;

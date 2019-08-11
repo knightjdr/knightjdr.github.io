@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './navbar__logo.css';
 
@@ -18,7 +18,7 @@ const Logo = ({
     },
   };
   return (
-    <NavLink
+    <Link
       className="navbar__logo-link"
       to="/"
     >
@@ -53,7 +53,7 @@ const Logo = ({
           />
         </g>
       </svg>
-    </NavLink>
+    </Link>
   );
 };
 
