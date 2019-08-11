@@ -129,6 +129,22 @@ const PubList = {
   co: [
     {
       authors: [
+        'Youn JY',
+        'Dyakov BJA',
+        'Knight JDR',
+        'Vernon RM',
+        'Zhang JP',
+        'Forman-Kay JD',
+        'Gingras AC',
+      ],
+      date: 'Submitted',
+      journal: '',
+      key: 'younSubmitted',
+      pages: '',
+      title: 'Proteomic landscapes of stress granules and P-bodies',
+    },
+    {
+      authors: [
         'Hesketh GG',
         'Papazotos F',
         'Pawling J',
