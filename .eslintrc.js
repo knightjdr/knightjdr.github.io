@@ -1,13 +1,27 @@
 module.exports = {
-  "extends": "airbnb",
-  "env": {
-    "browser": true,
-    "jest": true
+  env: {
+    browser: true,
+    es6: true,
   },
-  "parser": "babel-eslint",
-  "rules": {
-    "function-paren-newline": "off",
-    "no-underscore-dangle": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
-  }
+  extends: [
+    'plugin:react/recommended',
+    'airbnb',
+  ],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 11,
+    sourceType: 'module',
+  },
+  plugins: [
+    'react',
+  ],
+  rules: {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+  },
 };
