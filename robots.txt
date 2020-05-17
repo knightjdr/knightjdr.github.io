@@ -1,1 +1,4 @@
-Sitemap: https://jamesknight.dev/sitemap.xml
+User-agent: *
+Allow: /
+Sitemap: https://knightjdr.github.io/sitemap.xml
+Host: https://knightjdr.github.io
