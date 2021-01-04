@@ -11,7 +11,6 @@ const Layout = ({
   </div>
 );
 
-
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
